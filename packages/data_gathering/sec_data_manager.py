@@ -130,35 +130,55 @@ class SECDataManager:
     
     def get_insider_holdings(self, sec_df: pd.DataFrame) -> Dict[str, Set[str]]:
         """
-        Get stocks owned by insiders based on SEC filings.
+        Get all stocks that each insider owns based on SEC filings.
+        This includes stocks from other companies, not just the selected ticker.
         
         Args:
-            sec_df: DataFrame containing SEC transactions
+            sec_df: DataFrame containing SEC filing data
             
         Returns:
             Dictionary mapping insider names to sets of stock tickers they own
         """
-        print("🔍 Analyzing insider holdings...")
+        print("🔹 Gathering Insider Holdings ...")
         try:
-            insider_holdings = {}
+            insider_holdings: Dict[str, Set[str]] = {}
             
-            # Get internal people from SEC
-            internal_people = self._get_sec_interal_people()
-            internal_names = {person['name'] for person in internal_people}
+            # Get unique insider names from the SEC data
+            insider_names = sec_df['insider_name'].unique()
             
-            # Process SEC transactions
-            for _, row in sec_df.iterrows():
-                insider_name = row['insider_name']
-                if insider_name in internal_names:
-                    if insider_name not in insider_holdings:
-                        insider_holdings[insider_name] = set()
-                    insider_holdings[insider_name].add(row['stock_ticker'])
+            for insider_name in insider_names:
+                print(f"🔍 Fetching holdings for insider: {insider_name}")
+                try:
+                    # Get the insider's CIK from the SEC data
+                    insider_data = sec_df[sec_df['insider_name'] == insider_name].iloc[0]
+                    insider_cik = insider_data.get('insider_cik')
+                    
+                    if insider_cik:
+                        # Create URL to fetch all Form 4 filings for this insider
+                        insider_url = f"https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK={insider_cik}&type=4&owner=only&count=100"
+                        # Fetch all Form 4 filings for this insider
+                        insider_filings = self._scrape_sec_filings(insider_url)  
+                        # Convert list of dictionaries to DataFrame
+                        insider_filings = pd.DataFrame(insider_filings)
+                        # Keep only specified columns
+                        insider_filings = insider_filings[['issuerTradingSymbol', 'insider_name', 'relationship', 'transactions']]
+                        
+                        insider_holdings[insider_name] = insider_filings
+                    else:
+                        print(f"⚠️ No CIK found for insider: {insider_name}")
+                        
+                except Exception as e:
+                    print(f"❌ Error fetching holdings for {insider_name}: {e}")
+                    continue
+                
+                # Add a small delay to respect SEC rate limiting
+                time.sleep(0.5)
             
             print(f"✅ Found holdings for {len(insider_holdings)} insiders")
             return insider_holdings
         except Exception as e:
-            print(f"❌ Error getting insider holdings: {e}")
-            return {}
+            print(f"❌ Error gathering insider holdings: {e}")
+            raise
     
     def get_sec_filings(self) -> pd.DataFrame:
         """

@@ -58,14 +58,14 @@ class FinancialDataAnalyzer:
         try:
             #sec_df = self.sec_manager.get_sec_filings()
             sec_df = pd.read_csv('insider_transactions.csv')
-            #insider_holdings = self.sec_manager.get_insider_holdings(sec_df)
-            with open('insider_holdings.json', 'r') as f:
-                insider_holdings = json.load(f)
+            insider_holdings_df = self.sec_manager.get_insider_holdings(sec_df)
+            #with open('insider_holdings.json', 'r') as f:
+            #    insider_holdings = json.load(f)
             
             ticker_info = yf.Ticker(self.stock_ticker).info
             data = {
                 'sec_transactions': sec_df,
-                'insider_holdings': insider_holdings,
+                'insider_holdings': insider_holdings_df,
                 'google_trends': googleAPI_get_df([self.stock_ticker]),
                 'news_sentiment': newsAPI_get_df(self.stock_ticker, num_articles=DEFAULT_NEWS_ARTICLES),
                 'analysts_ratings': get_finviz_ratings(self.stock_ticker),
@@ -90,9 +90,8 @@ class FinancialDataAnalyzer:
     def run_analysis(self) -> None:
         """Run the complete financial data analysis pipeline."""
         try:
-            if not self.analyzer.load_ontology():
-                return
-
+            #if not self.analyzer.load_ontology():
+            #    return
             self.analyzer.store_data(self.gather_data())
             self.analyzer.query_data()
         except Exception as e:
