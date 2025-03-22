@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import pandas as pd
 from datetime import datetime, timedelta
 
-def get_finviz_ratings(stock_symbol="AAPL"):
+def get_finviz_ratings(stock_symbol):
     # URL for the Finviz page of the stock
     url = f"https://finviz.com/quote.ashx?t={stock_symbol}&p=d"
 
@@ -31,9 +31,9 @@ def get_finviz_ratings(stock_symbol="AAPL"):
         # Find all rows in the table (skip the header row)
         rows = ratings_table.find_all('tr')[1:]  # [1:] to skip the header row
         
-        # Get the current date and calculate the date 1 month ago
+        # Get the current date and calculate the date 182 days ago
         today = datetime.utcnow()
-        one_month_ago = today - timedelta(days=32)
+        one_month_ago = today - timedelta(days=182)
 
         # List to store the data
         data = []

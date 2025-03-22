@@ -78,18 +78,12 @@ def get_sparql_queries(stock_ticker: str) -> Dict[str, str]:
 
         "Analyze Insider Holdings": f"""
             PREFIX ex: <http://example.org/finance#>
-            SELECT ?insiderName ?stockTicker ?transactionDate ?transactionType ?shares ?value
+            SELECT DISTINCT ?insiderName ?stockTicker
             WHERE {{
                 ?insider ex:name ?insiderName .
                 ?insider ex:ownsStock ?stock .
                 ?stock ex:stockTicker ?stockTicker .
-                ?transaction ex:insiderName ?insiderName .
-                ?transaction ex:stockTicker ?stockTicker .
-                ?transaction ex:date ?transactionDate .
-                ?transaction ex:transactionType ?transactionType .
-                ?transaction ex:shares ?shares .
-                ?transaction ex:value ?value .
             }}
-            ORDER BY ?insiderName ?transactionDate
+            ORDER BY ?insiderName ?stockTicker
         """
     } 

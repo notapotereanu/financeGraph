@@ -3,15 +3,23 @@
 import os
 from datetime import datetime, timedelta
 from typing import Optional, Dict, Any, List, Set
+import time
+import json
 
 import pandas as pd
 import yfinance as yf
 
-from packages.finviz import get_finviz_ratings
-from packages.googleAPI import googleAPI_get_df
-from packages.newsAPI import newsAPI_get_df
-from packages.secFillings import get_sec_fillings
-from packages.tripleStoreStorage import TripleStoreStorage
+# Disable pandas warnings
+import warnings
+warnings.filterwarnings('ignore')
+
+from packages.data_gathering.competitors import get_competitors
+from packages.data_gathering.finviz import get_finviz_ratings
+from packages.data_gathering.googleAPI import googleAPI_get_df
+from packages.data_gathering.newsAPI import newsAPI_get_df
+from packages.data_gathering.tripleStoreStorage import TripleStoreStorage
+from packages.data_gathering.sec_data_manager import SECDataManager
+from packages.helpers.data_analyzer import DataAnalyzer
 from config import (
     TRIPLESTORE_ENDPOINT,
     SPARQL_QUERY_ENDPOINT,
@@ -34,83 +42,30 @@ class FinancialDataAnalyzer:
             stock_ticker: The stock ticker symbol to analyze
         """
         self.stock_ticker = stock_ticker
-        self.sec_cik = self._get_sec_cik()
-        if not self.sec_cik:
-            raise ValueError(f"Failed to get SEC CIK for {stock_ticker}")
-        
-        self.sec_url = f"https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK={self.sec_cik}&type=4&owner=only&count=100"
+        self.sec_manager = SECDataManager(stock_ticker)
         self.storage = TripleStoreStorage(TRIPLESTORE_ENDPOINT, SPARQL_QUERY_ENDPOINT)
-
-    def _get_sec_cik(self) -> Optional[str]:
-        """
-        Get the SEC CIK number for the stock ticker.
-        
-        Returns:
-            The CIK as a string with leading zeros, or None if not found
-        """
-        try:
-            company = yf.Ticker(self.stock_ticker)
-            info = company.info
-            cik = str(info.get('cik', ''))
-            return cik.zfill(10)
-        except Exception as e:
-            print(f"❌ Error getting SEC CIK for {self.stock_ticker}: {e}")
-            return None
-
-    def _get_insider_holdings(self, sec_df: pd.DataFrame) -> Dict[str, Set[str]]:
-        """
-        Get all stocks that each insider owns based on SEC filings.
-        
-        Args:
-            sec_df: DataFrame containing SEC filing data
-            
-        Returns:
-            Dictionary mapping insider names to sets of stock tickers they own
-        """
-        print("🔹 Gathering Insider Holdings ...")
-        try:
-            insider_holdings: Dict[str, Set[str]] = {}
-            
-            # Group by insider name and get unique stock tickers
-            for insider_name in sec_df['insider_name'].unique():
-                insider_data = sec_df[sec_df['insider_name'] == insider_name]
-                holdings = set(insider_data['stock_ticker'].unique())
-                insider_holdings[insider_name] = holdings
-            
-            print(f"✅ Found holdings for {len(insider_holdings)} insiders")
-            return insider_holdings
-        except Exception as e:
-            print(f"❌ Error gathering insider holdings: {e}")
-            raise
-
-    def load_ontology(self) -> bool:
-        """
-        Load the ontology file into the triplestore.
-        
-        Returns:
-            True if successful, False otherwise
-        """
-        if os.path.exists(ONTOLOGY_PATH):
-            self.storage.load_ontology(ONTOLOGY_PATH)
-            print("✅ Ontology successfully loaded.")
-            return True
-        print("⚠️ Ontology file not found. Make sure `finance.owl` is in the correct path.")
-        return False
+        self.analyzer = DataAnalyzer(stock_ticker, self.storage)
 
     def gather_data(self) -> Dict[str, Any]:
         """
         Gather all required financial data.
+        First tries to load from CSV files, then fetches fresh data if needed.
         
         Returns:
             Dictionary containing all gathered dataframes and insider holdings
         """
         print("🔹 Gathering Data ...")
         try:
-            sec_df = get_sec_fillings(self.sec_url, self.stock_ticker)
-            insider_holdings = self._get_insider_holdings(sec_df)
+            #sec_df = self.sec_manager.get_sec_filings()
+            sec_df = pd.read_csv('insider_transactions.csv')
+            #insider_holdings = self.sec_manager.get_insider_holdings(sec_df)
+            with open('insider_holdings.json', 'r') as f:
+                insider_holdings = json.load(f)
             
+            ticker_info = yf.Ticker(self.stock_ticker).info
             data = {
                 'sec_transactions': sec_df,
+                'insider_holdings': insider_holdings,
                 'google_trends': googleAPI_get_df([self.stock_ticker]),
                 'news_sentiment': newsAPI_get_df(self.stock_ticker, num_articles=DEFAULT_NEWS_ARTICLES),
                 'analysts_ratings': get_finviz_ratings(self.stock_ticker),
@@ -119,68 +74,27 @@ class FinancialDataAnalyzer:
                     start=datetime.today() - timedelta(days=DEFAULT_STOCK_HISTORY_DAYS),
                     end=datetime.today()
                 ),
-                'insider_holdings': insider_holdings
+                'company_officers' : SECDataManager.get_board_members(),
+                'company_description': ticker_info.get('longBusinessSummary', []),
+                'company_name': ticker_info.get('displayName', []),
+                'institutional_holders': yf.Ticker(self.stock_ticker).institutional_holders,
+                'competitors': get_competitors(self.stock_ticker)
             }
+            
             print("✅ Data successfully gathered.")
             return data
         except Exception as e:
             print(f"❌ Error fetching data: {e}")
             raise
 
-    def store_data(self, data: Dict[str, Any]) -> None:
-        """
-        Convert and store data in the triplestore.
-        
-        Args:
-            data: Dictionary containing all dataframes and insider holdings to store
-        """
-        print("🔹 Converting and Storing RDF Data ...")
-        try:
-            rdf_data = {
-                'sec': self.storage.convert_sec_transactions_to_rdf(data['sec_transactions']),
-                'google': self.storage.convert_google_trends_to_rdf(data['google_trends']),
-                'news': self.storage.convert_news_sentiment_to_rdf(data['news_sentiment']),
-                'analysts': self.storage.convert_analysts_ratings_to_rdf(data['analysts_ratings']),
-                'stock': self.storage.convert_stock_data_to_rdf(data['stock_data']),
-                'insider_holdings': self.storage.convert_insider_holdings_to_rdf(data['insider_holdings'])
-            }
-
-            for rdf in rdf_data.values():
-                self.storage.store(rdf)
-
-            print("✅ RDF data successfully stored in the triplestore.")
-        except Exception as e:
-            print(f"❌ Error converting or storing RDF data: {e}")
-            raise
-
-    def query_data(self) -> None:
-        """Execute SPARQL queries and display results."""
-        print("🔹 Querying the Triplestore ...")
-        try:
-            queries = get_sparql_queries(self.stock_ticker)
-            
-            for query_name, sparql_query in queries.items():
-                print(f"\n🔎 Running Query: {query_name}")
-                results = self.storage.query(sparql_query)
-                
-                if results and "results" in results:
-                    for result in results["results"]["bindings"]:
-                        print(result)
-                else:
-                    print("⚠️ No results found.")
-        except Exception as e:
-            print(f"❌ Error executing SPARQL query: {e}")
-            raise
-
     def run_analysis(self) -> None:
         """Run the complete financial data analysis pipeline."""
         try:
-            if not self.load_ontology():
+            if not self.analyzer.load_ontology():
                 return
 
-            data = self.gather_data()
-            self.store_data(data)
-            self.query_data()
+            self.analyzer.store_data(self.gather_data())
+            self.analyzer.query_data()
         except Exception as e:
             print(f"❌ Error in analysis pipeline: {e}")
             raise
