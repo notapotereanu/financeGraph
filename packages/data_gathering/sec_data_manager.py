@@ -8,6 +8,7 @@ from bs4 import BeautifulSoup
 import xml.etree.ElementTree as ET
 from sec_api import QueryApi
 from packages.helpers.InsiderTransaction import InsiderTransaction
+from sec_api import DirectorsBoardMembersApi
 
 # Disable pandas warnings
 import warnings
@@ -24,8 +25,21 @@ HEADERS = {
 TRANSACTION_CODE_MAPPING = {
     "P": "Purchase",
     "S": "Sale",
-    "F": "Gift",
-    "M": "Exercise"
+    "F": "Tax Withholding (RSU Vesting)",
+    "G": "Gift",
+    "M": "Exercise or Conversion of Derivative Security",
+    "A": "Grant, Award, or Other Acquisition",
+    "D": "Disposition to the Issuer (Shares returned to company)",
+    "C": "Conversion of Security",
+    "V": "Voluntary Reporting",
+    "I": "Discretionary Transaction (e.g., Employee Benefit Plan)",
+    "W": "Will or Laws of Descent",
+    "J": "Other Acquisition or Disposition (See Footnotes)",
+    "K": "Equity Swap or Similar Instrument",
+    "U": "Tender Offer",
+    "L": "Small Acquisition (Less than $10,000)",
+    "H": "Expiration of Long Derivative Position",
+    "O": "Exercise of Out-of-the-money Derivative Securities"
 }
 
 class SECDataManager:
@@ -39,11 +53,58 @@ class SECDataManager:
             stock_ticker: The stock ticker symbol to analyze
         """
         self.stock_ticker = stock_ticker
+        self.api_token = "7afdb19cd4eab20201f2b2ef69710e460b1555d75a5a1fab271efb01d307fcfb"
         self.sec_cik = self._get_sec_cik()
         self.sec_url = f"https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK={self.sec_cik}&type=4&dateb=&owner=exclude&count=100&search_text="
     
+    def get_board_members(self):
+        """
+        Get directors and board members from SEC API.
         
+        Returns:
+            List of dictionaries containing board member information
+        """
+        print("🔍 Looking up board members...")
+        try:
+            directorsBoardMembersApi = DirectorsBoardMembersApi(api_key=self.api_token,)
+            
+            search_params = {
+                "query": f"ticker:{self.stock_ticker}",
+                "from": 0,
+                "size": 50,
+                "sort": [{ "filedAt": { "order": "desc" } }]
+            }
         
+            response = directorsBoardMembersApi.get_data(search_params)
+
+            stock_data = pd.DataFrame(response["data"])
+
+            stock_data = stock_data.explode("directors")
+
+            columns = [
+            'name',
+            'position',
+            'age',
+            'directorClass',
+            'dateFirstElected',
+            'isIndependent',
+            'committeeMemberships',
+            'qualificationsAndExperience',
+            ]
+
+            for column in columns:
+                stock_data[column] = stock_data["directors"].apply(lambda x: x.get(column))
+
+            # Get the most recent filedAt date
+            max_filed_date = stock_data['filedAt'].max()
+            # Filter for only the most recent rows
+            latest_data = stock_data[stock_data['filedAt'] == max_filed_date]
+            return latest_data[['filedAt', *columns]]
+            
+        except Exception as e:
+            print(f"❌ Error getting board members: {e}")
+            return []
+    
     def _get_sec_cik(self) -> str:
         """
         Get the SEC CIK code for the stock ticker using the sec-api package.
@@ -53,7 +114,7 @@ class SECDataManager:
         """
         print(f"🔍 Looking up SEC CIK for {self.stock_ticker}...")
         try:
-            queryApi = QueryApi("7afdb19cd4eab20201f2b2ef69710e460b1555d75a5a1fab271efb01d307fcfb")
+            queryApi = QueryApi(self.api_token)
             query = {
                 "query": {
                     "query_string": {
@@ -88,7 +149,7 @@ class SECDataManager:
         """
         print("🔍 Looking up SEC internal people...")
         try:
-            queryApi = QueryApi("7afdb19cd4eab20201f2b2ef69710e460b1555d75a5a1fab271efb01d307fcfb")
+            queryApi = QueryApi(self.api_token)
             query = {
                 "query": {
                     "query_string": {
@@ -155,14 +216,35 @@ class SECDataManager:
                     
                     if insider_cik:
                         # Create URL to fetch all Form 4 filings for this insider
-                        insider_url = f"https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK={insider_cik}&type=4&owner=only&count=100"
+                        insider_url = f"https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK={insider_cik}&type=4&owner=only&count=10"
                         # Fetch all Form 4 filings for this insider
                         insider_filings = self._scrape_sec_filings(insider_url)  
                         # Convert list of dictionaries to DataFrame
                         insider_filings = pd.DataFrame(insider_filings)
                         # Keep only specified columns
-                        insider_filings = insider_filings[['issuerTradingSymbol', 'insider_name', 'relationship', 'transactions']]
+                        insider_filings = insider_filings[['issuerTradingSymbol', 'relationship', 'transactions']]
+                        # Drop rows where transactions array is empty
+                        insider_filings = insider_filings[insider_filings['transactions'].str.len() > 0]
                         
+                        # Explode the transactions column to create separate rows
+                        insider_filings = insider_filings.explode('transactions')
+                        
+                        # Extract transaction details into separate columns
+                        insider_filings['date'] = insider_filings['transactions'].apply(lambda x: x.get('date'))
+                        insider_filings['transaction_type'] = insider_filings['transactions'].apply(lambda x: x.get('transaction_type'))
+                        insider_filings['cost'] = insider_filings['transactions'].apply(lambda x: x.get('cost'))
+                        insider_filings['shares'] = insider_filings['transactions'].apply(lambda x: x.get('shares'))
+                        insider_filings['value'] = insider_filings['transactions'].apply(lambda x: x.get('value'))
+                        insider_filings['shares_total'] = insider_filings['transactions'].apply(lambda x: x.get('shares_total'))
+                        
+                        # Map transaction codes to descriptions using TRANSACTION_CODE_MAPPING
+                        # For unknown codes, keep the original code
+                        insider_filings['transaction_type'] = insider_filings['transaction_type'].map(
+                            lambda x: TRANSACTION_CODE_MAPPING.get(x, x)
+                        )
+                        
+                        # Drop the original transactions column
+                        insider_filings = insider_filings.drop('transactions', axis=1)
                         insider_holdings[insider_name] = insider_filings
                     else:
                         print(f"⚠️ No CIK found for insider: {insider_name}")
@@ -340,7 +422,7 @@ class SECDataManager:
 
         # Fetch the XML content
         try:
-            xml_response = requests.get(xml_link, headers=HEADERS, timeout=30)
+            xml_response = requests.get(xml_link, headers=HEADERS, timeout=10)
             xml_response.raise_for_status()
             xml_content = xml_response.content
         except requests.Timeout:

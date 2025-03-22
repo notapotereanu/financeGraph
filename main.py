@@ -56,16 +56,16 @@ class FinancialDataAnalyzer:
         """
         print("🔹 Gathering Data ...")
         try:
-            #sec_df = self.sec_manager.get_sec_filings()
-            sec_df = pd.read_csv('insider_transactions.csv')
-            insider_holdings_df = self.sec_manager.get_insider_holdings(sec_df)
+            sec_df = self.sec_manager.get_sec_filings()
+            #sec_df = pd.read_csv('insider_transactions.csv')
+            insider_holdings = self.sec_manager.get_insider_holdings(sec_df)
             #with open('insider_holdings.json', 'r') as f:
             #    insider_holdings = json.load(f)
             
             ticker_info = yf.Ticker(self.stock_ticker).info
             data = {
                 'sec_transactions': sec_df,
-                'insider_holdings': insider_holdings_df,
+                'insider_holdings': insider_holdings,
                 'google_trends': googleAPI_get_df([self.stock_ticker]),
                 'news_sentiment': newsAPI_get_df(self.stock_ticker, num_articles=DEFAULT_NEWS_ARTICLES),
                 'analysts_ratings': get_finviz_ratings(self.stock_ticker),
@@ -74,7 +74,7 @@ class FinancialDataAnalyzer:
                     start=datetime.today() - timedelta(days=DEFAULT_STOCK_HISTORY_DAYS),
                     end=datetime.today()
                 ),
-                'company_officers' : SECDataManager.get_board_members(),
+                'company_officers' : self.sec_manager.get_board_members(),
                 'company_description': ticker_info.get('longBusinessSummary', []),
                 'company_name': ticker_info.get('displayName', []),
                 'institutional_holders': yf.Ticker(self.stock_ticker).institutional_holders,
