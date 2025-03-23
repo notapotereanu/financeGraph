@@ -55,7 +55,7 @@ class SECDataManager:
         self.stock_ticker = stock_ticker
         self.api_token = "7afdb19cd4eab20201f2b2ef69710e460b1555d75a5a1fab271efb01d307fcfb"
         self.sec_cik = self._get_sec_cik()
-        self.sec_url = f"https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK={self.sec_cik}&type=4&dateb=&owner=exclude&count=100&search_text="
+        self.sec_url = f"https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK={self.sec_cik}&type=4&dateb=&owner=only&count=100&search_text="
     
     def get_board_members(self):
         """
@@ -216,7 +216,7 @@ class SECDataManager:
                     
                     if insider_cik:
                         # Create URL to fetch all Form 4 filings for this insider
-                        insider_url = f"https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK={insider_cik}&type=4&owner=only&count=10"
+                        insider_url = f"https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK={insider_cik}&type=4&owner=only&count=100"
                         # Fetch all Form 4 filings for this insider
                         insider_filings = self._scrape_sec_filings(insider_url)  
                         # Convert list of dictionaries to DataFrame
@@ -338,14 +338,14 @@ class SECDataManager:
         rel_elem = root.find(".//reportingOwner/reportingOwnerRelationship")
         if rel_elem is not None:
             parts = []
-            if rel_elem.findtext("isDirector") == "1":
+            if rel_elem.findtext("isDirector") == "true":
                 parts.append("Director")
-            if rel_elem.findtext("isOfficer") == "1":
+            if rel_elem.findtext("isOfficer") == "true":
                 officer_title = rel_elem.findtext("officerTitle") or ""
                 parts.append(f"Officer ({officer_title.strip()})" if officer_title.strip() else "Officer")
-            if rel_elem.findtext("isTenPercentOwner") == "1":
+            if rel_elem.findtext("isTenPercentOwner") == "true":
                 parts.append("10% Owner")
-            if rel_elem.findtext("isOther") == "1":
+            if rel_elem.findtext("isOther") == "true":
                 parts.append("Other")
             relationship = ", ".join(parts)
 

@@ -4,7 +4,7 @@ import os
 from typing import Dict, Any
 
 from packages.data_gathering.tripleStoreStorage import TripleStoreStorage
-from queries import get_sparql_queries
+from packages.data_analyser.queries import get_sparql_queries
 from config import ONTOLOGY_PATH
 
 

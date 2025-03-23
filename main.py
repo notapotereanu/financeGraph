@@ -28,7 +28,7 @@ from config import (
     DEFAULT_NEWS_ARTICLES,
     DEFAULT_STOCK_HISTORY_DAYS
 )
-from queries import get_sparql_queries
+from packages.data_analyser.queries import get_sparql_queries
 
 
 class FinancialDataAnalyzer:
@@ -56,16 +56,20 @@ class FinancialDataAnalyzer:
         """
         print("🔹 Gathering Data ...")
         try:
-            sec_df = self.sec_manager.get_sec_filings()
-            #sec_df = pd.read_csv('insider_transactions.csv')
-            insider_holdings = self.sec_manager.get_insider_holdings(sec_df)
-            #with open('insider_holdings.json', 'r') as f:
-            #    insider_holdings = json.load(f)
+            #sec_df = self.sec_manager.get_sec_filings()
+            sec_df = pd.read_csv('sec_df.csv')
+            #insider_holdings = self.sec_manager.get_insider_holdings(sec_df)
+            with open('insider_holdings.json', 'r') as f:
+                insider_holdings = json.load(f)
+                
+            unique_tickers = self.extractAllTickersFromInsiderHolding(insider_holdings)
+            insider_stocks_data = self.downloadAllInsiderHoldingStockTrends(unique_tickers)
             
             ticker_info = yf.Ticker(self.stock_ticker).info
             data = {
                 'sec_transactions': sec_df,
                 'insider_holdings': insider_holdings,
+                'insider_stocks_data': insider_stocks_data,
                 'google_trends': googleAPI_get_df([self.stock_ticker]),
                 'news_sentiment': newsAPI_get_df(self.stock_ticker, num_articles=DEFAULT_NEWS_ARTICLES),
                 'analysts_ratings': get_finviz_ratings(self.stock_ticker),
@@ -86,6 +90,39 @@ class FinancialDataAnalyzer:
         except Exception as e:
             print(f"❌ Error fetching data: {e}")
             raise
+
+    def downloadAllInsiderHoldingStockTrends(self, unique_tickers):
+        insider_stocks_data = {}
+        for ticker in unique_tickers:
+            try:
+                stock_data = yf.download(
+                        ticker,
+                        start=datetime.today() - timedelta(days=DEFAULT_STOCK_HISTORY_DAYS),
+                        end=datetime.today()
+                    )
+                if not stock_data.empty:
+                    # Reset index to make Date a column
+                    stock_data = stock_data.reset_index()
+                    # Rename the index column to 'Date'
+                    stock_data = stock_data.rename(columns={'Date': 'Date'})
+                    # Flatten multi-index columns by taking first level
+                    stock_data.columns = [col[0] if isinstance(col, tuple) else col for col in stock_data.columns]
+                    # Set Date back as index
+                    stock_data = stock_data.set_index('Date')
+                    insider_stocks_data[ticker] = stock_data
+            except Exception as e:
+                print(f"❌ Error fetching data for {ticker}: {e}")
+                continue
+        return insider_stocks_data
+
+    def extractAllTickersFromInsiderHolding(self, insider_holdings):
+        unique_tickers = set()
+        for insider_data in insider_holdings.values():
+            if isinstance(insider_data, pd.DataFrame):
+                unique_tickers.update(insider_data['issuerTradingSymbol'].unique())
+            elif isinstance(insider_data, list):
+                unique_tickers.update(entry['issuerTradingSymbol'] for entry in insider_data)
+        return unique_tickers
 
     def run_analysis(self) -> None:
         """Run the complete financial data analysis pipeline."""

@@ -1,5 +1,3 @@
-"""Configuration settings for the financial data analysis system."""
-
 from typing import Dict, Any
 
 # API Endpoints
@@ -25,11 +23,3 @@ SEC_HEADERS: Dict[str, str] = {
     "Accept-Encoding": "gzip, deflate",
     "Connection": "keep-alive"
 }
-
-# Transaction Code Mapping
-TRANSACTION_CODE_MAPPING: Dict[str, str] = {
-    "P": "Purchase",
-    "S": "Sale",
-    "F": "Gift",
-    "M": "Exercise"
-} 
