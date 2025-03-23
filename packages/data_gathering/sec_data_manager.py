@@ -41,7 +41,6 @@ TRANSACTION_CODE_MAPPING = {
     "H": "Expiration of Long Derivative Position",
     "O": "Exercise of Out-of-the-money Derivative Securities"
 }
-
 class SECDataManager:
     """Handles SEC data retrieval and processing."""
     
@@ -53,9 +52,9 @@ class SECDataManager:
             stock_ticker: The stock ticker symbol to analyze
         """
         self.stock_ticker = stock_ticker
-        self.api_token = "7afdb19cd4eab20201f2b2ef69710e460b1555d75a5a1fab271efb01d307fcfb"
+        self.api_token = "07bdfa8624b47b7ebf0aca1b37f7a8f14a9d95f81962521bd9254f53d7c022de"
         self.sec_cik = self._get_sec_cik()
-        self.sec_url = f"https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK={self.sec_cik}&type=4&dateb=&owner=only&count=100&search_text="
+        self.sec_url = f"https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK={self.sec_cik}&type=4&dateb=&owner=only&count=20&search_text="
     
     def get_board_members(self):
         """
@@ -99,7 +98,7 @@ class SECDataManager:
             max_filed_date = stock_data['filedAt'].max()
             # Filter for only the most recent rows
             latest_data = stock_data[stock_data['filedAt'] == max_filed_date]
-            return latest_data[['filedAt', *columns]]
+            return latest_data[['name', 'position', 'age', 'directorClass', 'qualificationsAndExperience', 'committeeMemberships']]
             
         except Exception as e:
             print(f"❌ Error getting board members: {e}")
@@ -216,7 +215,7 @@ class SECDataManager:
                     
                     if insider_cik:
                         # Create URL to fetch all Form 4 filings for this insider
-                        insider_url = f"https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK={insider_cik}&type=4&owner=only&count=100"
+                        insider_url = f"https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK={insider_cik}&type=4&owner=only&count=5"
                         # Fetch all Form 4 filings for this insider
                         insider_filings = self._scrape_sec_filings(insider_url)  
                         # Convert list of dictionaries to DataFrame

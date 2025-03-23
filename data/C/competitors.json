@@ -1,0 +1,38 @@
+[
+    {
+        "ticker": "JPM",
+        "name": "JPMorgan Chase & Co"
+    },
+    {
+        "ticker": "BAC",
+        "name": "Bank of America Corp"
+    },
+    {
+        "ticker": "WFC",
+        "name": "Wells Fargo & Co"
+    },
+    {
+        "ticker": "PNC",
+        "name": "PNC Financial Services Group Inc"
+    },
+    {
+        "ticker": "USB",
+        "name": "US Bancorp"
+    },
+    {
+        "ticker": "FITB",
+        "name": "Fifth Third Bancorp"
+    },
+    {
+        "ticker": "FCNCA",
+        "name": "First Citizens BancShares Inc (Delaware)"
+    },
+    {
+        "ticker": "KEY",
+        "name": "KeyCorp"
+    },
+    {
+        "ticker": "CMA",
+        "name": "Comerica Inc"
+    }
+]

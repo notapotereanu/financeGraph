@@ -1,0 +1,12 @@
+issuerTradingSymbol,relationship,date,transaction_type,cost,shares,value,shares_total
+C,Officer (Chief Operating Officer),2025-02-13,"Grant, Award, or Other Acquisition",0.0,38518.27,0.0,259179.69
+C,Officer (Chief Operating Officer),2025-02-13,Sale,81.0947,23248.0,1885289.59,235931.69
+C,Officer (Chief Operating Officer),2025-02-13,Sale,81.14,6752.0,547857.28,229179.69
+C,Officer (Chief Operating Officer),2025-01-20,Tax Withholding (RSU Vesting),79.99,25405.26,2032166.75,220661.42
+C,Officer (Chief Operating Officer),2024-02-15,"Grant, Award, or Other Acquisition",0.0,65292.44,0.0,246066.68
+C,Officer (Chief Operating Officer),2024-01-20,Tax Withholding (RSU Vesting),51.52,18328.23,944270.41,180774.24
+C,,2023-10-20,Tax Withholding (RSU Vesting),40.06,4771.64,191151.9,199102.47
+C,,2023-02-16,"Grant, Award, or Other Acquisition",0.0,66905.35,0.0,203874.11
+C,,2023-01-20,Tax Withholding (RSU Vesting),49.37,10349.47,510953.33,136968.76
+C,,2022-10-20,Tax Withholding (RSU Vesting),43.34,4404.64,190897.1,147318.23
+C,,2022-02-10,"Grant, Award, or Other Acquisition",0.0,43981.84,0.0,151722.87

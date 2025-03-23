@@ -15,7 +15,7 @@ def newsAPI_get_df(keyword, num_articles=100):
     """Fetches the latest news articles from the past month and performs sentiment analysis."""
     
     today = datetime.utcnow().date()
-    last_month = today - timedelta(days=30)
+    last_month = today - timedelta(days=28)
 
     params = {
         "q": keyword,
@@ -51,5 +51,5 @@ def newsAPI_get_df(keyword, num_articles=100):
         df = pd.DataFrame(news_data)
         return df
     else:
-        print(f"Error: {response.status_code} - {response.json()}")
+        print(f"Error News Setiment: {response.status_code} - {response.json()}")
         return None

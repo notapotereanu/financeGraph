@@ -33,7 +33,7 @@ def get_finviz_ratings(stock_symbol):
         
         # Get the current date and calculate the date 182 days ago
         today = datetime.utcnow()
-        one_month_ago = today - timedelta(days=182)
+        one_month_ago = today - timedelta(days=365*10)
 
         # List to store the data
         data = []
@@ -62,6 +62,9 @@ def get_finviz_ratings(stock_symbol):
         df = pd.DataFrame(data, columns=["Date", "Action", "Analyst", "Rating Change", "Price Target Change"])
 
         # Return the DataFrame
+        # Get only the most recent rating for each analyst
+        df['Date'] = pd.to_datetime(df['Date'], format='%b-%d-%y')
+        df = df.sort_values('Date').groupby('Analyst').tail(1).reset_index(drop=True)
         return df
 
     else:

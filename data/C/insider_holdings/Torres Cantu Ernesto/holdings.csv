@@ -1,0 +1,16 @@
+issuerTradingSymbol,relationship,date,transaction_type,cost,shares,value,shares_total
+C,Officer (Head of International),2025-02-20,"Grant, Award, or Other Acquisition",0.0,1865.44,0.0,165560.51
+C,Officer (Head of International),2025-02-20,Tax Withholding (RSU Vesting),83.94,791.44,66433.47,164769.07
+C,Officer (Head of International),2025-02-13,"Grant, Award, or Other Acquisition",0.0,71470.64,0.0,241825.77
+C,Officer (Head of International),2025-02-13,"Grant, Award, or Other Acquisition",0.0,3719.3,0.0,245545.07
+C,Officer (Head of International),2025-02-13,"Grant, Award, or Other Acquisition",0.0,13424.18,0.0,258969.25
+C,Officer (Head of International),2025-02-13,Tax Withholding (RSU Vesting),81.27,6266.18,509252.45,252703.07
+C,Officer (Head of International),2025-02-14,Gift,0.0,89008.0,0.0,163695.07
+C,Officer (Head of International),2025-02-14,Gift,0.0,89008.0,0.0,89008.0
+C,Officer (Head of International),2025-01-20,Tax Withholding (RSU Vesting),79.99,19024.0,1521729.76,170355.13
+C,Officer (Head of International),2024-02-15,"Grant, Award, or Other Acquisition",0.0,53153.12,0.0,189379.13
+C,Officer (Head of International),2024-01-20,Tax Withholding (RSU Vesting),51.52,12184.46,627743.38,136226.01
+C,,2023-02-16,"Grant, Award, or Other Acquisition",0.0,59629.89,0.0,148410.47
+C,,2023-01-20,Tax Withholding (RSU Vesting),49.37,7536.57,372080.46,88780.58
+C,,2022-02-10,"Grant, Award, or Other Acquisition",0.0,46669.27,0.0,96317.15
+C,,2022-01-20,Tax Withholding (RSU Vesting),64.24,4685.18,300975.96,49647.88

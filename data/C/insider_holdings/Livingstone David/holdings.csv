@@ -1,0 +1,25 @@
+issuerTradingSymbol,relationship,date,transaction_type,cost,shares,value,shares_total
+C,Officer (Chief Client Officer),2025-02-20,Tax Withholding (RSU Vesting),83.94,12648.16,1061686.55,437325.95
+C,Officer (Chief Client Officer),2025-02-20,"Grant, Award, or Other Acquisition",0.0,2038.06,0.0,439364.01
+C,Officer (Chief Client Officer),2025-02-20,Tax Withholding (RSU Vesting),83.94,958.06,80419.56,438405.95
+C,Officer (Chief Client Officer),2025-02-13,"Grant, Award, or Other Acquisition",0.0,42818.16,0.0,445964.11
+C,Officer (Chief Client Officer),2025-02-13,"Grant, Award, or Other Acquisition",0.0,7567.73,0.0,453531.84
+C,Officer (Chief Client Officer),2025-02-13,Tax Withholding (RSU Vesting),81.27,3557.73,289136.72,449974.11
+C,Officer (Chief Client Officer),2024-02-20,"Grant, Award, or Other Acquisition",0.0,1676.32,0.0,403934.27
+C,Officer (Chief Client Officer),2024-02-20,Tax Withholding (RSU Vesting),54.85,788.32,43239.35,403145.95
+C,Officer (Chief Client Officer),2024-02-15,"Grant, Award, or Other Acquisition",0.0,70182.09,0.0,398812.33
+C,Officer (Chief Client Officer),2024-02-15,"Grant, Award, or Other Acquisition",0.0,11720.34,0.0,410532.67
+C,Officer (Chief Client Officer),2024-02-15,Tax Withholding (RSU Vesting),53.98,5509.34,297394.17,405023.33
+C,Officer (Chief Client Officer),2024-02-20,Tax Withholding (RSU Vesting),54.85,2765.38,151681.09,402257.95
+C,Officer (Chief Client Officer),2024-01-20,Tax Withholding (RSU Vesting),51.52,282.92,14576.04,328630.24
+C,,2023-03-03,"Grant, Award, or Other Acquisition",0.0,19046.14,0.0,327861.16
+C,,2023-03-03,"Grant, Award, or Other Acquisition",0.0,1986.68,0.0,329847.84
+C,,2023-03-03,Tax Withholding (RSU Vesting),51.4,934.68,48042.55,328913.16
+C,,2023-02-16,"Grant, Award, or Other Acquisition",0.0,120185.02,0.0,302300.02
+C,,2023-02-16,"Grant, Award, or Other Acquisition",0.0,12294.12,0.0,314594.14
+C,,2023-02-16,Tax Withholding (RSU Vesting),51.82,5779.12,299474.0,308815.02
+C,,2023-01-20,Tax Withholding (RSU Vesting),49.37,1171.78,57850.78,182115.0
+C,,2022-02-10,"Grant, Award, or Other Acquisition",0.0,54597.09,0.0,177695.78
+C,,2022-02-10,"Grant, Award, or Other Acquisition",0.0,10551.54,0.0,188247.32
+C,,2022-02-10,Tax Withholding (RSU Vesting),67.84,4960.54,336523.03,183286.78
+C,,2022-01-20,Tax Withholding (RSU Vesting),64.24,1771.06,113772.89,123098.69
