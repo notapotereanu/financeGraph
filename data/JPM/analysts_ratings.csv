@@ -1,0 +1,14 @@
+Date,Action,Analyst,Rating Change,Price Target Change
+2022-12-08,Initiated,Piper Sandler,Overweight,$150
+2023-03-13,Upgrade,Wells Fargo,Equal Weight → Overweight,$148 → $155
+2023-07-10,Downgrade,Societe Generale,Buy → Hold,
+2023-07-11,Upgrade,Jefferies,Hold → Buy,$149 → $165
+2023-07-12,Downgrade,Citigroup,Buy → Neutral,$160
+2023-09-07,Initiated,HSBC Securities,Hold,$159
+2023-11-02,Downgrade,Odeon,Buy → Hold,$140
+2024-08-20,Downgrade,Daiwa Securities,Buy → Outperform,$240
+2024-09-03,Downgrade,Deutsche Bank,Buy → Hold,$235
+2024-09-30,Downgrade,Morgan Stanley,Overweight → Equal-Weight,$220 → $224
+2024-11-20,Downgrade,Oppenheimer,Outperform → Perform,
+2025-01-03,Upgrade,Wolfe Research,Peer Perform → Outperform,$269
+2025-03-07,Upgrade,Robert W. Baird,Underperform → Neutral,$215 → $220

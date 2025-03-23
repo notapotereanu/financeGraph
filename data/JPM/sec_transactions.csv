@@ -1,0 +1,2 @@
+date,stock_ticker,issuerTradingSymbol,price,insider_name,insider_cik,relationship,transaction_type,shares,value,shares_total,xml_link
+2025-02-01,JPM,JPM,1.0,Erdoes Mary E.,0001473446,,Other Acquisition or Disposition (See Footnotes),51000.0000,51000.0,0.0000,https://www.sec.gov/Archives/edgar/data/19617/000122520825003531/doc4.xml

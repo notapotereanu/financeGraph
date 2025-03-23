@@ -9,19 +9,13 @@ import xml.etree.ElementTree as ET
 from sec_api import QueryApi
 from packages.helpers.InsiderTransaction import InsiderTransaction
 from sec_api import DirectorsBoardMembersApi
+from config import SEC_API_KEY, SEC_HEADERS, SEC_FILES_TO_ANALYSE
 
 # Disable pandas warnings
 import warnings
 warnings.filterwarnings('ignore')
 
 # Constants
-HEADERS = {
-    "User-Agent": "MyScraper/1.0 (https://www.mywebsite.com/contact; contact@mywebsite.com)",
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-    "Accept-Encoding": "gzip, deflate",
-    "Connection": "keep-alive"
-}
-
 TRANSACTION_CODE_MAPPING = {
     "P": "Purchase",
     "S": "Sale",
@@ -52,9 +46,9 @@ class SECDataManager:
             stock_ticker: The stock ticker symbol to analyze
         """
         self.stock_ticker = stock_ticker
-        self.api_token = "07bdfa8624b47b7ebf0aca1b37f7a8f14a9d95f81962521bd9254f53d7c022de"
+        self.api_token = SEC_API_KEY
         self.sec_cik = self._get_sec_cik()
-        self.sec_url = f"https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK={self.sec_cik}&type=4&dateb=&owner=only&count=20&search_text="
+        self.sec_url = f"https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK={self.sec_cik}&type=4&dateb=&owner=only&count={SEC_FILES_TO_ANALYSE}&search_text="
     
     def get_board_members(self):
         """
@@ -215,7 +209,7 @@ class SECDataManager:
                     
                     if insider_cik:
                         # Create URL to fetch all Form 4 filings for this insider
-                        insider_url = f"https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK={insider_cik}&type=4&owner=only&count=5"
+                        insider_url = f"https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK={insider_cik}&type=4&owner=only&count={SEC_FILES_TO_ANALYSE}"
                         # Fetch all Form 4 filings for this insider
                         insider_filings = self._scrape_sec_filings(insider_url)  
                         # Convert list of dictionaries to DataFrame
@@ -392,7 +386,7 @@ class SECDataManager:
             Dictionary containing filing data or None if scraping fails
         """
         try:
-            response = requests.get(detail_url, headers=HEADERS)
+            response = requests.get(detail_url, headers=SEC_HEADERS)
             response.raise_for_status()
         except Exception as e:
             print(f"Error scraping detail page {detail_url}: {e}")
@@ -407,7 +401,7 @@ class SECDataManager:
             if href.lower().endswith('.xml'):
                 possible_xml_url = "https://www.sec.gov" + href
                 try:
-                    head_response = requests.head(possible_xml_url, headers=HEADERS)
+                    head_response = requests.head(possible_xml_url, headers=SEC_HEADERS)
                     content_type = head_response.headers.get('Content-Type', '')
                     if 'xml' in content_type.lower():
                         xml_link = possible_xml_url
@@ -421,7 +415,7 @@ class SECDataManager:
 
         # Fetch the XML content
         try:
-            xml_response = requests.get(xml_link, headers=HEADERS, timeout=10)
+            xml_response = requests.get(xml_link, headers=SEC_HEADERS, timeout=10)
             xml_response.raise_for_status()
             xml_content = xml_response.content
         except requests.Timeout:
@@ -446,7 +440,7 @@ class SECDataManager:
             List of dictionaries containing filing data
         """
         try:
-            response = requests.get(url, headers=HEADERS)
+            response = requests.get(url, headers=SEC_HEADERS)
             response.raise_for_status()
         except Exception as e:
             print(f"Error scraping list page: {e}")
