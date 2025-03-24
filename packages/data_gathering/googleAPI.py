@@ -68,7 +68,7 @@ def googleAPI_get_df(keywords, days_ago=365, geo='US', hl='en-US', max_retries=5
                     print(f"Error {response.status_code} while fetching token, retrying {retry + 1}/{max_retries}")
             else:
                 print(f"Exceeded maximum retry attempts ({max_retries}) while fetching token. Exiting...")
-                return None
+                return pd.DataFrame(columns=['score'])
 
             # Phase 2: Fetch trends data
             for retry in range(max_retries):
@@ -105,4 +105,4 @@ def googleAPI_get_df(keywords, days_ago=365, geo='US', hl='en-US', max_retries=5
             print(f"Switching browser version to {browser_versions[current_browser_version_index]} and retrying...")
 
     print(f"Exceeded maximum browser switch attempts ({browser_switch_retries}). Exiting...")
-    return None
+    return pd.DataFrame(columns=['score'])

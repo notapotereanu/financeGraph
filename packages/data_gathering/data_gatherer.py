@@ -13,12 +13,69 @@ from packages.data_gathering.competitors import get_competitors
 from config import DEFAULT_NEWS_ARTICLES, DEFAULT_STOCK_HISTORY_DAYS
 
 class DataGatherer:
+    
     def __init__(self, ticker: str, sec_manager: SECDataManager):
         self.ticker = ticker
         self.sec_manager = sec_manager
 
+    def get_institutional_holders_with_tickers(self, raw_holders_data):
+        holder_mapping = {
+            'blackrock': 'BLK',
+            'vanguard': 'VTI',
+            'state street': 'STT',
+            'morgan stanley': 'MS', 
+            'jpmorgan': 'JPM',
+            'jp morgan': 'JPM',
+            'berkshire': 'BRK-A',
+            'fidelity': 'FIS',
+            'fmr': 'FIS',
+            't.rowe': 'TROW',
+            't rowe': 'TROW',
+            'goldman': 'GS',
+            'goldman sachs': 'GS',
+            'bank of america': 'BAC',
+            'wells fargo': 'WFC',
+            'schwab': 'SCHW',
+            'northern trust': 'NTRS',
+            'invesco': 'IVZ',
+            'capital group': 'CGAEX',
+            'mellon': 'BK',
+            'ubs': 'UBS',
+            'deutsche': 'DB',
+            'credit suisse': 'CS',
+            'citi': 'C',
+            'citigroup': 'C',
+            'barclays': 'BCS',
+            'hsbc': 'HSBC',
+            'prudential': 'PRU',
+            'alliance': 'AB',
+            'bernstein': 'AB',
+            'franklin': 'BEN',
+            'ameriprise': 'AMP',
+            'principal': 'PFG',
+            'raymond james': 'RJF',
+            'sei': 'SEIC',
+            'eaton': 'ETN',
+            'affiliated managers': 'AMG',
+            'kkr': 'KKR',
+            'carlyle': 'CG',
+            'apollo': 'APO',
+            'brookfield': 'BAM'
+        }
+        
+        def find_ticker(holder_name):
+            holder_lower = holder_name.lower()
+            for key, ticker in holder_mapping.items():
+                if key in holder_lower:
+                    return ticker
+            return None
+        
+        holders_df = raw_holders_data[['Holder', 'Shares']]
+        holders_df['Ticker'] = holders_df['Holder'].apply(find_ticker)
+        return holders_df
+                
     def gather_data(self) -> Dict[str, Any]:
-        print("🔹 Gathering Data ...")
+        print(f"[INFO] Gathering Data for {self.ticker} ...")
         try:
             data = {}
             ticker_dir = os.path.join('data', self.ticker)
@@ -89,6 +146,7 @@ class DataGatherer:
                 data['google_trends'] = pd.read_csv(google_trends_path)
             else:
                 data['google_trends'] = googleAPI_get_df([self.ticker])
+                
 
             if os.path.exists(news_sentiment_path):
                 data['news_sentiment'] = pd.read_csv(news_sentiment_path)
@@ -103,11 +161,14 @@ class DataGatherer:
             if os.path.exists(stock_data_path):
                 data['stock_data'] = pd.read_csv(stock_data_path)
             else:
-                data['stock_data'] = yf.download(
+                stock_data = yf.download(
                     self.ticker,
                     start=datetime.today() - timedelta(days=DEFAULT_STOCK_HISTORY_DAYS),
                     end=datetime.today()
                 )
+                stock_data = stock_data.reset_index()
+                stock_data.columns = [col[0] if isinstance(col, tuple) else col for col in stock_data.columns]
+                data['stock_data'] = stock_data
 
             if os.path.exists(company_officers_path):
                 data['company_officers'] = pd.read_csv(company_officers_path)
@@ -131,7 +192,9 @@ class DataGatherer:
             if os.path.exists(institutional_holders_path):
                 data['institutional_holders'] = pd.read_csv(institutional_holders_path)
             else:
-                data['institutional_holders'] = yf.Ticker(self.ticker).institutional_holders[['Holder', 'Shares']]
+                data['institutional_holders'] = self.get_institutional_holders_with_tickers(
+                    yf.Ticker(self.ticker).institutional_holders
+                )
 
             if os.path.exists(competitors_path):
                 with open(competitors_path, 'r') as f:
@@ -139,10 +202,10 @@ class DataGatherer:
             else:
                 data['competitors'] = get_competitors(self.ticker)
 
-            print("✅ Data successfully gathered for ticker " + self.ticker)
+            print(f"[SUCCESS] Data successfully gathered for ticker {self.ticker}")
             return data
         except Exception as e:
-            print(f"❌ Error fetching data: {e}")
+            print(f"[ERROR] Error fetching data: {e}")
             raise
 
     def downloadAllInsiderHoldingStockTrends(self, unique_tickers):
@@ -161,7 +224,7 @@ class DataGatherer:
                     stock_data = stock_data.set_index('Date')
                     insider_stocks_data[ticker] = stock_data
             except Exception as e:
-                print(f"❌ Error fetching data for {ticker}: {e}")
+                print(f"[ERROR] Error fetching data for {ticker}: {e}")
                 continue
         return insider_stocks_data
 

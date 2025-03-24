@@ -1,0 +1,26 @@
+issuerTradingSymbol,relationship,date,transaction_type,cost,shares,value,shares_total
+TGT,,2025-03-12,"Grant, Award, or Other Acquisition",0.0,1841.0,0.0,20197.0
+AAPL,,2025-02-01,Exercise or Conversion of Derivative Security,,1516.0,,8607.0
+BAC,,2024-08-19,Gift,0.0,3000.0,0.0,0.0
+BAC,,2024-08-19,Gift,0.0,3000.0,0.0,3000.0
+TGT,,2024-03-13,"Grant, Award, or Other Acquisition",0.0,1148.0,0.0,17753.0
+AAPL,,2024-02-01,Exercise or Conversion of Derivative Security,,1852.0,,7091.0
+TGT,,2023-03-08,"Grant, Award, or Other Acquisition",0.0,1166.0,0.0,15959.0
+AAPL,,2023-02-01,Exercise or Conversion of Derivative Security,,1685.0,,5239.0
+TGT,,2022-03-09,"Grant, Award, or Other Acquisition",0.0,878.0,0.0,14435.0
+AAPL,,2022-02-01,Exercise or Conversion of Derivative Security,,1986.0,,3554.0
+TGT,,2021-03-10,"Grant, Award, or Other Acquisition",0.0,1004.0,0.0,13408.0
+AAPL,,2021-02-01,Exercise or Conversion of Derivative Security,,281.0,,1568.0
+TGT,,2020-03-11,"Grant, Award, or Other Acquisition",0.0,1711.0,0.0,12175.0
+TGT,,2019-03-13,"Grant, Award, or Other Acquisition",0.0,2338.0,0.0,10196.0
+TGT,,2018-03-14,"Grant, Award, or Other Acquisition",0.0,2538.0,0.0,7595.0
+TGT,,2017-01-11,"Grant, Award, or Other Acquisition",0.0,2377.0,0.0,4803.0
+DIS,,2016-03-31,"Grant, Award, or Other Acquisition",98.34,417.7,41076.62,74668.45
+TGT,,2016-03-09,"Grant, Award, or Other Acquisition",0.0,2364.0,0.0,2364.0
+DIS,,2016-02-22,Exercise or Conversion of Derivative Security,28.06,6000.0,168360.0,63890.75
+DIS,,2016-02-22,Exercise or Conversion of Derivative Security,16.225,10360.0,168091.0,74250.75
+DIS,,2015-12-31,"Grant, Award, or Other Acquisition",107.59,874.5,94087.46,57890.75
+DIS,,2015-09-30,"Grant, Award, or Other Acquisition",101.61,906.0,92058.66,57016.25
+DIS,,2015-06-30,"Grant, Award, or Other Acquisition",113.7,522.8,59442.36,56110.25
+DIS,,2015-06-04,Sale,110.7,397.0,43947.9,55587.45
+DIS,,2015-03-31,"Grant, Award, or Other Acquisition",106.81,842.1,89944.7,55984.45

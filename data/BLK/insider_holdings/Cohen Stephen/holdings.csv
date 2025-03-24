@@ -1,0 +1,16 @@
+issuerTradingSymbol,relationship,date,transaction_type,cost,shares,value,shares_total
+BLK,,2025-01-31,"Grant, Award, or Other Acquisition",0.0,383,0.0,5846
+BLK,,2025-01-31,Tax Withholding (RSU Vesting),1071.52,656,702917.12,5190
+BLK,,2025-01-16,"Grant, Award, or Other Acquisition",0.0,1026,0.0,5463
+BLK,,2024-02-12,Sale,805.55,950,765272.5,4437
+BLK,,2024-01-31,"Grant, Award, or Other Acquisition",0.0,727,0.0,6217
+BLK,,2024-01-31,Tax Withholding (RSU Vesting),781.73,830,648835.9,5387
+BLK,,2024-01-16,"Grant, Award, or Other Acquisition",0.0,1133,0.0,5490
+BLK,,2023-02-03,Sale,756.2601,390,294941.44,4357
+BLK,,2023-01-31,"Grant, Award, or Other Acquisition",0.0,2297,0.0,6432
+BLK,,2023-01-31,Tax Withholding (RSU Vesting),747.86,1685,1260144.1,4747
+BLK,,2023-01-30,Sale,753.46,1149,865725.54,4135
+BLK,,2023-01-17,"Grant, Award, or Other Acquisition",743.61,136,101130.96,5284
+BLK,,2022-01-31,"Grant, Award, or Other Acquisition",0.0,3373,0.0,7190
+BLK,,2022-01-31,Tax Withholding (RSU Vesting),808.14,2042,1650221.88,5148
+BLK,,2022-01-18,"Grant, Award, or Other Acquisition",832.07,1742,1449465.94,3817

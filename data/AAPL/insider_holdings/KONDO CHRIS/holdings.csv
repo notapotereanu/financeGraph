@@ -1,0 +1,58 @@
+issuerTradingSymbol,relationship,date,transaction_type,cost,shares,value,shares_total
+AAPL,,2024-11-18,Sale,228.87,4130,945233.1,15419
+AAPL,,2024-10-15,Exercise or Conversion of Derivative Security,,8115,,23534
+AAPL,,2024-10-15,Tax Withholding (RSU Vesting),233.85,3985,931892.25,19549
+AAPL,,2024-08-15,Sale,225.0,8706,1958850.0,15419
+AAPL,,2024-08-09,Sale,216.5,5178,1121037.0,24125
+AAPL,,2024-05-15,Sale,190.395,4999,951784.61,29278
+AAPL,,2024-04-15,Exercise or Conversion of Derivative Security,,8119,,37397
+AAPL,,2024-04-15,Tax Withholding (RSU Vesting),172.69,3120,538792.8,34277
+AAPL,,2023-11-29,Sale,192.0,5513,1058496.0,29174
+AAPL,,2023-11-10,Sale,184.04,4806,884496.24,34687
+AAPL,,2023-10-15,Exercise or Conversion of Derivative Security,,10785,,44765
+AAPL,,2023-10-15,Tax Withholding (RSU Vesting),178.85,5272,942897.2,39493
+AAPL,,2023-05-08,Sale,173.26,4092,708979.92,33946
+AAPL,,2023-04-15,Exercise or Conversion of Derivative Security,,10792,,42422
+AAPL,,2023-04-15,Tax Withholding (RSU Vesting),165.21,4384,724280.64,38038
+AAPL,,2022-11-22,Sale,148.72,20200,3004144.0,31505
+AAPL,,2022-10-15,Exercise or Conversion of Derivative Security,,13136,,58104
+AAPL,,2022-10-15,Tax Withholding (RSU Vesting),138.38,6399,885493.62,51705
+AAPL,,2022-04-15,Exercise or Conversion of Derivative Security,,13146,,50458
+AAPL,,2022-04-15,Tax Withholding (RSU Vesting),165.29,5537,915210.73,44921
+AAPL,,2021-11-12,Sale,150.0,9005,1350750.0,37197
+AAPL,,2021-10-15,Exercise or Conversion of Derivative Security,,17591,,54788
+AAPL,,2021-10-15,Tax Withholding (RSU Vesting),144.84,8586,1243596.24,46202
+AAPL,,2021-04-15,Exercise or Conversion of Derivative Security,,17603,,44637
+AAPL,,2021-04-15,Tax Withholding (RSU Vesting),134.5,7499,1008615.5,37138
+AAPL,,2020-10-15,Exercise or Conversion of Derivative Security,,23652,,53244
+AAPL,,2020-10-15,Tax Withholding (RSU Vesting),120.71,11528,1391544.88,41716
+AAPL,,2020-10-16,Sale,121.34,14840,1800685.6,26876
+AAPL,,2020-05-08,Sale,305.62,4491,1372539.42,7370
+AAPL,,2020-04-15,Exercise or Conversion of Derivative Security,,5916,,14206
+AAPL,,2020-04-15,Tax Withholding (RSU Vesting),284.43,2345,666988.35,11861
+AAPL,,2019-10-15,Exercise or Conversion of Derivative Security,,6915,,15464
+AAPL,,2019-10-15,Tax Withholding (RSU Vesting),235.32,3320,781262.4,12144
+AAPL,,2019-10-16,Sale,233.26,3932,917178.32,8212
+AAPL,,2019-08-01,Sale,217.4669,4376,951635.15,8549
+AAPL,,2019-02-19,Gift,0.0,471,0.0,8469
+AAPL,,2019-04-15,Exercise or Conversion of Derivative Security,,6917,,15501
+AAPL,,2019-04-15,Tax Withholding (RSU Vesting),199.23,2587,515408.01,12914
+AAPL,,2018-11-19,Sale,190.0,3408,647520.0,8940
+AAPL,,2018-10-15,Exercise or Conversion of Derivative Security,,6800,,15629
+AAPL,,2018-10-15,Tax Withholding (RSU Vesting),217.36,3281,713158.16,12348
+AAPL,,2018-08-15,Exercise or Conversion of Derivative Security,,675,,9149
+AAPL,,2018-08-15,Tax Withholding (RSU Vesting),210.24,320,67276.8,8829
+AAPL,,2018-05-16,Sale,187.0,4867,910129.0,8433
+AAPL,,2018-04-15,Exercise or Conversion of Derivative Security,,6803,,15868
+AAPL,,2018-04-15,Tax Withholding (RSU Vesting),174.73,2568,448706.64,13300
+AAPL,,2018-02-15,Exercise or Conversion of Derivative Security,,675,,9294
+AAPL,,2018-02-15,Tax Withholding (RSU Vesting),172.99,229,39614.71,9065
+AAPL,,2017-10-15,Exercise or Conversion of Derivative Security,,6149,,11621
+AAPL,,2017-10-15,Tax Withholding (RSU Vesting),156.99,3122,490122.78,8499
+AAPL,,2017-08-15,Exercise or Conversion of Derivative Security,,675,,12021
+AAPL,,2017-08-15,Tax Withholding (RSU Vesting),161.6,340,54944.0,11681
+AAPL,,2017-08-16,Sale,161.96,6209,1005609.64,5472
+AAPL,,2017-04-15,Exercise or Conversion of Derivative Security,,6152,,13530
+AAPL,,2017-04-15,Tax Withholding (RSU Vesting),141.05,2242,316234.1,11288
+AAPL,,2017-02-15,Exercise or Conversion of Derivative Security,,675,,7637
+AAPL,,2017-02-15,Tax Withholding (RSU Vesting),135.51,259,35097.09,7378

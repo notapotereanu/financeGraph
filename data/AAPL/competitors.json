@@ -1,0 +1,34 @@
+[
+    {
+        "ticker": "DELL",
+        "name": "Dell Technologies Inc"
+    },
+    {
+        "ticker": "HPQ",
+        "name": "HP Inc"
+    },
+    {
+        "ticker": "SMCI",
+        "name": "Super Micro Computer Inc"
+    },
+    {
+        "ticker": "HPE",
+        "name": "Hewlett Packard Enterprise Co"
+    },
+    {
+        "ticker": "NTAP",
+        "name": "NetApp Inc"
+    },
+    {
+        "ticker": "PSTG",
+        "name": "Pure Storage Inc"
+    },
+    {
+        "ticker": "WDC",
+        "name": "Western Digital Corp"
+    },
+    {
+        "ticker": "SNDK",
+        "name": "SanDisk Corp"
+    }
+]

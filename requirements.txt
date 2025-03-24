@@ -1,0 +1,12 @@
+neo4j==5.14.1
+streamlit==1.29.0
+pandas
+numpy
+plotly
+beautifulsoup4
+requests
+matplotlib
+yfinance
+python-dateutil
+lxml
+html5lib

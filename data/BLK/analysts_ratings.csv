@@ -1,0 +1,15 @@
+Date,Action,Analyst,Rating Change,Price Target Change
+2019-01-29,Upgrade,Jefferies,Hold → Buy,
+2019-03-08,Reiterated,BofA/Merrill,Buy,$490 → $498
+2019-10-08,Initiated,BMO Capital Markets,Market Perform,
+2020-10-01,Upgrade,Deutsche Bank,Hold → Buy,$576 → $654
+2021-11-03,Resumed,BofA Securities,Buy,$1080
+2022-10-11,Downgrade,UBS,Buy → Neutral,$700 → $585
+2022-10-19,Initiated,Credit Suisse,Neutral,$540
+2023-05-19,Initiated,Citigroup,Buy,$750
+2023-07-10,Upgrade,Keefe Bruyette,Mkt Perform → Outperform,$770 → $835
+2023-12-12,Upgrade,Exane BNP Paribas,Neutral → Outperform,$885
+2023-12-15,Downgrade,JP Morgan,Overweight → Neutral,$708
+2024-01-16,Upgrade,TD Cowen,Market Perform → Outperform,$819 → $938
+2024-08-27,Initiated,Barclays,Overweight,$985
+2024-09-12,Initiated,Wells Fargo,Overweight,$1000

@@ -57,7 +57,7 @@ class SECDataManager:
         Returns:
             List of dictionaries containing board member information
         """
-        print("🔍 Looking up board members...")
+        print(f"[INFO] Looking up board members for {self.stock_ticker}...")
         try:
             directorsBoardMembersApi = DirectorsBoardMembersApi(api_key=self.api_token,)
             
@@ -67,13 +67,12 @@ class SECDataManager:
                 "size": 50,
                 "sort": [{ "filedAt": { "order": "desc" } }]
             }
-        
+            
             response = directorsBoardMembersApi.get_data(search_params)
 
             stock_data = pd.DataFrame(response["data"])
-
-            stock_data = stock_data.explode("directors")
-
+            
+            # Extract the nested directors data
             columns = [
             'name',
             'position',
@@ -95,7 +94,7 @@ class SECDataManager:
             return latest_data[['name', 'position', 'age', 'directorClass', 'qualificationsAndExperience', 'committeeMemberships']]
             
         except Exception as e:
-            print(f"❌ Error getting board members: {e}")
+            print(f"[ERROR] Error getting board members: {e}")
             return []
     
     def _get_sec_cik(self) -> str:
@@ -105,7 +104,7 @@ class SECDataManager:
         Returns:
             str: The 10-digit CIK code with leading zeros
         """
-        print(f"🔍 Looking up SEC CIK for {self.stock_ticker}...")
+        print(f"[INFO] Looking up SEC CIK for {self.stock_ticker}...")
         try:
             queryApi = QueryApi(self.api_token)
             query = {
@@ -125,12 +124,12 @@ class SECDataManager:
                 if cik:
                     # Format CIK to 10 digits with leading zeros
                     formatted_cik = cik.zfill(10)
-                    print(f"✅ Found CIK: {formatted_cik}")
+                    print(f"[SUCCESS] Found CIK: {formatted_cik}")
                     return formatted_cik
-            print("⚠️ No CIK found in SEC filings")
+            print("[WARNING] No CIK found in SEC filings")
             return ""
         except Exception as e:
-            print(f"❌ Error getting SEC CIK: {e}")
+            print(f"[ERROR] Error finding CIK: {e}")
             return ""
     
     def _get_sec_interal_people(self) -> List[Dict]:
@@ -182,20 +181,19 @@ class SECDataManager:
             print(f"❌ Error getting SEC internal people: {e}")
             return []
     
-    def get_insider_holdings(self, sec_df: pd.DataFrame) -> Dict[str, Set[str]]:
+    def get_insider_holdings(self, sec_df: pd.DataFrame) -> Dict[str, pd.DataFrame]:
         """
-        Get all stocks that each insider owns based on SEC filings.
-        This includes stocks from other companies, not just the selected ticker.
+        Process insider holdings data from SEC transactions.
         
         Args:
-            sec_df: DataFrame containing SEC filing data
+            sec_df: DataFrame containing SEC Form 4 transactions
             
         Returns:
-            Dictionary mapping insider names to sets of stock tickers they own
+            Dictionary mapping insider names to their holdings DataFrames
         """
-        print("🔹 Gathering Insider Holdings ...")
+        print("[INFO] Processing insider holdings data...")
         try:
-            insider_holdings: Dict[str, Set[str]] = {}
+            insider_holdings: Dict[str, pd.DataFrame] = {}
             
             # Get unique insider names from the SEC data
             insider_names = sec_df['insider_name'].unique()
@@ -249,20 +247,20 @@ class SECDataManager:
                 # Add a small delay to respect SEC rate limiting
                 time.sleep(0.5)
             
-            print(f"✅ Found holdings for {len(insider_holdings)} insiders")
+            print(f"[SUCCESS] Processed insider holdings for {len(insider_holdings)} insiders")
             return insider_holdings
         except Exception as e:
-            print(f"❌ Error gathering insider holdings: {e}")
-            raise
+            print(f"[ERROR] Error processing insider holdings: {e}")
+            return {}
     
     def get_sec_filings(self) -> pd.DataFrame:
         """
-        Get SEC Form 4 filings for the stock.
+        Get SEC filings for the stock ticker.
         
         Returns:
-            DataFrame containing processed SEC filings
+            pd.DataFrame: DataFrame containing SEC filings data
         """
-        print("🔍 Fetching SEC Form 4 filings...")
+        print(f"[INFO] Getting SEC filings for {self.stock_ticker}...")
         try:
             filings = self._scrape_sec_filings(self.sec_url)
             insider_transactions = []
@@ -286,10 +284,10 @@ class SECDataManager:
             ])
             sec_df = self._clean_data(sec_df)
             
-            print(f"✅ Successfully processed {len(sec_df)} SEC filings")
+            print(f"[SUCCESS] Found {len(sec_df)} SEC transactions")
             return sec_df
         except Exception as e:
-            print(f"❌ Error getting SEC filings: {e}")
+            print(f"[ERROR] Error getting SEC filings: {e}")
             return pd.DataFrame()
     
     def _parse_form4_xml(self, xml_content: bytes, detail_url: str, xml_link: str) -> Optional[Dict]:

@@ -1,0 +1,42 @@
+[
+    {
+        "ticker": "DDOG",
+        "name": "Datadog Inc"
+    },
+    {
+        "ticker": "HUBS",
+        "name": "HubSpot Inc"
+    },
+    {
+        "ticker": "ANSS",
+        "name": "ANSYS Inc"
+    },
+    {
+        "ticker": "TYL",
+        "name": "Tyler Technologies Inc"
+    },
+    {
+        "ticker": "ZM",
+        "name": "Zoom Communications Inc"
+    },
+    {
+        "ticker": "NTNX",
+        "name": "Nutanix Inc"
+    },
+    {
+        "ticker": "PTC",
+        "name": "PTC Inc"
+    },
+    {
+        "ticker": "DOCU",
+        "name": "DocuSign Inc"
+    },
+    {
+        "ticker": "AZPN",
+        "name": "Aspen Technology Inc"
+    },
+    {
+        "ticker": "CRM",
+        "name": "Salesforce Inc"
+    }
+]

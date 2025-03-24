@@ -1,0 +1,60 @@
+date,stock_ticker,issuerTradingSymbol,price,insider_name,insider_cik,relationship,transaction_type,shares,value,shares_total,xml_link
+2024-08-30,BLK,BLK,513.5,Wiedman Mark,1469164,,Exercise or Conversion of Derivative Security,12000,6162000.0,18480.0,https://www.sec.gov/Archives/edgar/data/1364742/000112760224023248/form4.xml
+2024-08-30,BLK,BLK,900.0,Wiedman Mark,1469164,,Sale,12000,10800000.0,6480.0,https://www.sec.gov/Archives/edgar/data/1364742/000112760224023248/form4.xml
+2024-08-29,BLK,BLK,513.5,Kushel J. Richard,1059240,,Exercise or Conversion of Derivative Security,14000,7189000.0,81107.34,https://www.sec.gov/Archives/edgar/data/1059240/000112760224023247/form4.xml
+2024-08-29,BLK,BLK,885.385,Kushel J. Richard,1059240,,Sale,96,84996.96,81011.34,https://www.sec.gov/Archives/edgar/data/1059240/000112760224023247/form4.xml
+2024-08-29,BLK,BLK,886.6348,Kushel J. Richard,1059240,,Sale,258,228751.78,80753.34,https://www.sec.gov/Archives/edgar/data/1059240/000112760224023247/form4.xml
+2024-08-29,BLK,BLK,888.0413,Kushel J. Richard,1059240,,Sale,390,346336.11,80363.34,https://www.sec.gov/Archives/edgar/data/1059240/000112760224023247/form4.xml
+2024-08-29,BLK,BLK,888.8866,Kushel J. Richard,1059240,,Sale,12226,10867527.57,68137.34,https://www.sec.gov/Archives/edgar/data/1059240/000112760224023247/form4.xml
+2024-08-29,BLK,BLK,890.2167,Kushel J. Richard,1059240,,Sale,443,394366.0,67694.34,https://www.sec.gov/Archives/edgar/data/1059240/000112760224023247/form4.xml
+2024-08-29,BLK,BLK,890.8619,Kushel J. Richard,1059240,,Sale,587,522935.94,67107.34,https://www.sec.gov/Archives/edgar/data/1059240/000112760224023247/form4.xml
+2024-08-15,BLK,BLK,875.0346,Wiedman Mark,1469164,,Sale,12000,10500415.2,6480.0,https://www.sec.gov/Archives/edgar/data/1364742/000112760224022379/form4.xml
+2024-08-12,BLK,BLK,850.3279,Wiedman Mark,1469164,,Sale,4641,3946371.78,12900.0,https://www.sec.gov/Archives/edgar/data/1364742/000112760224022217/form4.xml
+2024-08-12,BLK,BLK,851.3759,Wiedman Mark,1469164,,Sale,1345,1145100.59,11555.0,https://www.sec.gov/Archives/edgar/data/1364742/000112760224022217/form4.xml
+2024-08-12,BLK,BLK,852.0918,Wiedman Mark,1469164,,Sale,275,234325.24,11280.0,https://www.sec.gov/Archives/edgar/data/1364742/000112760224022217/form4.xml
+2024-08-12,BLK,BLK,854.14,Wiedman Mark,1469164,,Sale,800,683312.0,10480.0,https://www.sec.gov/Archives/edgar/data/1364742/000112760224022217/form4.xml
+2024-08-12,BLK,BLK,856.355,Wiedman Mark,1469164,,Sale,4000,3425420.0,6480.0,https://www.sec.gov/Archives/edgar/data/1364742/000112760224022217/form4.xml
+2024-08-13,BLK,BLK,850.0,Wiedman Mark,1469164,,Sale,939,798150.0,6480.0,https://www.sec.gov/Archives/edgar/data/1364742/000112760224022217/form4.xml
+2024-08-06,BLK,BLK,840.3562,FINK LAURENCE,1059245,,Sale,13293,11170854.97,369875.0,https://www.sec.gov/Archives/edgar/data/1059245/000112760224021912/form4.xml
+2024-08-06,BLK,BLK,841.2842,FINK LAURENCE,1059245,,Sale,1900,1598439.98,367975.0,https://www.sec.gov/Archives/edgar/data/1059245/000112760224021912/form4.xml
+2024-08-06,BLK,BLK,842.5379,FINK LAURENCE,1059245,,Sale,700,589776.53,367275.0,https://www.sec.gov/Archives/edgar/data/1059245/000112760224021912/form4.xml
+2024-08-06,BLK,BLK,843.5179,FINK LAURENCE,1059245,,Sale,700,590462.53,366575.0,https://www.sec.gov/Archives/edgar/data/1059245/000112760224021912/form4.xml
+2024-08-06,BLK,BLK,844.5376,FINK LAURENCE,1059245,,Sale,1667,1407844.18,364908.0,https://www.sec.gov/Archives/edgar/data/1059245/000112760224021912/form4.xml
+2024-08-06,BLK,BLK,845.83,FINK LAURENCE,1059245,,Sale,3700,3129571.0,361208.0,https://www.sec.gov/Archives/edgar/data/1059245/000112760224021912/form4.xml
+2024-08-06,BLK,BLK,846.9099,FINK LAURENCE,1059245,,Sale,5258,4453052.25,355950.0,https://www.sec.gov/Archives/edgar/data/1059245/000112760224021912/form4.xml
+2024-08-06,BLK,BLK,847.9743,FINK LAURENCE,1059245,,Sale,1632,1383894.06,354318.0,https://www.sec.gov/Archives/edgar/data/1059245/000112760224021912/form4.xml
+2024-08-06,BLK,BLK,848.485,FINK LAURENCE,1059245,,Sale,200,169697.0,354118.0,https://www.sec.gov/Archives/edgar/data/1059245/000112760224021912/form4.xml
+2024-08-06,BLK,BLK,849.7133,FINK LAURENCE,1059245,,Sale,300,254913.99,353818.0,https://www.sec.gov/Archives/edgar/data/1059245/000112760224021912/form4.xml
+2024-08-06,BLK,BLK,850.92,FINK LAURENCE,1059245,,Sale,100,85092.0,353718.0,https://www.sec.gov/Archives/edgar/data/1059245/000112760224021912/form4.xml
+2024-08-02,BLK,BLK,842.0693,Daley Pamela,1290705,,Sale,1523,1282471.54,5740.0,https://www.sec.gov/Archives/edgar/data/1290705/000112760224021762/form4.xml
+2024-08-02,BLK,BLK,843.255,Daley Pamela,1290705,,Sale,8,6746.04,5732.0,https://www.sec.gov/Archives/edgar/data/1290705/000112760224021762/form4.xml
+2024-07-16,BLK,BLK,513.5,Wiedman Mark,1469164,,Exercise or Conversion of Derivative Security,27000,13864500.0,33480.0,https://www.sec.gov/Archives/edgar/data/1364742/000112760224020696/form4.xml
+2024-07-16,BLK,BLK,833.9227,Wiedman Mark,1469164,,Sale,7935,6617176.62,25545.0,https://www.sec.gov/Archives/edgar/data/1364742/000112760224020696/form4.xml
+2024-07-16,BLK,BLK,834.5795,Wiedman Mark,1469164,,Sale,18065,15076678.67,7480.0,https://www.sec.gov/Archives/edgar/data/1364742/000112760224020696/form4.xml
+2024-07-16,BLK,BLK,835.54,Wiedman Mark,1469164,,Sale,1000,835540.0,6480.0,https://www.sec.gov/Archives/edgar/data/1364742/000112760224020696/form4.xml
+2024-05-31,BLK,BLK,761.86,Heller Caroline,1961019,,Tax Withholding (RSU Vesting),139,105898.54,2297.0,https://www.sec.gov/Archives/edgar/data/1364742/000112760224017755/form4.xml
+2024-05-20,BLK,BLK,804.7601,FINK LAURENCE,1059245,,Sale,5041,4056795.66,409105.0,https://www.sec.gov/Archives/edgar/data/1059245/000112760224016315/form4.xml
+2024-05-20,BLK,BLK,805.6719,FINK LAURENCE,1059245,,Sale,8751,7050434.8,400354.0,https://www.sec.gov/Archives/edgar/data/1059245/000112760224016315/form4.xml
+2024-05-20,BLK,BLK,806.6157,FINK LAURENCE,1059245,,Sale,2588,2087521.43,397766.0,https://www.sec.gov/Archives/edgar/data/1059245/000112760224016315/form4.xml
+2024-05-20,BLK,BLK,807.9052,FINK LAURENCE,1059245,,Sale,5948,4805420.13,391818.0,https://www.sec.gov/Archives/edgar/data/1059245/000112760224016315/form4.xml
+2024-05-20,BLK,BLK,808.8599,FINK LAURENCE,1059245,,Sale,1754,1418740.26,390064.0,https://www.sec.gov/Archives/edgar/data/1059245/000112760224016315/form4.xml
+2024-05-20,BLK,BLK,810.1961,FINK LAURENCE,1059245,,Sale,4400,3564862.84,385664.0,https://www.sec.gov/Archives/edgar/data/1059245/000112760224016315/form4.xml
+2024-05-20,BLK,BLK,811.0371,FINK LAURENCE,1059245,,Sale,2496,2024348.6,383168.0,https://www.sec.gov/Archives/edgar/data/1059245/000112760224016315/form4.xml
+2024-05-10,BLK,BLK,513.5,Wiedman Mark,1469164,,Exercise or Conversion of Derivative Security,9000,4621500.0,15480.0,https://www.sec.gov/Archives/edgar/data/1364742/000112760224015332/form4.xml
+2024-05-10,BLK,BLK,795.0,Wiedman Mark,1469164,,Sale,9000,7155000.0,6480.0,https://www.sec.gov/Archives/edgar/data/1364742/000112760224015332/form4.xml
+2024-02-28,BLK,BLK,807.5411,FINK LAURENCE,1059245,,Sale,5108,4124919.94,440016.0,https://www.sec.gov/Archives/edgar/data/1059245/000112760224007969/form4.xml
+2024-02-28,BLK,BLK,808.4575,FINK LAURENCE,1059245,,Sale,7215,5833020.86,432801.0,https://www.sec.gov/Archives/edgar/data/1059245/000112760224007969/form4.xml
+2024-02-28,BLK,BLK,809.4628,FINK LAURENCE,1059245,,Sale,4598,3721909.95,428203.0,https://www.sec.gov/Archives/edgar/data/1059245/000112760224007969/form4.xml
+2024-02-28,BLK,BLK,810.817,FINK LAURENCE,1059245,,Sale,2748,2228125.12,425455.0,https://www.sec.gov/Archives/edgar/data/1059245/000112760224007969/form4.xml
+2024-02-28,BLK,BLK,811.7447,FINK LAURENCE,1059245,,Sale,9721,7890970.23,415734.0,https://www.sec.gov/Archives/edgar/data/1059245/000112760224007969/form4.xml
+2024-02-28,BLK,BLK,812.7363,FINK LAURENCE,1059245,,Sale,1588,1290625.24,414146.0,https://www.sec.gov/Archives/edgar/data/1059245/000112760224007969/form4.xml
+2024-02-23,BLK,BLK,513.5,Lord Rachel,1717289,,Exercise or Conversion of Derivative Security,36059,18516296.5,53063.0,https://www.sec.gov/Archives/edgar/data/1364742/000112760224006732/form4.xml
+2024-02-23,BLK,BLK,816.4104,Lord Rachel,1717289,,Sale,16469,13445462.88,36594.0,https://www.sec.gov/Archives/edgar/data/1364742/000112760224006732/form4.xml
+2024-02-23,BLK,BLK,817.5559,Lord Rachel,1717289,,Sale,4300,3515490.37,32294.0,https://www.sec.gov/Archives/edgar/data/1364742/000112760224006732/form4.xml
+2024-02-23,BLK,BLK,818.7876,Lord Rachel,1717289,,Sale,6867,5622614.45,25427.0,https://www.sec.gov/Archives/edgar/data/1364742/000112760224006732/form4.xml
+2024-02-23,BLK,BLK,819.5569,Lord Rachel,1717289,,Sale,3497,2865990.48,21930.0,https://www.sec.gov/Archives/edgar/data/1364742/000112760224006732/form4.xml
+2024-02-23,BLK,BLK,820.7357,Lord Rachel,1717289,,Sale,1802,1478965.73,20128.0,https://www.sec.gov/Archives/edgar/data/1364742/000112760224006732/form4.xml
+2024-02-23,BLK,BLK,821.8197,Lord Rachel,1717289,,Sale,1276,1048641.94,18852.0,https://www.sec.gov/Archives/edgar/data/1364742/000112760224006732/form4.xml
+2024-02-23,BLK,BLK,823.2181,Lord Rachel,1717289,,Sale,1848,1521307.05,17004.0,https://www.sec.gov/Archives/edgar/data/1364742/000112760224006732/form4.xml
+2024-02-23,BLK,BLK,821.694,Wiedman Mark,1469164,,Sale,240,197206.56,6480.0,https://www.sec.gov/Archives/edgar/data/1364742/000112760224006730/form4.xml
+2024-02-12,BLK,BLK,805.55,Cohen Stephen,1855412,,Sale,950,765272.5,4437.0,https://www.sec.gov/Archives/edgar/data/1364742/000112760224005100/form4.xml
