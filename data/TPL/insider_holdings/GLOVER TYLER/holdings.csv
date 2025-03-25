@@ -1,0 +1,21 @@
+issuerTradingSymbol,relationship,date,transaction_type,cost,shares,value,shares_total
+TPL,,2025-02-13,Exercise or Conversion of Derivative Security,,1266,,11208
+TPL,,2025-02-13,Tax Withholding (RSU Vesting),1353.18,599,810554.82,10609
+TPL,,2025-02-10,Exercise or Conversion of Derivative Security,,882,,5751
+TPL,,2025-02-10,Tax Withholding (RSU Vesting),1381.19,420,580099.8,5331
+TPL,,2025-02-11,Exercise or Conversion of Derivative Security,,1254,,6585
+TPL,,2025-02-11,Tax Withholding (RSU Vesting),1364.12,593,808923.16,5992
+TPL,,2025-02-11,"Grant, Award, or Other Acquisition",0.0,7500,0.0,13492
+TPL,,2025-02-11,Tax Withholding (RSU Vesting),1364.12,3550,4842626.0,9942
+TPL,,2024-02-10,Exercise or Conversion of Derivative Security,,294,,1510
+TPL,,2024-02-10,Tax Withholding (RSU Vesting),1466.11,125,183263.75,1385
+TPL,,2024-02-11,Exercise or Conversion of Derivative Security,,416,,1801
+TPL,,2024-02-11,Tax Withholding (RSU Vesting),1466.11,178,260967.58,1623
+TPL,,2023-12-29,Tax Withholding (RSU Vesting),1572.45,203,319207.35,1216
+TPL,,2023-02-11,Exercise or Conversion of Derivative Security,,416,,1596
+TPL,,2023-02-11,Tax Withholding (RSU Vesting),1923.78,177,340509.06,1419
+TPL,,2022-12-29,Tax Withholding (RSU Vesting),2331.36,304,708733.44,1180
+TPL,,2021-12-29,"Grant, Award, or Other Acquisition",0.0,1199,0.0,1484
+TPL,,2021-05-25,Purchase,1503.93,27,40606.11,285
+TPL,,2021-05-18,Purchase,1649.4,158,260605.2,258
+TPL,,2018-12-04,Purchase,598.0,100,59800.0,100

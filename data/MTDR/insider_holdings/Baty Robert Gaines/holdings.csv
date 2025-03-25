@@ -1,0 +1,23 @@
+issuerTradingSymbol,relationship,date,transaction_type,cost,shares,value,shares_total
+MTDR,,2025-03-04,Purchase,46.09,700,32263.0,68317
+MTDR,,2024-09-13,Purchase,50.58,500,25290.0,67617
+MTDR,,2024-06-13,"Grant, Award, or Other Acquisition",0.0,2533,0.0,67117
+MTDR,,2023-12-11,Purchase,53.88,250,13470.0,64584
+MTDR,,2023-06-09,"Grant, Award, or Other Acquisition",0.0,2621,0.0,64334
+MTDR,,2023-03-15,Purchase,44.8,500,22400.0,61713
+MTDR,,2022-06-10,"Grant, Award, or Other Acquisition",0.0,2040,0.0,61213
+MTDR,,2021-12-02,Purchase,36.27,500,18135.0,59173
+MTDR,,2021-03-31,"Small Acquisition (Less than $10,000)",23.49,11,258.39,54630
+MTDR,,2021-06-04,"Grant, Award, or Other Acquisition",0.0,4043,0.0,58673
+MTDR,,2020-11-04,Purchase,6.94,1000,6940.0,54619
+MTDR,,2020-08-06,Purchase,9.0,1120,10080.0,53619
+MTDR,,2020-06-05,"Grant, Award, or Other Acquisition",0.0,8262,0.0,52499
+MTDR,,2020-03-13,Purchase,2.14,3500,7490.0,44237
+MTDR,,2020-03-06,Purchase,6.94,1000,6940.0,40737
+MTDR,,2019-06-06,"Grant, Award, or Other Acquisition",0.0,8395,0.0,39737
+MTDR,,2018-12-04,Purchase,24.36,819,19950.84,31342
+MTDR,,2018-06-07,"Grant, Award, or Other Acquisition",0.0,5210,0.0,30523
+MTDR,,2017-06-01,"Grant, Award, or Other Acquisition",0.0,5923,0.0,25313
+MTDR,,2017-04-11,"Grant, Award, or Other Acquisition",0.0,1399,0.0,19390
+MTDR,,2017-02-15,"Grant, Award, or Other Acquisition",0.0,1251,0.0,17991
+MTDR,,2016-12-13,"Grant, Award, or Other Acquisition",0.0,1290,0.0,16740

@@ -1,0 +1,232 @@
+date,stock_ticker,issuerTradingSymbol,price,insider_name,insider_cik,relationship,transaction_type,shares,value,shares_total,xml_link
+2025-03-18,META,META,600.25,Newstead Jennifer,1780525,,Sale,921,552830.25,32103,https://www.sec.gov/Archives/edgar/data/1326801/000095010325003699/dp226497_4-newstead.xml
+2025-03-17,META,META,607.5,Olivan Javier,1564475,,Sale,608,369360.0,7446,https://www.sec.gov/Archives/edgar/data/1326801/000095010325003648/dp226481_4-olivan.xml
+2025-03-11,META,META,595.0,Newstead Jennifer,1780525,,Sale,921,547995.0,33024,https://www.sec.gov/Archives/edgar/data/1326801/000095010325003430/dp226247_4-newstead.xml
+2025-03-10,META,META,609.0,Olivan Javier,1564475,,Sale,608,370272.0,8054,https://www.sec.gov/Archives/edgar/data/1326801/000095010325003349/dp226184_4-olivan.xml
+2025-03-04,META,META,644.0,Newstead Jennifer,1780525,,Sale,921,593124.0,33945,https://www.sec.gov/Archives/edgar/data/1326801/000095010325003130/dp225974_4-newstead.xml
+2025-03-03,META,META,673.96,Olivan Javier,1564475,,Sale,608,409767.68,8662,https://www.sec.gov/Archives/edgar/data/1326801/000095010325003069/dp225904_4-olivan.xml
+2025-02-28,META,META,643.56,Cox Christopher K,1607459,,Sale,400,257424.0,308286,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002981/dp225825_4-cox.xml
+2025-02-28,META,META,644.7733,Cox Christopher K,1607459,,Sale,300,193431.99,307986,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002981/dp225825_4-cox.xml
+2025-02-28,META,META,646.0725,Cox Christopher K,1607459,,Sale,200,129214.5,307786,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002981/dp225825_4-cox.xml
+2025-02-28,META,META,647.3301,Cox Christopher K,1607459,,Sale,531,343732.28,307255,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002981/dp225825_4-cox.xml
+2025-02-28,META,META,648.0601,Cox Christopher K,1607459,,Sale,709,459474.61,306546,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002981/dp225825_4-cox.xml
+2025-02-28,META,META,649.5151,Cox Christopher K,1607459,,Sale,734,476744.08,305812,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002981/dp225825_4-cox.xml
+2025-02-28,META,META,650.5445,Cox Christopher K,1607459,,Sale,1310,852213.29,304502,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002981/dp225825_4-cox.xml
+2025-02-28,META,META,651.5655,Cox Christopher K,1607459,,Sale,1422,926526.14,303080,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002981/dp225825_4-cox.xml
+2025-02-28,META,META,652.7188,Cox Christopher K,1607459,,Sale,2215,1445772.14,300865,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002981/dp225825_4-cox.xml
+2025-02-28,META,META,653.836,Cox Christopher K,1607459,,Sale,4915,3213603.94,295950,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002981/dp225825_4-cox.xml
+2025-02-28,META,META,654.7044,Cox Christopher K,1607459,,Sale,4719,3089550.06,291231,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002981/dp225825_4-cox.xml
+2025-02-28,META,META,655.4444,Cox Christopher K,1607459,,Sale,515,337553.87,290716,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002981/dp225825_4-cox.xml
+2025-02-28,META,META,656.305,Cox Christopher K,1607459,,Sale,200,131261.0,290516,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002981/dp225825_4-cox.xml
+2025-02-28,META,META,658.1134,Cox Christopher K,1607459,,Sale,1830,1204347.52,288686,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002981/dp225825_4-cox.xml
+2025-02-27,META,META,663.3295,Cox Christopher K,1607459,,Sale,626,415244.27,328060,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002857/dp225728_4-cox.xml
+2025-02-27,META,META,664.6714,Cox Christopher K,1607459,,Sale,1400,930539.96,326660,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002857/dp225728_4-cox.xml
+2025-02-27,META,META,665.67,Cox Christopher K,1607459,,Sale,500,332835.0,326160,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002857/dp225728_4-cox.xml
+2025-02-27,META,META,666.9934,Cox Christopher K,1607459,,Sale,301,200765.01,325859,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002857/dp225728_4-cox.xml
+2025-02-27,META,META,668.83,Cox Christopher K,1607459,,Sale,500,334415.0,325359,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002857/dp225728_4-cox.xml
+2025-02-27,META,META,670.2357,Cox Christopher K,1607459,,Sale,1400,938329.98,323959,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002857/dp225728_4-cox.xml
+2025-02-27,META,META,670.9567,Cox Christopher K,1607459,,Sale,600,402574.02,323359,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002857/dp225728_4-cox.xml
+2025-02-27,META,META,672.235,Cox Christopher K,1607459,,Sale,400,268894.0,322959,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002857/dp225728_4-cox.xml
+2025-02-27,META,META,673.92,Cox Christopher K,1607459,,Sale,500,336960.0,322459,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002857/dp225728_4-cox.xml
+2025-02-27,META,META,674.8707,Cox Christopher K,1607459,,Sale,1500,1012306.05,320959,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002857/dp225728_4-cox.xml
+2025-02-27,META,META,676.1299,Cox Christopher K,1607459,,Sale,1440,973627.06,319519,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002857/dp225728_4-cox.xml
+2025-02-27,META,META,677.2133,Cox Christopher K,1607459,,Sale,300,203163.99,319219,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002857/dp225728_4-cox.xml
+2025-02-27,META,META,678.6,Cox Christopher K,1607459,,Sale,600,407160.0,318619,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002857/dp225728_4-cox.xml
+2025-02-27,META,META,680.5986,Cox Christopher K,1607459,,Sale,700,476419.02,317919,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002857/dp225728_4-cox.xml
+2025-02-27,META,META,681.5742,Cox Christopher K,1607459,,Sale,1209,824023.21,316710,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002857/dp225728_4-cox.xml
+2025-02-27,META,META,682.3513,Cox Christopher K,1607459,,Sale,800,545881.04,315910,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002857/dp225728_4-cox.xml
+2025-02-27,META,META,683.8139,Cox Christopher K,1607459,,Sale,1682,1150174.98,314228,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002857/dp225728_4-cox.xml
+2025-02-27,META,META,684.9483,Cox Christopher K,1607459,,Sale,2455,1681548.08,311773,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002857/dp225728_4-cox.xml
+2025-02-27,META,META,685.9773,Cox Christopher K,1607459,,Sale,1887,1294439.17,309886,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002857/dp225728_4-cox.xml
+2025-02-27,META,META,687.0589,Cox Christopher K,1607459,,Sale,900,618353.01,308986,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002857/dp225728_4-cox.xml
+2025-02-27,META,META,688.21,Cox Christopher K,1607459,,Sale,300,206463.0,308686,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002857/dp225728_4-cox.xml
+2025-02-26,META,META,658.8958,Cox Christopher K,1607459,,Sale,1200,790674.96,347486,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002758/dp225601_4-cox.xml
+2025-02-26,META,META,659.6966,Cox Christopher K,1607459,,Sale,3640,2401295.62,343846,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002758/dp225601_4-cox.xml
+2025-02-26,META,META,660.4712,Cox Christopher K,1607459,,Sale,478,315705.23,343368,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002758/dp225601_4-cox.xml
+2025-02-26,META,META,661.8014,Cox Christopher K,1607459,,Sale,474,313693.86,342894,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002758/dp225601_4-cox.xml
+2025-02-26,META,META,662.9283,Cox Christopher K,1607459,,Sale,691,458083.46,342203,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002758/dp225601_4-cox.xml
+2025-02-26,META,META,663.938,Cox Christopher K,1607459,,Sale,2693,1787985.03,339510,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002758/dp225601_4-cox.xml
+2025-02-26,META,META,664.9256,Cox Christopher K,1607459,,Sale,3421,2274710.48,336089,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002758/dp225601_4-cox.xml
+2025-02-26,META,META,665.8164,Cox Christopher K,1607459,,Sale,1409,938135.31,334680,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002758/dp225601_4-cox.xml
+2025-02-26,META,META,666.9412,Cox Christopher K,1607459,,Sale,306,204084.01,334374,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002758/dp225601_4-cox.xml
+2025-02-26,META,META,668.2327,Cox Christopher K,1607459,,Sale,2280,1523570.56,332094,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002758/dp225601_4-cox.xml
+2025-02-26,META,META,669.466,Cox Christopher K,1607459,,Sale,500,334733.0,331594,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002758/dp225601_4-cox.xml
+2025-02-26,META,META,670.6062,Cox Christopher K,1607459,,Sale,2100,1408273.02,329494,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002758/dp225601_4-cox.xml
+2025-02-26,META,META,671.6027,Cox Christopher K,1607459,,Sale,808,542654.98,328686,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002758/dp225601_4-cox.xml
+2025-02-25,META,META,665.75,Newstead Jennifer,1780525,,Sale,921,613155.75,34866,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002644/dp225385_4-newstead.xml
+2025-02-24,META,META,686.28,Olivan Javier,1564475,,Sale,608,417258.24,9270,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002502/dp225363_4-olivan.xml
+2025-02-21,META,META,700.4656,Zuckerberg Mark,1548760,,Sale,2120,1484987.07,1403,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002363/dp225257_4-zuckerberg0221.xml
+2025-02-21,META,META,701.42,Zuckerberg Mark,1548760,,Sale,790,554121.8,613,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002363/dp225257_4-zuckerberg0221.xml
+2025-02-21,META,META,702.6593,Zuckerberg Mark,1548760,,Sale,493,346411.03,120,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002363/dp225257_4-zuckerberg0221.xml
+2025-02-21,META,META,703.775,Zuckerberg Mark,1548760,,Sale,120,84453.0,0,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002363/dp225257_4-zuckerberg0221.xml
+2025-02-20,META,META,700.4072,Zuckerberg Mark,1548760,,Sale,1500,1050610.8,2063,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002362/dp225255_4-zuckerberg0220.xml
+2025-02-20,META,META,701.9429,Zuckerberg Mark,1548760,,Sale,843,591737.86,1220,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002362/dp225255_4-zuckerberg0220.xml
+2025-02-20,META,META,702.9673,Zuckerberg Mark,1548760,,Sale,677,475908.86,543,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002362/dp225255_4-zuckerberg0220.xml
+2025-02-20,META,META,703.8788,Zuckerberg Mark,1548760,,Sale,400,281551.52,143,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002362/dp225255_4-zuckerberg0220.xml
+2025-02-20,META,META,705.3528,Zuckerberg Mark,1548760,,Sale,143,100865.45,0,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002362/dp225255_4-zuckerberg0220.xml
+2025-02-19,META,META,700.5481,Zuckerberg Mark,1548760,,Sale,1124,787416.06,18544,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002202/dp225111_4-zuckerberg.xml
+2025-02-19,META,META,701.5243,Zuckerberg Mark,1548760,,Sale,2139,1500560.48,16405,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002202/dp225111_4-zuckerberg.xml
+2025-02-19,META,META,702.5037,Zuckerberg Mark,1548760,,Sale,6248,4389243.12,10157,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002202/dp225111_4-zuckerberg.xml
+2025-02-19,META,META,703.6653,Zuckerberg Mark,1548760,,Sale,4183,2943431.95,5974,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002202/dp225111_4-zuckerberg.xml
+2025-02-19,META,META,704.537,Zuckerberg Mark,1548760,,Sale,4582,3228188.53,1392,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002202/dp225111_4-zuckerberg.xml
+2025-02-19,META,META,705.3784,Zuckerberg Mark,1548760,,Sale,1292,911348.89,100,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002202/dp225111_4-zuckerberg.xml
+2025-02-19,META,META,706.28,Zuckerberg Mark,1548760,,Sale,100,70628.0,0,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002202/dp225111_4-zuckerberg.xml
+2025-02-18,META,META,707.2662,Zuckerberg Mark,1548760,,Sale,569,402434.47,19099,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002201/dp225093_4-zuckerberg0218.xml
+2025-02-18,META,META,708.157,Zuckerberg Mark,1548760,,Sale,2191,1551571.99,16908,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002201/dp225093_4-zuckerberg0218.xml
+2025-02-18,META,META,709.1169,Zuckerberg Mark,1548760,,Sale,1562,1107640.6,15346,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002201/dp225093_4-zuckerberg0218.xml
+2025-02-18,META,META,710.1818,Zuckerberg Mark,1548760,,Sale,728,517012.35,14618,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002201/dp225093_4-zuckerberg0218.xml
+2025-02-18,META,META,711.2543,Zuckerberg Mark,1548760,,Sale,614,436710.14,14004,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002201/dp225093_4-zuckerberg0218.xml
+2025-02-18,META,META,712.5322,Zuckerberg Mark,1548760,,Sale,611,435357.17,13393,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002201/dp225093_4-zuckerberg0218.xml
+2025-02-18,META,META,713.597,Zuckerberg Mark,1548760,,Sale,299,213365.5,13094,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002201/dp225093_4-zuckerberg0218.xml
+2025-02-18,META,META,714.8953,Zuckerberg Mark,1548760,,Sale,490,350298.7,12604,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002201/dp225093_4-zuckerberg0218.xml
+2025-02-18,META,META,716.0533,Zuckerberg Mark,1548760,,Sale,2202,1576749.37,10402,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002201/dp225093_4-zuckerberg0218.xml
+2025-02-18,META,META,717.2222,Zuckerberg Mark,1548760,,Sale,2074,1487518.84,8328,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002201/dp225093_4-zuckerberg0218.xml
+2025-02-18,META,META,718.1319,Zuckerberg Mark,1548760,,Sale,1942,1394612.15,6386,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002201/dp225093_4-zuckerberg0218.xml
+2025-02-18,META,META,719.0095,Zuckerberg Mark,1548760,,Sale,780,560827.41,5606,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002201/dp225093_4-zuckerberg0218.xml
+2025-02-18,META,META,720.1317,Zuckerberg Mark,1548760,,Sale,1404,1011064.91,4202,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002201/dp225093_4-zuckerberg0218.xml
+2025-02-18,META,META,721.5872,Zuckerberg Mark,1548760,,Sale,522,376668.52,3680,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002201/dp225093_4-zuckerberg0218.xml
+2025-02-18,META,META,723.0668,Zuckerberg Mark,1548760,,Sale,407,294288.19,3273,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002201/dp225093_4-zuckerberg0218.xml
+2025-02-18,META,META,723.9093,Zuckerberg Mark,1548760,,Sale,680,492258.32,2593,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002201/dp225093_4-zuckerberg0218.xml
+2025-02-18,META,META,725.1156,Zuckerberg Mark,1548760,,Sale,461,334278.29,2132,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002201/dp225093_4-zuckerberg0218.xml
+2025-02-18,META,META,726.3898,Zuckerberg Mark,1548760,,Sale,290,210653.04,1842,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002201/dp225093_4-zuckerberg0218.xml
+2025-02-18,META,META,727.4525,Zuckerberg Mark,1548760,,Sale,294,213871.04,1548,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002201/dp225093_4-zuckerberg0218.xml
+2025-02-18,META,META,728.3278,Zuckerberg Mark,1548760,,Sale,256,186451.92,1292,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002201/dp225093_4-zuckerberg0218.xml
+2025-02-18,META,META,729.5928,Zuckerberg Mark,1548760,,Sale,119,86821.54,1173,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002201/dp225093_4-zuckerberg0218.xml
+2025-02-18,META,META,730.9757,Zuckerberg Mark,1548760,,Sale,108,78945.38,1065,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002201/dp225093_4-zuckerberg0218.xml
+2025-02-18,META,META,732.6025,Zuckerberg Mark,1548760,,Sale,200,146520.5,865,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002201/dp225093_4-zuckerberg0218.xml
+2025-02-18,META,META,734.2733,Zuckerberg Mark,1548760,,Sale,356,261401.29,509,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002201/dp225093_4-zuckerberg0218.xml
+2025-02-18,META,META,735.0911,Zuckerberg Mark,1548760,,Sale,297,218322.06,212,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002201/dp225093_4-zuckerberg0218.xml
+2025-02-18,META,META,736.6139,Zuckerberg Mark,1548760,,Sale,212,156162.15,0,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002201/dp225093_4-zuckerberg0218.xml
+2025-02-15,META,META,736.67,Olivan Javier,1564475,,Sale,4706,3466769.02,20935,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002195/dp225020_4-olivan.xml
+2025-02-15,META,META,736.67,Olivan Javier,1564475,,Tax Withholding (RSU Vesting),4470,3292914.9,25935,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002195/dp225020_4-olivan.xml
+2025-02-18,META,META,736.07,Olivan Javier,1564475,,Sale,608,447530.56,9878,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002195/dp225020_4-olivan.xml
+2025-02-15,META,META,736.67,Newstead Jennifer,1780525,,Tax Withholding (RSU Vesting),8672,6388402.24,36708,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002194/dp225056_4-newstead.xml
+2025-02-18,META,META,736.07,Newstead Jennifer,1780525,,Sale,921,677920.47,35787,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002194/dp225056_4-newstead.xml
+2025-02-15,META,META,736.67,Cox Christopher K,1607459,,Tax Withholding (RSU Vesting),9549,7034461.83,348686,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002193/dp225017_4-cox.xml
+2025-02-15,META,META,736.67,LI SUSAN J,1739092,,Sale,4548,3350375.16,51793,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002192/dp225018_4-li.xml
+2025-02-15,META,META,736.67,LI SUSAN J,1739092,,Tax Withholding (RSU Vesting),4696,3459402.32,56567,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002192/dp225018_4-li.xml
+2025-02-15,META,META,736.67,LI SUSAN J,1739092,,Sale,4005,2950363.35,61038,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002192/dp225018_4-li.xml
+2025-02-15,META,META,736.67,LI SUSAN J,1739092,,Tax Withholding (RSU Vesting),4696,3459402.32,65812,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002192/dp225018_4-li.xml
+2025-02-15,META,META,736.67,Bosworth Andrew,1917373,,Sale,5060,3727550.2,5139,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002191/dp225021_4-bosworth.xml
+2025-02-15,META,META,736.67,Bosworth Andrew,1917373,,Tax Withholding (RSU Vesting),6080,4478953.6,11321,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002191/dp225021_4-bosworth.xml
+2025-02-15,META,META,736.67,Anderson Aaron,1645073,,Tax Withholding (RSU Vesting),892,657109.64,4304,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002189/dp225019_4-anderson.xml
+2025-02-14,META,META,726.6768,Zuckerberg Mark,1548760,,Sale,190,138068.59,19478,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002122/dp225013_4-zuckerberg0214.xml
+2025-02-14,META,META,727.8686,Zuckerberg Mark,1548760,,Sale,770,560458.82,18708,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002122/dp225013_4-zuckerberg0214.xml
+2025-02-14,META,META,729.0104,Zuckerberg Mark,1548760,,Sale,1854,1351585.28,16854,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002122/dp225013_4-zuckerberg0214.xml
+2025-02-14,META,META,730.2069,Zuckerberg Mark,1548760,,Sale,1665,1215794.49,15189,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002122/dp225013_4-zuckerberg0214.xml
+2025-02-14,META,META,731.0162,Zuckerberg Mark,1548760,,Sale,1775,1297553.76,13414,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002122/dp225013_4-zuckerberg0214.xml
+2025-02-14,META,META,732.0021,Zuckerberg Mark,1548760,,Sale,970,710042.04,12444,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002122/dp225013_4-zuckerberg0214.xml
+2025-02-14,META,META,733.3187,Zuckerberg Mark,1548760,,Sale,613,449524.36,11831,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002122/dp225013_4-zuckerberg0214.xml
+2025-02-14,META,META,734.7063,Zuckerberg Mark,1548760,,Sale,1825,1340839.0,10006,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002122/dp225013_4-zuckerberg0214.xml
+2025-02-14,META,META,735.6316,Zuckerberg Mark,1548760,,Sale,1430,1051953.19,8576,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002122/dp225013_4-zuckerberg0214.xml
+2025-02-14,META,META,736.6317,Zuckerberg Mark,1548760,,Sale,2311,1702355.86,6265,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002122/dp225013_4-zuckerberg0214.xml
+2025-02-14,META,META,737.6214,Zuckerberg Mark,1548760,,Sale,1993,1470079.45,4272,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002122/dp225013_4-zuckerberg0214.xml
+2025-02-14,META,META,738.7666,Zuckerberg Mark,1548760,,Sale,2753,2033824.45,1519,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002122/dp225013_4-zuckerberg0214.xml
+2025-02-14,META,META,739.8483,Zuckerberg Mark,1548760,,Sale,1417,1048365.04,102,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002122/dp225013_4-zuckerberg0214.xml
+2025-02-14,META,META,740.7104,Zuckerberg Mark,1548760,,Sale,102,75552.46,0,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002122/dp225013_4-zuckerberg0214.xml
+2025-02-13,META,META,718.8472,Zuckerberg Mark,1548760,,Sale,1014,728911.06,18654,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002121/dp225012_4-zuckerberg0213.xml
+2025-02-13,META,META,719.9702,Zuckerberg Mark,1548760,,Sale,870,626374.07,17784,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002121/dp225012_4-zuckerberg0213.xml
+2025-02-13,META,META,720.994,Zuckerberg Mark,1548760,,Sale,2035,1467222.79,15749,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002121/dp225012_4-zuckerberg0213.xml
+2025-02-13,META,META,721.948,Zuckerberg Mark,1548760,,Sale,2119,1529807.81,13630,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002121/dp225012_4-zuckerberg0213.xml
+2025-02-13,META,META,723.0294,Zuckerberg Mark,1548760,,Sale,3327,2405518.81,10303,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002121/dp225012_4-zuckerberg0213.xml
+2025-02-13,META,META,723.9247,Zuckerberg Mark,1548760,,Sale,2958,2141369.26,7345,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002121/dp225012_4-zuckerberg0213.xml
+2025-02-13,META,META,725.0749,Zuckerberg Mark,1548760,,Sale,2667,1933774.76,4678,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002121/dp225012_4-zuckerberg0213.xml
+2025-02-13,META,META,725.9622,Zuckerberg Mark,1548760,,Sale,1213,880592.15,3465,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002121/dp225012_4-zuckerberg0213.xml
+2025-02-13,META,META,727.0729,Zuckerberg Mark,1548760,,Sale,1525,1108786.17,1940,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002121/dp225012_4-zuckerberg0213.xml
+2025-02-13,META,META,728.1007,Zuckerberg Mark,1548760,,Sale,1474,1073220.43,466,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002121/dp225012_4-zuckerberg0213.xml
+2025-02-13,META,META,728.8085,Zuckerberg Mark,1548760,,Sale,466,339624.76,0,https://www.sec.gov/Archives/edgar/data/1326801/000095010325002121/dp225012_4-zuckerberg0213.xml
+2025-02-11,META,META,713.32,Newstead Jennifer,1780525,,Sale,902,643414.64,27488,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001998/dp224823_4-newstead.xml
+2025-02-12,META,META,714.15,Zuckerberg Mark,1548760,,Sale,200,142830.0,19468,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001935/dp224874_4-zuckerberg0212.xml
+2025-02-12,META,META,715.1588,Zuckerberg Mark,1548760,,Sale,400,286063.52,19068,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001935/dp224874_4-zuckerberg0212.xml
+2025-02-12,META,META,716.3138,Zuckerberg Mark,1548760,,Sale,1281,917597.98,17787,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001935/dp224874_4-zuckerberg0212.xml
+2025-02-12,META,META,717.2085,Zuckerberg Mark,1548760,,Sale,705,505631.99,17082,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001935/dp224874_4-zuckerberg0212.xml
+2025-02-12,META,META,718.2781,Zuckerberg Mark,1548760,,Sale,2158,1550044.14,14924,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001935/dp224874_4-zuckerberg0212.xml
+2025-02-12,META,META,719.3255,Zuckerberg Mark,1548760,,Sale,2008,1444405.6,12916,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001935/dp224874_4-zuckerberg0212.xml
+2025-02-12,META,META,720.4214,Zuckerberg Mark,1548760,,Sale,1634,1177168.57,11282,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001935/dp224874_4-zuckerberg0212.xml
+2025-02-12,META,META,721.5466,Zuckerberg Mark,1548760,,Sale,1262,910591.81,10020,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001935/dp224874_4-zuckerberg0212.xml
+2025-02-12,META,META,722.8897,Zuckerberg Mark,1548760,,Sale,1685,1218069.14,8335,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001935/dp224874_4-zuckerberg0212.xml
+2025-02-12,META,META,724.0587,Zuckerberg Mark,1548760,,Sale,2780,2012883.19,5555,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001935/dp224874_4-zuckerberg0212.xml
+2025-02-12,META,META,725.0124,Zuckerberg Mark,1548760,,Sale,4161,3016776.6,1394,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001935/dp224874_4-zuckerberg0212.xml
+2025-02-12,META,META,725.8338,Zuckerberg Mark,1548760,,Sale,1094,794062.18,300,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001935/dp224874_4-zuckerberg0212.xml
+2025-02-12,META,META,726.7,Zuckerberg Mark,1548760,,Sale,300,218010.0,0,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001935/dp224874_4-zuckerberg0212.xml
+2025-02-11,META,META,710.21,Zuckerberg Mark,1548760,,Sale,100,71021.0,19568,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001934/dp224835_4-zuckerberg0211.xml
+2025-02-11,META,META,712.3459,Zuckerberg Mark,1548760,,Sale,1287,916789.17,18281,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001934/dp224835_4-zuckerberg0211.xml
+2025-02-11,META,META,713.488,Zuckerberg Mark,1548760,,Sale,1327,946798.58,16954,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001934/dp224835_4-zuckerberg0211.xml
+2025-02-11,META,META,714.5301,Zuckerberg Mark,1548760,,Sale,2796,1997826.16,14158,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001934/dp224835_4-zuckerberg0211.xml
+2025-02-11,META,META,715.5964,Zuckerberg Mark,1548760,,Sale,1751,1253009.3,12407,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001934/dp224835_4-zuckerberg0211.xml
+2025-02-11,META,META,716.5988,Zuckerberg Mark,1548760,,Sale,2537,1818011.16,9870,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001934/dp224835_4-zuckerberg0211.xml
+2025-02-11,META,META,717.6476,Zuckerberg Mark,1548760,,Sale,2630,1887413.19,7240,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001934/dp224835_4-zuckerberg0211.xml
+2025-02-11,META,META,718.5948,Zuckerberg Mark,1548760,,Sale,690,495830.41,6550,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001934/dp224835_4-zuckerberg0211.xml
+2025-02-11,META,META,719.767,Zuckerberg Mark,1548760,,Sale,1144,823413.45,5406,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001934/dp224835_4-zuckerberg0211.xml
+2025-02-11,META,META,720.8125,Zuckerberg Mark,1548760,,Sale,2306,1662193.62,3100,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001934/dp224835_4-zuckerberg0211.xml
+2025-02-11,META,META,721.8275,Zuckerberg Mark,1548760,,Sale,1155,833710.76,1945,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001934/dp224835_4-zuckerberg0211.xml
+2025-02-11,META,META,722.7477,Zuckerberg Mark,1548760,,Sale,1855,1340696.98,90,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001934/dp224835_4-zuckerberg0211.xml
+2025-02-11,META,META,723.54,Zuckerberg Mark,1548760,,Sale,90,65118.6,0,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001934/dp224835_4-zuckerberg0211.xml
+2025-02-10,META,META,712.2012,Zuckerberg Mark,1548760,,Sale,586,417349.9,30113,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001933/dp224834_4-zuckerberg0210.xml
+2025-02-10,META,META,713.2125,Zuckerberg Mark,1548760,,Sale,1382,985659.67,28731,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001933/dp224834_4-zuckerberg0210.xml
+2025-02-10,META,META,714.3081,Zuckerberg Mark,1548760,,Sale,6640,4743005.78,22091,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001933/dp224834_4-zuckerberg0210.xml
+2025-02-10,META,META,715.1348,Zuckerberg Mark,1548760,,Sale,7419,5305585.08,14672,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001933/dp224834_4-zuckerberg0210.xml
+2025-02-10,META,META,716.1417,Zuckerberg Mark,1548760,,Sale,5185,3713194.71,9487,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001933/dp224834_4-zuckerberg0210.xml
+2025-02-10,META,META,717.1652,Zuckerberg Mark,1548760,,Sale,5368,3849742.79,4119,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001933/dp224834_4-zuckerberg0210.xml
+2025-02-10,META,META,718.2201,Zuckerberg Mark,1548760,,Sale,2809,2017480.26,1310,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001933/dp224834_4-zuckerberg0210.xml
+2025-02-10,META,META,719.2433,Zuckerberg Mark,1548760,,Sale,1075,773186.55,235,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001933/dp224834_4-zuckerberg0210.xml
+2025-02-10,META,META,720.6479,Zuckerberg Mark,1548760,,Sale,235,169352.26,0,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001933/dp224834_4-zuckerberg0210.xml
+2025-02-10,META,META,713.045,Zuckerberg Mark,1548760,,Sale,192,136904.64,145904,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001933/dp224834_4-zuckerberg0210.xml
+2025-02-10,META,META,714.2541,Zuckerberg Mark,1548760,,Sale,1199,856390.67,144705,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001933/dp224834_4-zuckerberg0210.xml
+2025-02-10,META,META,715.1752,Zuckerberg Mark,1548760,,Sale,1461,1044870.97,143244,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001933/dp224834_4-zuckerberg0210.xml
+2025-02-10,META,META,716.5189,Zuckerberg Mark,1548760,,Sale,727,520909.24,142517,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001933/dp224834_4-zuckerberg0210.xml
+2025-02-10,META,META,717.4789,Zuckerberg Mark,1548760,,Sale,970,695954.53,141547,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001933/dp224834_4-zuckerberg0210.xml
+2025-02-10,META,META,718.7204,Zuckerberg Mark,1548760,,Sale,472,339236.03,141075,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001933/dp224834_4-zuckerberg0210.xml
+2025-02-10,META,META,720.38,Zuckerberg Mark,1548760,,Sale,75,54028.5,141000,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001933/dp224834_4-zuckerberg0210.xml
+2025-02-07,META,META,713.0223,Zuckerberg Mark,1548760,,Sale,1180,841366.31,41434,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001836/dp224749_4-zuckerberg0207.xml
+2025-02-07,META,META,714.466,Zuckerberg Mark,1548760,,Sale,3693,2638522.94,37741,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001836/dp224749_4-zuckerberg0207.xml
+2025-02-07,META,META,715.4152,Zuckerberg Mark,1548760,,Sale,9300,6653361.36,28441,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001836/dp224749_4-zuckerberg0207.xml
+2025-02-07,META,META,716.245,Zuckerberg Mark,1548760,,Sale,8105,5805165.72,20336,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001836/dp224749_4-zuckerberg0207.xml
+2025-02-07,META,META,717.3396,Zuckerberg Mark,1548760,,Sale,5451,3910218.16,14885,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001836/dp224749_4-zuckerberg0207.xml
+2025-02-07,META,META,718.3871,Zuckerberg Mark,1548760,,Sale,2413,1733468.07,12472,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001836/dp224749_4-zuckerberg0207.xml
+2025-02-07,META,META,719.3602,Zuckerberg Mark,1548760,,Sale,807,580523.68,11665,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001836/dp224749_4-zuckerberg0207.xml
+2025-02-07,META,META,720.4534,Zuckerberg Mark,1548760,,Sale,2447,1762949.47,9218,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001836/dp224749_4-zuckerberg0207.xml
+2025-02-07,META,META,721.4864,Zuckerberg Mark,1548760,,Sale,3133,2260416.89,6085,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001836/dp224749_4-zuckerberg0207.xml
+2025-02-07,META,META,722.373,Zuckerberg Mark,1548760,,Sale,3326,2402612.6,2759,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001836/dp224749_4-zuckerberg0207.xml
+2025-02-07,META,META,723.4095,Zuckerberg Mark,1548760,,Sale,2159,1561841.11,600,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001836/dp224749_4-zuckerberg0207.xml
+2025-02-07,META,META,724.2633,Zuckerberg Mark,1548760,,Sale,600,434557.98,0,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001836/dp224749_4-zuckerberg0207.xml
+2025-02-07,META,META,712.3624,Zuckerberg Mark,1548760,,Sale,196,139623.03,158875,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001836/dp224749_4-zuckerberg0207.xml
+2025-02-07,META,META,713.6477,Zuckerberg Mark,1548760,,Sale,397,283318.14,158478,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001836/dp224749_4-zuckerberg0207.xml
+2025-02-07,META,META,714.8156,Zuckerberg Mark,1548760,,Sale,1708,1220905.04,156770,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001836/dp224749_4-zuckerberg0207.xml
+2025-02-07,META,META,715.8415,Zuckerberg Mark,1548760,,Sale,3568,2554122.47,153202,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001836/dp224749_4-zuckerberg0207.xml
+2025-02-07,META,META,716.8448,Zuckerberg Mark,1548760,,Sale,1981,1420069.55,151221,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001836/dp224749_4-zuckerberg0207.xml
+2025-02-07,META,META,717.8867,Zuckerberg Mark,1548760,,Sale,971,697067.99,150250,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001836/dp224749_4-zuckerberg0207.xml
+2025-02-07,META,META,719.0378,Zuckerberg Mark,1548760,,Sale,722,519145.29,149528,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001836/dp224749_4-zuckerberg0207.xml
+2025-02-07,META,META,720.0024,Zuckerberg Mark,1548760,,Sale,485,349201.16,149043,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001836/dp224749_4-zuckerberg0207.xml
+2025-02-07,META,META,721.2609,Zuckerberg Mark,1548760,,Sale,1216,877053.25,147827,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001836/dp224749_4-zuckerberg0207.xml
+2025-02-07,META,META,722.1388,Zuckerberg Mark,1548760,,Sale,683,493220.8,147144,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001836/dp224749_4-zuckerberg0207.xml
+2025-02-07,META,META,723.376,Zuckerberg Mark,1548760,,Sale,784,567126.78,146360,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001836/dp224749_4-zuckerberg0207.xml
+2025-02-07,META,META,724.2785,Zuckerberg Mark,1548760,,Sale,264,191209.52,146096,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001836/dp224749_4-zuckerberg0207.xml
+2025-02-06,META,META,704.9065,Zuckerberg Mark,1548760,,Sale,1395,983344.57,41219,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001835/dp224748_4-zuckerberg0206.xml
+2025-02-06,META,META,705.8658,Zuckerberg Mark,1548760,,Sale,3299,2328651.27,37920,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001835/dp224748_4-zuckerberg0206.xml
+2025-02-06,META,META,706.989,Zuckerberg Mark,1548760,,Sale,2523,1783733.25,35397,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001835/dp224748_4-zuckerberg0206.xml
+2025-02-06,META,META,707.7555,Zuckerberg Mark,1548760,,Sale,1870,1323502.78,33527,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001835/dp224748_4-zuckerberg0206.xml
+2025-02-06,META,META,708.9714,Zuckerberg Mark,1548760,,Sale,5136,3641277.11,28391,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001835/dp224748_4-zuckerberg0206.xml
+2025-02-06,META,META,709.8566,Zuckerberg Mark,1548760,,Sale,2911,2066392.56,25480,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001835/dp224748_4-zuckerberg0206.xml
+2025-02-06,META,META,710.9536,Zuckerberg Mark,1548760,,Sale,3508,2494025.23,21972,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001835/dp224748_4-zuckerberg0206.xml
+2025-02-06,META,META,711.9219,Zuckerberg Mark,1548760,,Sale,6295,4481548.36,15677,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001835/dp224748_4-zuckerberg0206.xml
+2025-02-06,META,META,713.0344,Zuckerberg Mark,1548760,,Sale,3150,2246058.36,12527,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001835/dp224748_4-zuckerberg0206.xml
+2025-02-06,META,META,714.2379,Zuckerberg Mark,1548760,,Sale,2817,2012008.16,9710,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001835/dp224748_4-zuckerberg0206.xml
+2025-02-06,META,META,715.1734,Zuckerberg Mark,1548760,,Sale,4346,3108143.6,5364,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001835/dp224748_4-zuckerberg0206.xml
+2025-02-06,META,META,716.0623,Zuckerberg Mark,1548760,,Sale,2874,2057963.05,2490,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001835/dp224748_4-zuckerberg0206.xml
+2025-02-06,META,META,717.2546,Zuckerberg Mark,1548760,,Sale,2300,1649685.58,190,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001835/dp224748_4-zuckerberg0206.xml
+2025-02-06,META,META,718.5521,Zuckerberg Mark,1548760,,Sale,190,136524.9,0,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001835/dp224748_4-zuckerberg0206.xml
+2025-02-06,META,META,704.9768,Zuckerberg Mark,1548760,,Sale,789,556226.7,171257,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001835/dp224748_4-zuckerberg0206.xml
+2025-02-06,META,META,706.0864,Zuckerberg Mark,1548760,,Sale,937,661602.96,170320,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001835/dp224748_4-zuckerberg0206.xml
+2025-02-06,META,META,707.307,Zuckerberg Mark,1548760,,Sale,871,616064.4,169449,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001835/dp224748_4-zuckerberg0206.xml
+2025-02-06,META,META,708.7908,Zuckerberg Mark,1548760,,Sale,1426,1010735.68,168023,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001835/dp224748_4-zuckerberg0206.xml
+2025-02-06,META,META,709.5865,Zuckerberg Mark,1548760,,Sale,935,663463.38,167088,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001835/dp224748_4-zuckerberg0206.xml
+2025-02-06,META,META,710.6923,Zuckerberg Mark,1548760,,Sale,1290,916793.07,165798,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001835/dp224748_4-zuckerberg0206.xml
+2025-02-06,META,META,711.7984,Zuckerberg Mark,1548760,,Sale,1583,1126776.87,164215,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001835/dp224748_4-zuckerberg0206.xml
+2025-02-06,META,META,712.7938,Zuckerberg Mark,1548760,,Sale,1392,992208.97,162823,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001835/dp224748_4-zuckerberg0206.xml
+2025-02-06,META,META,713.9005,Zuckerberg Mark,1548760,,Sale,406,289843.6,162417,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001835/dp224748_4-zuckerberg0206.xml
+2025-02-06,META,META,715.0097,Zuckerberg Mark,1548760,,Sale,1589,1136150.41,160828,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001835/dp224748_4-zuckerberg0206.xml
+2025-02-06,META,META,716.068,Zuckerberg Mark,1548760,,Sale,970,694585.96,159858,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001835/dp224748_4-zuckerberg0206.xml
+2025-02-06,META,META,717.1551,Zuckerberg Mark,1548760,,Sale,685,491251.24,159173,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001835/dp224748_4-zuckerberg0206.xml
+2025-02-06,META,META,718.25,Zuckerberg Mark,1548760,,Sale,102,73261.5,159071,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001835/dp224748_4-zuckerberg0206.xml
+2025-02-04,META,META,702.24,Newstead Jennifer,1780525,,Sale,905,635527.2,28390,https://www.sec.gov/Archives/edgar/data/1326801/000095010325001720/dp224544_4-newstead.xml

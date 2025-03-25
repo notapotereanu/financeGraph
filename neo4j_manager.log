@@ -1206,3 +1206,174 @@
 2025-03-25 01:17:04,083 - Neo4jManager - INFO - Completed saving all data for IOT in 1.33 seconds
 2025-03-25 01:17:04,084 - Neo4jManager - INFO - Closing Neo4j connection
 2025-03-25 01:17:04,084 - Neo4jManager - INFO - Neo4j connection closed successfully
+2025-03-25 10:21:53,914 - Neo4jManager - INFO - Initializing Neo4jManager with URI: bolt://localhost:7687, database: neo4j
+2025-03-25 10:21:55,982 - Neo4jManager - INFO - Successfully connected to Neo4j database
+2025-03-25 10:22:01,479 - Neo4jManager - INFO - Starting to save data for ticker: AAPL
+2025-03-25 10:22:01,480 - Neo4jManager - INFO - Creating main Stock node for AAPL
+2025-03-25 10:22:01,758 - Neo4jManager - INFO - Main Stock node created/updated for AAPL
+2025-03-25 10:22:01,759 - Neo4jManager - INFO - Saving stock price data to CSV for AAPL
+2025-03-25 10:22:01,761 - Neo4jManager - INFO - Saved 123 price records to data/AAPL/stock_prices.csv
+2025-03-25 10:22:01,762 - Neo4jManager - INFO - Processing Insider Holdings for AAPL
+2025-03-25 10:22:01,762 - Neo4jManager - INFO - Saving insider holdings for AAPL
+2025-03-25 10:22:01,762 - Neo4jManager - INFO - Creating InsiderTraders node for AAPL
+2025-03-25 10:22:01,918 - Neo4jManager - INFO - InsiderTraders node created: Insider Trading - AAPL
+2025-03-25 10:22:01,919 - Neo4jManager - INFO - Processing 13 insider records
+2025-03-25 10:22:01,919 - Neo4jManager - INFO - Processing insider: Adams Katherine L with 97 holdings records
+2025-03-25 10:22:02,068 - Neo4jManager - INFO - Processing 2 securities held by Adams Katherine L
+2025-03-25 10:22:02,218 - Neo4jManager - INFO - Processing insider: Austin Wanda M with 27 holdings records
+2025-03-25 10:22:02,233 - Neo4jManager - INFO - Processing 4 securities held by Austin Wanda M
+2025-03-25 10:22:02,270 - Neo4jManager - INFO - Processing insider: COOK TIMOTHY D with 102 holdings records
+2025-03-25 10:22:02,283 - Neo4jManager - INFO - Processing 2 securities held by COOK TIMOTHY D
+2025-03-25 10:22:02,296 - Neo4jManager - INFO - Processing insider: Gorsky Alex with 25 holdings records
+2025-03-25 10:22:02,307 - Neo4jManager - INFO - Processing 3 securities held by Gorsky Alex
+2025-03-25 10:22:02,329 - Neo4jManager - INFO - Processing insider: JUNG ANDREA with 22 holdings records
+2025-03-25 10:22:02,340 - Neo4jManager - INFO - Processing 2 securities held by JUNG ANDREA
+2025-03-25 10:22:02,496 - Neo4jManager - INFO - Processing insider: KONDO CHRIS with 57 holdings records
+2025-03-25 10:22:02,513 - Neo4jManager - INFO - Processing 1 securities held by KONDO CHRIS
+2025-03-25 10:22:02,514 - Neo4jManager - INFO - Processing insider: LEVINSON ARTHUR D with 56 holdings records
+2025-03-25 10:22:02,530 - Neo4jManager - INFO - Processing 1 securities held by LEVINSON ARTHUR D
+2025-03-25 10:22:02,531 - Neo4jManager - INFO - Processing insider: LOZANO MONICA C with 25 holdings records
+2025-03-25 10:22:02,548 - Neo4jManager - INFO - Processing 4 securities held by LOZANO MONICA C
+2025-03-25 10:22:02,598 - Neo4jManager - INFO - Processing insider: Maestri Luca with 83 holdings records
+2025-03-25 10:22:02,612 - Neo4jManager - INFO - Processing 1 securities held by Maestri Luca
+2025-03-25 10:22:02,613 - Neo4jManager - INFO - Processing insider: O'BRIEN DEIRDRE with 65 holdings records
+2025-03-25 10:22:02,624 - Neo4jManager - INFO - Processing 1 securities held by O'BRIEN DEIRDRE
+2025-03-25 10:22:02,626 - Neo4jManager - INFO - Processing insider: SUGAR RONALD D with 44 holdings records
+2025-03-25 10:22:02,688 - Neo4jManager - INFO - Processing 4 securities held by SUGAR RONALD D
+2025-03-25 10:22:02,972 - Neo4jManager - INFO - Processing insider: WAGNER SUSAN with 31 holdings records
+2025-03-25 10:22:02,994 - Neo4jManager - INFO - Processing 3 securities held by WAGNER SUSAN
+2025-03-25 10:22:03,035 - Neo4jManager - INFO - Processing insider: WILLIAMS JEFFREY E with 91 holdings records
+2025-03-25 10:22:03,053 - Neo4jManager - INFO - Processing 1 securities held by WILLIAMS JEFFREY E
+2025-03-25 10:22:03,054 - Neo4jManager - INFO - Successfully completed saving insider holdings for AAPL
+2025-03-25 10:22:03,054 - Neo4jManager - INFO - Completed saving Insider Holdings for AAPL
+2025-03-25 10:22:03,055 - Neo4jManager - INFO - Completed Insider Holdings in 1.29 seconds
+2025-03-25 10:22:03,060 - Neo4jManager - INFO - Processing SEC Transactions for AAPL
+2025-03-25 10:22:03,061 - Neo4jManager - INFO - Saving SEC transactions for AAPL
+2025-03-25 10:22:03,062 - Neo4jManager - INFO - Processing 54 SEC transactions
+2025-03-25 10:22:03,946 - Neo4jManager - INFO - Completed saving SEC transactions: 54 created, 0 skipped
+2025-03-25 10:22:03,947 - Neo4jManager - INFO - Completed saving SEC Transactions for AAPL
+2025-03-25 10:22:03,947 - Neo4jManager - INFO - Completed SEC Transactions in 0.89 seconds
+2025-03-25 10:22:03,947 - Neo4jManager - INFO - Processing Company Officers for AAPL
+2025-03-25 10:22:04,578 - Neo4jManager - INFO - Completed saving Company Officers for AAPL
+2025-03-25 10:22:04,579 - Neo4jManager - INFO - Completed Company Officers in 0.63 seconds
+2025-03-25 10:22:04,579 - Neo4jManager - INFO - Processing Institutional Holders for AAPL
+2025-03-25 10:22:04,579 - Neo4jManager - INFO - Saving institutional holders for AAPL
+2025-03-25 10:22:04,580 - Neo4jManager - INFO - Creating InstitutionalHolders node for AAPL
+2025-03-25 10:22:04,659 - Neo4jManager - INFO - InstitutionalHolders node created: Institutional Holders - AAPL
+2025-03-25 10:22:04,712 - Neo4jManager - INFO - Processing 10 institutional holders
+2025-03-25 10:22:05,094 - Neo4jManager - INFO - Completed saving institutional holders: 10 created, 0 skipped
+2025-03-25 10:22:05,094 - Neo4jManager - INFO - Completed saving Institutional Holders for AAPL
+2025-03-25 10:22:05,094 - Neo4jManager - INFO - Completed Institutional Holders in 0.52 seconds
+2025-03-25 10:22:05,094 - Neo4jManager - INFO - Processing Competitors for AAPL
+2025-03-25 10:22:05,519 - Neo4jManager - INFO - Completed saving Competitors for AAPL
+2025-03-25 10:22:05,519 - Neo4jManager - INFO - Completed Competitors in 0.42 seconds
+2025-03-25 10:22:05,519 - Neo4jManager - INFO - Processing Analyst Ratings for AAPL
+2025-03-25 10:22:05,519 - Neo4jManager - ERROR - Error processing Analyst Ratings for AAPL: 'Neo4jManager' object has no attribute '_save_analysts_ratings'
+2025-03-25 10:22:05,519 - Neo4jManager - INFO - Completed Analyst Ratings in 0.00 seconds
+2025-03-25 10:22:05,520 - Neo4jManager - INFO - Processing News Sentiment for AAPL
+2025-03-25 10:22:05,520 - Neo4jManager - INFO - Saving news sentiment for AAPL
+2025-03-25 10:22:05,520 - Neo4jManager - INFO - Creating NewsFeed node for AAPL
+2025-03-25 10:22:05,586 - Neo4jManager - INFO - NewsFeed node created: News Feed - AAPL with path data/AAPL/news_sentiment.csv
+2025-03-25 10:22:05,588 - Neo4jManager - INFO - Saved 100 news items to CSV
+2025-03-25 10:22:05,588 - Neo4jManager - INFO - Processing 100 news items for individual nodes
+2025-03-25 10:22:05,593 - Neo4jManager - INFO - Completed saving news sentiment: 0 created, 100 skipped
+2025-03-25 10:22:05,594 - Neo4jManager - INFO - Completed saving News Sentiment for AAPL
+2025-03-25 10:22:05,594 - Neo4jManager - INFO - Completed News Sentiment in 0.07 seconds
+2025-03-25 10:22:05,594 - Neo4jManager - INFO - Completed saving all data for AAPL in 4.11 seconds
+2025-03-25 10:22:05,595 - Neo4jManager - INFO - Closing Neo4j connection
+2025-03-25 10:22:05,595 - Neo4jManager - INFO - Neo4j connection closed successfully
+2025-03-25 10:22:46,715 - Neo4jManager - INFO - Initializing Neo4jManager with URI: bolt://localhost:7687, database: neo4j
+2025-03-25 10:22:48,806 - Neo4jManager - INFO - Successfully connected to Neo4j database
+2025-03-25 10:22:59,057 - Neo4jManager - INFO - Starting to save data for ticker: BLK
+2025-03-25 10:22:59,058 - Neo4jManager - INFO - Creating main Stock node for BLK
+2025-03-25 10:22:59,062 - Neo4jManager - INFO - Main Stock node created/updated for BLK
+2025-03-25 10:22:59,063 - Neo4jManager - INFO - Saving stock price data to CSV for BLK
+2025-03-25 10:22:59,066 - Neo4jManager - INFO - Saved 122 price records to data/BLK/stock_prices.csv
+2025-03-25 10:22:59,066 - Neo4jManager - INFO - Processing Insider Holdings for BLK
+2025-03-25 10:22:59,067 - Neo4jManager - INFO - Saving insider holdings for BLK
+2025-03-25 10:22:59,067 - Neo4jManager - INFO - Creating InsiderTraders node for BLK
+2025-03-25 10:22:59,072 - Neo4jManager - INFO - InsiderTraders node created: Insider Trading - BLK
+2025-03-25 10:22:59,073 - Neo4jManager - INFO - Processing 7 insider records
+2025-03-25 10:22:59,073 - Neo4jManager - INFO - Processing insider: Cohen Stephen with 15 holdings records
+2025-03-25 10:22:59,080 - Neo4jManager - INFO - Processing 1 securities held by Cohen Stephen
+2025-03-25 10:22:59,081 - Neo4jManager - INFO - Processing insider: Daley Pamela with 42 holdings records
+2025-03-25 10:22:59,089 - Neo4jManager - INFO - Processing 2 securities held by Daley Pamela
+2025-03-25 10:22:59,096 - Neo4jManager - INFO - Processing insider: FINK LAURENCE with 146 holdings records
+2025-03-25 10:22:59,104 - Neo4jManager - INFO - Processing 1 securities held by FINK LAURENCE
+2025-03-25 10:22:59,105 - Neo4jManager - INFO - Processing insider: Heller Caroline with 8 holdings records
+2025-03-25 10:22:59,110 - Neo4jManager - INFO - Processing 1 securities held by Heller Caroline
+2025-03-25 10:22:59,111 - Neo4jManager - INFO - Processing insider: Kushel J. Richard with 65 holdings records
+2025-03-25 10:22:59,116 - Neo4jManager - INFO - Processing 1 securities held by Kushel J. Richard
+2025-03-25 10:22:59,118 - Neo4jManager - INFO - Processing insider: Lord Rachel with 37 holdings records
+2025-03-25 10:22:59,124 - Neo4jManager - INFO - Processing 1 securities held by Lord Rachel
+2025-03-25 10:22:59,125 - Neo4jManager - INFO - Processing insider: Wiedman Mark with 81 holdings records
+2025-03-25 10:22:59,130 - Neo4jManager - INFO - Processing 2 securities held by Wiedman Mark
+2025-03-25 10:22:59,138 - Neo4jManager - INFO - Successfully completed saving insider holdings for BLK
+2025-03-25 10:22:59,139 - Neo4jManager - INFO - Completed saving Insider Holdings for BLK
+2025-03-25 10:22:59,139 - Neo4jManager - INFO - Completed Insider Holdings in 0.07 seconds
+2025-03-25 10:22:59,139 - Neo4jManager - INFO - Processing SEC Transactions for BLK
+2025-03-25 10:22:59,140 - Neo4jManager - INFO - Saving SEC transactions for BLK
+2025-03-25 10:22:59,140 - Neo4jManager - INFO - Processing 59 SEC transactions
+2025-03-25 10:22:59,484 - Neo4jManager - INFO - Completed saving SEC transactions: 59 created, 0 skipped
+2025-03-25 10:22:59,484 - Neo4jManager - INFO - Completed saving SEC Transactions for BLK
+2025-03-25 10:22:59,485 - Neo4jManager - INFO - Completed SEC Transactions in 0.34 seconds
+2025-03-25 10:22:59,485 - Neo4jManager - INFO - Processing Company Officers for BLK
+2025-03-25 10:22:59,498 - Neo4jManager - INFO - Completed saving Company Officers for BLK
+2025-03-25 10:22:59,498 - Neo4jManager - INFO - Completed Company Officers in 0.01 seconds
+2025-03-25 10:22:59,498 - Neo4jManager - INFO - Processing Institutional Holders for BLK
+2025-03-25 10:22:59,499 - Neo4jManager - INFO - Saving institutional holders for BLK
+2025-03-25 10:22:59,499 - Neo4jManager - INFO - Creating InstitutionalHolders node for BLK
+2025-03-25 10:22:59,507 - Neo4jManager - INFO - InstitutionalHolders node created: Institutional Holders - BLK
+2025-03-25 10:22:59,513 - Neo4jManager - INFO - Processing 10 institutional holders
+2025-03-25 10:22:59,596 - Neo4jManager - INFO - Completed saving institutional holders: 10 created, 0 skipped
+2025-03-25 10:22:59,596 - Neo4jManager - INFO - Completed saving Institutional Holders for BLK
+2025-03-25 10:22:59,596 - Neo4jManager - INFO - Completed Institutional Holders in 0.10 seconds
+2025-03-25 10:22:59,597 - Neo4jManager - INFO - Processing Competitors for BLK
+2025-03-25 10:22:59,684 - Neo4jManager - INFO - Completed saving Competitors for BLK
+2025-03-25 10:22:59,684 - Neo4jManager - INFO - Completed Competitors in 0.09 seconds
+2025-03-25 10:22:59,684 - Neo4jManager - INFO - Processing Analyst Ratings for BLK
+2025-03-25 10:22:59,685 - Neo4jManager - ERROR - Error processing Analyst Ratings for BLK: 'Neo4jManager' object has no attribute '_save_analysts_ratings'
+2025-03-25 10:22:59,685 - Neo4jManager - INFO - Completed Analyst Ratings in 0.00 seconds
+2025-03-25 10:22:59,685 - Neo4jManager - INFO - Processing News Sentiment for BLK
+2025-03-25 10:22:59,685 - Neo4jManager - INFO - Saving news sentiment for BLK
+2025-03-25 10:22:59,686 - Neo4jManager - INFO - Creating NewsFeed node for BLK
+2025-03-25 10:22:59,689 - Neo4jManager - INFO - NewsFeed node created: News Feed - BLK with path data/BLK/news_sentiment.csv
+2025-03-25 10:22:59,692 - Neo4jManager - INFO - Saved 100 news items to CSV
+2025-03-25 10:22:59,692 - Neo4jManager - INFO - Processing 100 news items for individual nodes
+2025-03-25 10:22:59,696 - Neo4jManager - INFO - Completed saving news sentiment: 0 created, 100 skipped
+2025-03-25 10:22:59,696 - Neo4jManager - INFO - Completed saving News Sentiment for BLK
+2025-03-25 10:22:59,696 - Neo4jManager - INFO - Completed News Sentiment in 0.01 seconds
+2025-03-25 10:22:59,697 - Neo4jManager - INFO - Completed saving all data for BLK in 0.64 seconds
+2025-03-25 10:22:59,697 - Neo4jManager - INFO - Closing Neo4j connection
+2025-03-25 10:22:59,697 - Neo4jManager - INFO - Neo4j connection closed successfully
+2025-03-25 10:23:27,630 - Neo4jManager - INFO - Initializing Neo4jManager with URI: bolt://localhost:7687, database: neo4j
+2025-03-25 10:23:29,696 - Neo4jManager - INFO - Successfully connected to Neo4j database
+2025-03-25 10:25:51,941 - Neo4jManager - INFO - Initializing Neo4jManager with URI: bolt://localhost:7687, database: neo4j
+2025-03-25 10:25:53,996 - Neo4jManager - INFO - Successfully connected to Neo4j database
+2025-03-25 11:01:33,616 - yfinance - ERROR - 
+1 Failed download:
+2025-03-25 11:01:33,617 - yfinance - ERROR - ['WLP']: YFPricesMissingError('possibly delisted; no price data found  (1d 2024-09-26 11:01:33.376956 -> 2025-03-25 11:01:33.376964)')
+2025-03-25 11:31:32,342 - Neo4jManager - INFO - Initializing Neo4jManager with URI: bolt://localhost:7687, database: neo4j
+2025-03-25 11:31:34,408 - Neo4jManager - INFO - Successfully connected to Neo4j database
+2025-03-25 11:49:35,887 - yfinance - ERROR - 
+1 Failed download:
+2025-03-25 11:49:35,888 - yfinance - ERROR - ['TARR']: YFPricesMissingError('possibly delisted; no price data found  (1d 2024-09-26 11:49:35.624022 -> 2025-03-25 11:49:35.624030)')
+2025-03-25 11:56:56,353 - Neo4jManager - INFO - Initializing Neo4jManager with URI: bolt://localhost:7687, database: neo4j
+2025-03-25 11:56:58,415 - Neo4jManager - INFO - Successfully connected to Neo4j database
+2025-03-25 13:20:23,967 - yfinance - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/SRGA?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=SRGA&crumb=W2QSWB6WWOU
+2025-03-25 13:20:33,267 - yfinance - ERROR - 
+1 Failed download:
+2025-03-25 13:20:33,267 - yfinance - ERROR - ['RUBY']: YFPricesMissingError('possibly delisted; no price data found  (1d 2024-09-26 13:20:33.045851 -> 2025-03-25 13:20:33.045861)')
+2025-03-25 13:20:35,619 - yfinance - ERROR - 
+1 Failed download:
+2025-03-25 13:20:35,620 - yfinance - ERROR - ['CBMX']: YFPricesMissingError('possibly delisted; no price data found  (1d 2024-09-26 13:20:35.409780 -> 2025-03-25 13:20:35.409787)')
+2025-03-25 13:40:30,402 - Neo4jManager - INFO - Initializing Neo4jManager with URI: bolt://localhost:7687, database: neo4j
+2025-03-25 13:40:32,458 - Neo4jManager - INFO - Successfully connected to Neo4j database
+2025-03-25 16:53:49,394 - Neo4jManager - INFO - Initializing Neo4jManager with URI: bolt://localhost:7687, database: neo4j
+2025-03-25 16:53:51,460 - Neo4jManager - INFO - Successfully connected to Neo4j database
+2025-03-25 17:11:08,527 - Neo4jManager - INFO - Initializing Neo4jManager with URI: bolt://localhost:7687, database: neo4j
+2025-03-25 17:11:10,598 - Neo4jManager - INFO - Successfully connected to Neo4j database
+2025-03-25 17:12:52,038 - Neo4jManager - INFO - Closing Neo4j connection
+2025-03-25 17:12:52,039 - Neo4jManager - INFO - Neo4j connection closed successfully
+2025-03-25 17:16:28,023 - Neo4jManager - INFO - Initializing Neo4jManager with URI: bolt://localhost:7687, database: neo4j
+2025-03-25 17:16:30,103 - Neo4jManager - INFO - Successfully connected to Neo4j database

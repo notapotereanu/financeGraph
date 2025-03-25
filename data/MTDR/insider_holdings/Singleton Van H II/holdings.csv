@@ -1,0 +1,38 @@
+issuerTradingSymbol,relationship,date,transaction_type,cost,shares,value,shares_total
+MTDR,,2025-02-25,Purchase,52.72,1000,52720.0,290135
+MTDR,,2025-02-21,Purchase,53.21,2000,106420.0,289135
+MTDR,,2025-01-07,"Grant, Award, or Other Acquisition",0.0,28440,0.0,298483
+MTDR,,2025-01-07,Tax Withholding (RSU Vesting),58.35,11348,662155.8,287135
+MTDR,,2024-09-09,Purchase,50.09,1000,50090.0,269852
+MTDR,,2023-12-31,"Grant, Award, or Other Acquisition",0.0,44500,0.0,286127
+MTDR,,2023-12-31,Tax Withholding (RSU Vesting),56.86,17511,995675.46,268616
+MTDR,,2022-12-31,"Grant, Award, or Other Acquisition",0.0,97548,0.0,279540
+MTDR,,2022-12-31,Tax Withholding (RSU Vesting),57.24,38386,2197214.64,241154
+MTDR,,2021-12-31,"Grant, Award, or Other Acquisition",0.0,79366,0.0,213223
+MTDR,,2021-12-31,Tax Withholding (RSU Vesting),36.92,31231,1153048.52,181992
+MTDR,,2021-10-01,Exercise or Conversion of Derivative Security,29.68,36919,1095755.92,164011
+MTDR,,2021-10-01,Tax Withholding (RSU Vesting),39.51,30154,1191384.54,133857
+MTDR,,2021-09-27,Exercise or Conversion of Derivative Security,27.26,50189,1368152.14,168122
+MTDR,,2021-09-27,Tax Withholding (RSU Vesting),36.24,41030,1486927.2,127092
+MTDR,,2021-02-16,Tax Withholding (RSU Vesting),20.07,4125,82788.75,117933
+MTDR,,2020-03-09,Purchase,2.56,20000,51200.0,122058
+MTDR,,2020-03-06,Purchase,7.44,10000,74400.0,102058
+MTDR,,2020-02-15,Tax Withholding (RSU Vesting),12.94,2417,31275.98,95974
+MTDR,,2020-02-16,Tax Withholding (RSU Vesting),12.94,3916,50673.04,92058
+MTDR,,2020-01-09,Exercise or Conversion of Derivative Security,9.0,10000,90000.0,104154
+MTDR,,2020-01-09,Tax Withholding (RSU Vesting),18.41,5763,106096.83,98391
+MTDR,,2019-02-15,Tax Withholding (RSU Vesting),19.31,2417,46672.27,107093
+MTDR,,2019-02-16,Tax Withholding (RSU Vesting),19.31,3916,75617.96,103177
+MTDR,,2019-02-19,Tax Withholding (RSU Vesting),18.7,6518,121886.6,96659
+MTDR,,2018-12-10,Purchase,19.83,500,9915.0,109510
+MTDR,,2018-12-06,Purchase,22.26,2005,44631.3,109010
+MTDR,,2018-02-15,Tax Withholding (RSU Vesting),29.57,2210,65349.7,75559
+MTDR,,2018-02-16,"Grant, Award, or Other Acquisition",0.0,31446,0.0,107005
+MTDR,,2018-01-21,Tax Withholding (RSU Vesting),31.66,1280,40524.8,77769
+MTDR,,2017-07-25,Exercise or Conversion of Derivative Security,8.18,33750,276075.0,98994
+MTDR,,2017-07-25,Tax Withholding (RSU Vesting),24.31,19945,484862.95,79049
+MTDR,,2017-04-10,Exercise or Conversion of Derivative Security,10.49,14583,152975.67,74907
+MTDR,,2017-04-10,Tax Withholding (RSU Vesting),24.12,9663,233071.56,65244
+MTDR,,2017-03-12,Tax Withholding (RSU Vesting),23.32,7080,165105.6,60324
+MTDR,,2017-02-15,"Grant, Award, or Other Acquisition",0.0,19406,0.0,67404
+MTDR,,2016-04-16,Tax Withholding (RSU Vesting),21.13,765,16164.45,47998

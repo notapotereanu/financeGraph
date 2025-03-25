@@ -1,0 +1,10 @@
+issuerTradingSymbol,relationship,date,transaction_type,cost,shares,value,shares_total
+TEM,Director,2025-03-17,Sale,46.67,2006,93620.02,33667
+TEM,Director,2025-03-17,Sale,48.11,2046,98433.06,31621
+TEM,Director,2025-03-17,Sale,48.90,1214,59364.6,30407
+TEM,Director,2025-03-17,Sale,50.04,3142,157225.68,27265
+TEM,Director,2025-03-17,Sale,50.63,900,45567.0,26365
+TEM,Director,2025-03-03,Sale,57.52,338,19441.76,35673
+TEM,Director,2025-02-14,Sale,90,1320,118800.0,36011
+TEM,Director,2024-12-11,Sale,41.81,1183,49461.23,37331
+TEM,Director,2024-06-13,"Grant, Award, or Other Acquisition",0,38514,0.0,38514

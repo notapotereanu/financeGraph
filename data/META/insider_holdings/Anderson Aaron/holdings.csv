@@ -1,0 +1,92 @@
+issuerTradingSymbol,relationship,date,transaction_type,cost,shares,value,shares_total
+META,,2025-02-15,Exercise or Conversion of Derivative Security,0.0,1450.0,0.0,4864
+META,,2025-02-15,Exercise or Conversion of Derivative Security,0.0,332.0,0.0,5196
+META,,2025-02-15,Tax Withholding (RSU Vesting),736.67,892.0,657109.64,4304
+META,,2024-11-15,Exercise or Conversion of Derivative Security,0.0,1450.0,0.0,4697
+META,,2024-11-15,Exercise or Conversion of Derivative Security,0.0,333.0,0.0,5030
+META,,2024-11-15,Tax Withholding (RSU Vesting),577.16,885.0,510786.6,4145
+META,,2024-11-18,Sale,557.0,731.0,407167.0,3414
+META,,2024-08-20,Gift,0.0,446.0,0.0,3532
+META,,2024-08-20,Gift,0.0,285.0,0.0,3247
+META,,2024-08-15,Exercise or Conversion of Derivative Security,0.0,1450.0,0.0,4530
+META,,2024-08-15,Exercise or Conversion of Derivative Security,0.0,333.0,0.0,4863
+META,,2024-08-15,Tax Withholding (RSU Vesting),526.76,885.0,466182.6,3978
+META,,2024-05-15,Exercise or Conversion of Derivative Security,0.0,1451.0,0.0,3668
+META,,2024-05-15,Exercise or Conversion of Derivative Security,0.0,332.0,0.0,4000
+META,,2024-05-15,Tax Withholding (RSU Vesting),471.85,885.0,417587.25,3115
+META,,2024-05-15,Sale,474.75,35.0,16616.25,3080
+META,,2024-02-15,Exercise or Conversion of Derivative Security,0.0,1450.0,0.0,2947
+META,,2024-02-15,Tax Withholding (RSU Vesting),473.28,730.0,345494.4,2217
+META,,2023-11-15,Exercise or Conversion of Derivative Security,0.0,1450.0,0.0,2216
+META,,2023-11-15,Tax Withholding (RSU Vesting),336.31,719.0,241806.89,1497
+META,,2023-08-15,Exercise or Conversion of Derivative Security,0.0,1450.0,0.0,1485
+META,,2023-08-15,Tax Withholding (RSU Vesting),306.19,719.0,220150.61,766
+PYPL,,2020-05-15,Gift,0.0,1345.0,0.0,20840
+PYPL,,2020-07-31,Sale,192.4623,1000.0,192462.3,19840
+PYPL,,2020-07-31,Sale,193.1503,1200.0,231780.36,18640
+PYPL,,2020-07-31,Sale,194.3728,1788.0,347538.57,16852
+PYPL,,2020-07-31,Sale,192.8317,2200.0,424229.74,14652
+PYPL,,2020-07-31,Sale,194.1742,2065.0,400969.72,12587
+PYPL,,2020-07-31,Sale,194.6482,950.0,184915.79,11637
+PYPL,,2020-03-01,"Grant, Award, or Other Acquisition",0.0,6066.0,0.0,20091
+PYPL,,2020-03-01,Tax Withholding (RSU Vesting),107.99,2098.0,226563.02,17993
+PYPL,,2020-03-01,Exercise or Conversion of Derivative Security,0.0,3032.0,0.0,21025
+PYPL,,2020-03-01,Exercise or Conversion of Derivative Security,0.0,1415.0,0.0,22440
+PYPL,,2020-03-01,Exercise or Conversion of Derivative Security,0.0,943.0,0.0,23383
+PYPL,,2020-03-01,Exercise or Conversion of Derivative Security,0.0,1478.0,0.0,24861
+PYPL,,2020-03-01,Exercise or Conversion of Derivative Security,0.0,806.0,0.0,25667
+PYPL,,2020-03-01,Tax Withholding (RSU Vesting),107.99,3720.0,401722.8,21947
+PYPL,,2020-02-15,"Grant, Award, or Other Acquisition",0.0,1875.0,0.0,14710
+PYPL,,2020-02-15,Tax Withholding (RSU Vesting),122.99,685.0,84248.15,14025
+PYPL,,2019-12-03,Gift,0.0,676.0,0.0,12835
+PYPL,,2019-04-01,Exercise or Conversion of Derivative Security,0.0,2017.0,0.0,13561
+PYPL,,2019-04-01,Exercise or Conversion of Derivative Security,0.0,1888.0,0.0,15449
+PYPL,,2019-04-01,Tax Withholding (RSU Vesting),105.55,1938.0,204555.9,13511
+PYPL,,2019-03-01,"Grant, Award, or Other Acquisition",0.0,4120.0,0.0,9721
+PYPL,,2019-03-01,Exercise or Conversion of Derivative Security,0.0,3033.0,0.0,12754
+PYPL,,2019-03-01,Exercise or Conversion of Derivative Security,0.0,1415.0,0.0,14169
+PYPL,,2019-03-01,Exercise or Conversion of Derivative Security,0.0,944.0,0.0,15113
+PYPL,,2019-03-01,Tax Withholding (RSU Vesting),98.8,3569.0,352617.2,11544
+PYPL,,2019-02-15,"Grant, Award, or Other Acquisition",0.0,2043.0,0.0,6351
+PYPL,,2019-02-15,Tax Withholding (RSU Vesting),94.91,750.0,71182.5,5601
+PYPL,,2018-12-04,Gift,0.0,407.0,0.0,1352
+PYPL,,2018-12-06,Gift,0.0,676.0,0.0,676
+PYPL,,2018-12-15,Exercise or Conversion of Derivative Security,0.0,7204.0,0.0,7880
+PYPL,,2018-12-15,Tax Withholding (RSU Vesting),85.92,3572.0,306906.24,4308
+PYPL,,2018-07-27,Sale,87.3479,8900.0,777396.31,9921
+PYPL,,2018-07-27,Sale,88.4641,3400.0,300777.94,6521
+PYPL,,2018-07-27,Sale,89.4061,2900.0,259277.69,3621
+PYPL,,2018-07-27,Sale,90.0782,1862.0,167725.61,1759
+PYPL,,2018-07-15,Exercise or Conversion of Derivative Security,0.0,3533.0,0.0,19584
+PYPL,,2018-07-15,Exercise or Conversion of Derivative Security,0.0,1963.0,0.0,21547
+PYPL,,2018-07-15,Tax Withholding (RSU Vesting),87.99,2726.0,239860.74,18821
+PYPL,,2018-04-01,Exercise or Conversion of Derivative Security,0.0,1889.0,0.0,15486
+PYPL,,2018-04-01,Exercise or Conversion of Derivative Security,0.0,2017.0,0.0,17503
+PYPL,,2018-04-01,Tax Withholding (RSU Vesting),75.87,1452.0,110163.24,16051
+PYPL,,2018-03-01,Exercise or Conversion of Derivative Security,0.0,3033.0,0.0,14646
+PYPL,,2018-03-01,Tax Withholding (RSU Vesting),78.64,1049.0,82493.36,13597
+PYPL,,2018-02-15,"Grant, Award, or Other Acquisition",0.0,5948.0,0.0,17561
+PYPL,,2018-02-15,Tax Withholding (RSU Vesting),78.295,2105.0,164810.98,15456
+PYPL,,2018-02-16,Sale,77.9792,3843.0,299674.07,11613
+PYPL,,2018-02-02,Sale,77.1392,2500.0,192848.0,18480
+PYPL,,2018-02-02,Sale,78.0958,6867.0,536283.86,11613
+PYPL,,2017-12-15,Exercise or Conversion of Derivative Security,0.0,7204.0,0.0,24198
+PYPL,,2017-12-15,Tax Withholding (RSU Vesting),75.65,3218.0,243441.7,20980
+PYPL,,2017-08-14,Gift,0.0,4090.0,0.0,16994
+PYPL,,2017-07-15,Exercise or Conversion of Derivative Security,0.0,3534.0,0.0,21188
+PYPL,,2017-07-15,Exercise or Conversion of Derivative Security,0.0,1963.0,0.0,23151
+PYPL,,2017-07-15,Tax Withholding (RSU Vesting),57.16,2067.0,118149.72,21084
+PYPL,,2017-04-01,Exercise or Conversion of Derivative Security,0.0,2018.0,0.0,16558
+PYPL,,2017-04-01,Exercise or Conversion of Derivative Security,0.0,1889.0,0.0,18447
+PYPL,,2017-04-01,Tax Withholding (RSU Vesting),43.02,1469.0,63196.38,16978
+PYPL,,2016-12-15,Exercise or Conversion of Derivative Security,0.0,7205.0,0.0,17248
+PYPL,,2016-12-15,Tax Withholding (RSU Vesting),39.54,2708.0,107074.32,14540
+PYPL,,2016-10-31,Sale,41.78,2644.0,110466.32,10043
+PYPL,,2016-07-15,Exercise or Conversion of Derivative Security,0.0,1964.0,0.0,11221
+PYPL,,2016-07-15,Exercise or Conversion of Derivative Security,0.0,3534.0,0.0,14755
+PYPL,,2016-07-15,Tax Withholding (RSU Vesting),39.09,2068.0,80838.12,12687
+PYPL,,2016-04-01,Exercise or Conversion of Derivative Security,0.0,2018.0,0.0,9340
+PYPL,,2016-04-01,Tax Withholding (RSU Vesting),39.4,759.0,29904.6,8581
+PYPL,,2015-12-15,Exercise or Conversion of Derivative Security,0.0,7205.0,0.0,7876
+PYPL,,2015-12-15,Tax Withholding (RSU Vesting),36.32,2708.0,98354.56,5168
+PYPL,,2015-07-17,"Grant, Award, or Other Acquisition",0.0,53379.0,0.0,2154

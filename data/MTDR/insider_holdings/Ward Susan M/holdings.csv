@@ -1,0 +1,5 @@
+issuerTradingSymbol,relationship,date,transaction_type,cost,shares,value,shares_total
+MTDR,,2025-02-25,Purchase,52.81,2000,105620.0,5844
+MTDR,,2024-06-13,"Grant, Award, or Other Acquisition",0.0,2533,0.0,3844
+MTDR,,2024-01-24,"Grant, Award, or Other Acquisition",0.0,1311,0.0,1311
+SHLX,,2014-10-29,Purchase,23.0,25000,575000.0,25000

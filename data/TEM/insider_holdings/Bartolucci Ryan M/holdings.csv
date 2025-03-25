@@ -1,0 +1,20 @@
+issuerTradingSymbol,relationship,date,transaction_type,cost,shares,value,shares_total
+TEM,Officer (Chief Accounting Officer),2025-02-19,Sale,81.83,750,61372.5,46250
+TEM,Officer (Chief Accounting Officer),2025-02-19,Sale,82.36,68,5600.48,46182
+TEM,Officer (Chief Accounting Officer),2025-02-20,Sale,80,1682,134560.0,44500
+TEM,Officer (Chief Accounting Officer),2025-02-13,Sale,80,6059,484720.0,47000
+TEM,Officer (Chief Accounting Officer),2025-02-05,Sale,67.57,1858,125545.06,55379
+TEM,Officer (Chief Accounting Officer),2025-02-06,Sale,71,2320,164720.0,53059
+TEM,Officer (Chief Accounting Officer),2025-01-31,Sale,60,13770,826200.0,57237
+TEM,Officer (Chief Accounting Officer),2024-12-16,Sale,40.23,339,13637.97,71007
+TEM,Officer (Chief Accounting Officer),2024-11-01,"Grant, Award, or Other Acquisition",0,10000,0.0,71346
+TEM,Officer (Chief Accounting Officer),2024-06-13,"Grant, Award, or Other Acquisition",0,75000,0.0,75000
+TEM,Officer (Chief Accounting Officer),2024-06-14,Tax Withholding (RSU Vesting),37,13654,505198.0,61346
+SRGA,,2020-09-25,Tax Withholding (RSU Vesting),1.92,797,1530.24,79561
+SRGA,,2020-09-25,Tax Withholding (RSU Vesting),1.92,2717,5216.64,77641
+RTIX,,2020-07-22,"Grant, Award, or Other Acquisition",0.00,18499,0.0,80358
+RTIX,,2020-07-02,"Grant, Award, or Other Acquisition",0.00,43125,0.0,61859
+RTIX,,2019-03-08,"Grant, Award, or Other Acquisition",,18734,,18734
+RTIX,,2019-03-08,Disposition to the Issuer (Shares returned to company),,18734,,0
+RTIX,,2019-02-26,"Grant, Award, or Other Acquisition",0,8582,0.0,18734
+RTIX,,2018-09-25,"Grant, Award, or Other Acquisition",0,8152,0.0,10152

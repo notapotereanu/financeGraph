@@ -1,0 +1,21 @@
+issuerTradingSymbol,relationship,date,transaction_type,cost,shares,value,shares_total
+C,Officer (Chief Risk Officer),2025-02-20,Tax Withholding (RSU Vesting),83.94,6640.58,557410.29,227888.32
+C,Officer (Chief Risk Officer),2025-02-13,"Grant, Award, or Other Acquisition",0,44208.66,0.0,234528.9
+C,Officer (Chief Risk Officer),2025-01-20,Tax Withholding (RSU Vesting),79.99,15012.35,1200837.88,190320.24
+C,Officer (Chief Risk Officer),2024-02-15,"Grant, Award, or Other Acquisition",0,60654.79,0.0,210285.60
+C,Officer (Chief Risk Officer),2024-02-20,Tax Withholding (RSU Vesting),54.85,4953.01,271672.6,205332.59
+C,Officer (Chief Risk Officer),2024-01-20,Tax Withholding (RSU Vesting),51.52,6348.65,327082.45,149630.81
+C,,2023-04-18,Sale,49.87,12000,598440.0,155979.46
+C,,2023-02-16,"Grant, Award, or Other Acquisition",0.00,66890.62,0.0,172857.38
+C,,2023-02-20,Tax Withholding (RSU Vesting),51.42,4877.92,250822.65,167979.46
+C,,2022-02-20,Tax Withholding (RSU Vesting),64.14,3537.92,226922.19,105966.76
+C,,2022-02-10,"Grant, Award, or Other Acquisition",0.00,10007.2,0.0,98549.65
+C,,2022-02-10,"Grant, Award, or Other Acquisition",0.00,17970.03,0.0,116519.68
+C,,2022-02-10,"Grant, Award, or Other Acquisition",0.00,1934.01,0.0,118453.69
+C,,2022-02-10,Tax Withholding (RSU Vesting),67.84,949.01,64380.84,117504.68
+C,,2022-02-11,Sale,68.6835,8000,549468.0,109504.68
+C,,2021-02-11,"Grant, Award, or Other Acquisition",0.00,2335.67,0.0,89754.65
+C,,2021-02-11,Tax Withholding (RSU Vesting),63.62,345.67,21991.53,89408.98
+C,,2021-02-20,Tax Withholding (RSU Vesting),65.78,866.53,57000.34,86552.45
+C,,2021-02-11,"Grant, Award, or Other Acquisition",0.00,4606.93,0.0,75209.54
+C,,2021-02-11,"Grant, Award, or Other Acquisition",0.00,12209.44,0.0,87418.98

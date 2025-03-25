@@ -1,0 +1,12 @@
+issuerTradingSymbol,relationship,date,transaction_type,cost,shares,value,shares_total
+MTDR,,2025-03-04,Purchase,45.88,200,9176.0,58241
+MTDR,,2025-03-05,Purchase,44.0,200,8800.0,58441
+MTDR,,2025-02-21,Purchase,54.45,300,16335.0,58041
+MTDR,,2024-09-09,Purchase,50.1,300,15030.0,57541
+MTDR,,2024-09-10,Purchase,49.43,200,9886.0,57741
+MTDR,,2024-06-13,"Grant, Award, or Other Acquisition",0.0,2533,0.0,57241
+MTDR,,2024-01-16,Gift,0.0,22856,0.0,336978
+MTDR,,2023-12-13,Purchase,52.98,500,26490.0,54708
+MTDR,,2023-12-06,Purchase,54.45,100,5445.0,54208
+MTDR,,2023-08-23,Gift,0.0,40783,0.0,314122
+MTDR,,2023-06-09,"Grant, Award, or Other Acquisition",0.0,2621,0.0,54108

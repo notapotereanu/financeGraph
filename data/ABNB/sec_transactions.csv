@@ -1,0 +1,97 @@
+date,stock_ticker,issuerTradingSymbol,price,insider_name,insider_cik,relationship,transaction_type,shares,value,shares_total,xml_link
+2025-03-20,ABNB,ABNB,,Gebbia Joseph,1834171,"Director, 10% Owner",Conversion of Security,2509150,,2723440,https://www.sec.gov/Archives/edgar/data/1559720/000095017025043821/ownership.xml
+2025-03-18,ABNB,ABNB,126.0,BALOGH ARISTOTLE N,1216924,Officer (Chief Technology Officer),Sale,700,88200.0,171419,https://www.sec.gov/Archives/edgar/data/1216924/000095017025042804/ownership.xml
+2025-03-17,ABNB,ABNB,124.0,Chesky Brian,1834152,"Director, Officer (CEO and Chairman), 10% Owner",Sale,1472,182528.0,11807133,https://www.sec.gov/Archives/edgar/data/1559720/000095017025042216/ownership.xml
+2025-03-17,ABNB,ABNB,125.7123,Chesky Brian,1834152,"Director, Officer (CEO and Chairman), 10% Owner",Sale,8132,1022292.42,11799001,https://www.sec.gov/Archives/edgar/data/1559720/000095017025042216/ownership.xml
+2025-03-17,ABNB,ABNB,126.45,Chesky Brian,1834152,"Director, Officer (CEO and Chairman), 10% Owner",Sale,14093,1782059.85,11784908,https://www.sec.gov/Archives/edgar/data/1559720/000095017025042216/ownership.xml
+2025-03-17,ABNB,ABNB,127.4949,Chesky Brian,1834152,"Director, Officer (CEO and Chairman), 10% Owner",Sale,14764,1882334.7,11770144,https://www.sec.gov/Archives/edgar/data/1559720/000095017025042216/ownership.xml
+2025-03-11,ABNB,ABNB,130.18,BALOGH ARISTOTLE N,1216924,Officer (Chief Technology Officer),Sale,700,91126.0,172119,https://www.sec.gov/Archives/edgar/data/1216924/000095017025038918/ownership.xml
+2025-03-11,ABNB,ABNB,123.8364,Gebbia Joseph,1834171,"Director, 10% Owner",Sale,2244,277888.88,426331,https://www.sec.gov/Archives/edgar/data/1559720/000095017025038899/ownership.xml
+2025-03-11,ABNB,ABNB,124.5519,Gebbia Joseph,1834171,"Director, 10% Owner",Sale,11709,1458378.2,414622,https://www.sec.gov/Archives/edgar/data/1559720/000095017025038899/ownership.xml
+2025-03-11,ABNB,ABNB,125.6236,Gebbia Joseph,1834171,"Director, 10% Owner",Sale,38849,4880351.24,375773,https://www.sec.gov/Archives/edgar/data/1559720/000095017025038899/ownership.xml
+2025-03-11,ABNB,ABNB,126.5133,Gebbia Joseph,1834171,"Director, 10% Owner",Sale,72556,9179298.99,303217,https://www.sec.gov/Archives/edgar/data/1559720/000095017025038899/ownership.xml
+2025-03-11,ABNB,ABNB,127.3177,Gebbia Joseph,1834171,"Director, 10% Owner",Sale,51467,6552660.07,251750,https://www.sec.gov/Archives/edgar/data/1559720/000095017025038899/ownership.xml
+2025-03-11,ABNB,ABNB,128.5036,Gebbia Joseph,1834171,"Director, 10% Owner",Sale,29501,3790984.7,222249,https://www.sec.gov/Archives/edgar/data/1559720/000095017025038899/ownership.xml
+2025-03-11,ABNB,ABNB,129.3115,Gebbia Joseph,1834171,"Director, 10% Owner",Sale,5559,718842.63,216690,https://www.sec.gov/Archives/edgar/data/1559720/000095017025038899/ownership.xml
+2025-03-11,ABNB,ABNB,130.15,Gebbia Joseph,1834171,"Director, 10% Owner",Sale,2400,312360.0,214290,https://www.sec.gov/Archives/edgar/data/1559720/000095017025038899/ownership.xml
+2025-03-04,ABNB,ABNB,140.1,BALOGH ARISTOTLE N,1216924,Officer (Chief Technology Officer),Sale,700,98070.0,172819,https://www.sec.gov/Archives/edgar/data/1216924/000095017025034828/ownership.xml
+2025-03-04,ABNB,ABNB,140.1,Mertz Elinor,1938411,Officer (Chief Financial Officer),Sale,6250,875625.0,449463,https://www.sec.gov/Archives/edgar/data/1559720/000095017025034818/ownership.xml
+2025-03-05,ABNB,ABNB,141.87,Mertz Elinor,1938411,Officer (Chief Financial Officer),Sale,6086,863420.82,443377,https://www.sec.gov/Archives/edgar/data/1559720/000095017025034818/ownership.xml
+2025-03-03,ABNB,ABNB,140.6271,Chesky Brian,1834152,"Director, Officer (CEO and Chairman), 10% Owner",Sale,13287,1868512.28,11872241,https://www.sec.gov/Archives/edgar/data/1559720/000095017025033579/ownership.xml
+2025-03-03,ABNB,ABNB,141.3691,Chesky Brian,1834152,"Director, Officer (CEO and Chairman), 10% Owner",Sale,3300,466518.03,11868941,https://www.sec.gov/Archives/edgar/data/1559720/000095017025033579/ownership.xml
+2025-03-03,ABNB,ABNB,142.7335,Chesky Brian,1834152,"Director, Officer (CEO and Chairman), 10% Owner",Sale,11972,1708805.46,11856969,https://www.sec.gov/Archives/edgar/data/1559720/000095017025033579/ownership.xml
+2025-03-03,ABNB,ABNB,143.4582,Chesky Brian,1834152,"Director, Officer (CEO and Chairman), 10% Owner",Sale,43246,6203993.32,11813723,https://www.sec.gov/Archives/edgar/data/1559720/000095017025033579/ownership.xml
+2025-03-03,ABNB,ABNB,144.2576,Chesky Brian,1834152,"Director, Officer (CEO and Chairman), 10% Owner",Sale,5118,738310.4,11808605,https://www.sec.gov/Archives/edgar/data/1559720/000095017025033579/ownership.xml
+2025-02-26,ABNB,ABNB,40.18,Blecharczyk Nathan,1834147,"Director, Officer (Chief Strategy Officer), 10% Owner",Exercise or Conversion of Derivative Security,26154,1050867.72,185491,https://www.sec.gov/Archives/edgar/data/1559720/000095017025030093/ownership.xml
+2025-02-26,ABNB,ABNB,145.0,Blecharczyk Nathan,1834147,"Director, Officer (Chief Strategy Officer), 10% Owner",Sale,26154,3792330.0,159337,https://www.sec.gov/Archives/edgar/data/1559720/000095017025030093/ownership.xml
+2025-02-25,ABNB,ABNB,140.7548,Gebbia Joseph,1834171,"Director, 10% Owner",Sale,21406,3012997.25,621454,https://www.sec.gov/Archives/edgar/data/1559720/000095017025029226/ownership.xml
+2025-02-25,ABNB,ABNB,141.5175,Gebbia Joseph,1834171,"Director, 10% Owner",Sale,103089,14588897.56,518365,https://www.sec.gov/Archives/edgar/data/1559720/000095017025029226/ownership.xml
+2025-02-25,ABNB,ABNB,142.3539,Gebbia Joseph,1834171,"Director, 10% Owner",Sale,68002,9680349.91,450363,https://www.sec.gov/Archives/edgar/data/1559720/000095017025029226/ownership.xml
+2025-02-25,ABNB,ABNB,143.44,Gebbia Joseph,1834171,"Director, 10% Owner",Sale,17140,2458561.6,433223,https://www.sec.gov/Archives/edgar/data/1559720/000095017025029226/ownership.xml
+2025-02-25,ABNB,ABNB,144.4734,Gebbia Joseph,1834171,"Director, 10% Owner",Sale,4438,641172.95,428785,https://www.sec.gov/Archives/edgar/data/1559720/000095017025029226/ownership.xml
+2025-02-25,ABNB,ABNB,145.0314,Gebbia Joseph,1834171,"Director, 10% Owner",Sale,210,30456.59,428575,https://www.sec.gov/Archives/edgar/data/1559720/000095017025029226/ownership.xml
+2025-02-25,ABNB,ABNB,145.01,BALOGH ARISTOTLE N,1216924,Officer (Chief Technology Officer),Sale,700,101507.0,173519,https://www.sec.gov/Archives/edgar/data/1216924/000095017025029219/ownership.xml
+2025-02-24,ABNB,ABNB,,Chesky Brian,1834152,"Director, Officer (CEO and Chairman), 10% Owner",Conversion of Security,32000,,48800,https://www.sec.gov/Archives/edgar/data/1559720/000095017025028028/ownership.xml
+2025-02-20,ABNB,ABNB,156.32,Blecharczyk Nathan,1834147,"Director, Officer (Chief Strategy Officer), 10% Owner",Sale,2712,423939.84,159337,https://www.sec.gov/Archives/edgar/data/1559720/000095017025025874/ownership.xml
+2025-02-19,ABNB,ABNB,160.6,Bernstein David C,1288881,Officer (Chief Accounting Officer),Tax Withholding (RSU Vesting),917,147270.2,39664,https://www.sec.gov/Archives/edgar/data/1288881/000095017025025110/ownership.xml
+2025-02-19,ABNB,ABNB,160.6,Mertz Elinor,1938411,Officer (Chief Financial Officer),Tax Withholding (RSU Vesting),4275,686565.0,455713,https://www.sec.gov/Archives/edgar/data/1559720/000095017025025106/ownership.xml
+2025-02-19,ABNB,ABNB,160.6,BALOGH ARISTOTLE N,1216924,Officer (Chief Technology Officer),Tax Withholding (RSU Vesting),6295,1010977.0,174219,https://www.sec.gov/Archives/edgar/data/1216924/000095017025025104/ownership.xml
+2025-02-19,ABNB,ABNB,160.6,Blecharczyk Nathan,1834147,"Director, Officer (Chief Strategy Officer), 10% Owner",Tax Withholding (RSU Vesting),2801,449840.6,162049,https://www.sec.gov/Archives/edgar/data/1559720/000095017025025097/ownership.xml
+2025-02-19,ABNB,ABNB,,Blecharczyk Nathan,1834147,"Director, Officer (Chief Strategy Officer), 10% Owner",Conversion of Security,36344,,45025,https://www.sec.gov/Archives/edgar/data/1559720/000095017025025097/ownership.xml
+2025-02-18,ABNB,ABNB,161.05,BALOGH ARISTOTLE N,1216924,Officer (Chief Technology Officer),Sale,700,112735.0,180514,https://www.sec.gov/Archives/edgar/data/1216924/000095017025024410/ownership.xml
+2025-02-18,ABNB,ABNB,158.6307,Chesky Brian,1834152,"Director, Officer (CEO and Chairman), 10% Owner",Sale,3719,589947.57,11997194,https://www.sec.gov/Archives/edgar/data/1559720/000095017025024405/ownership.xml
+2025-02-18,ABNB,ABNB,159.7029,Chesky Brian,1834152,"Director, Officer (CEO and Chairman), 10% Owner",Sale,25063,4002633.78,11972131,https://www.sec.gov/Archives/edgar/data/1559720/000095017025024405/ownership.xml
+2025-02-18,ABNB,ABNB,160.3424,Chesky Brian,1834152,"Director, Officer (CEO and Chairman), 10% Owner",Sale,71366,11442995.72,11900765,https://www.sec.gov/Archives/edgar/data/1559720/000095017025024405/ownership.xml
+2025-02-18,ABNB,ABNB,161.3524,Chesky Brian,1834152,"Director, Officer (CEO and Chairman), 10% Owner",Sale,10663,1720500.64,11890102,https://www.sec.gov/Archives/edgar/data/1559720/000095017025024405/ownership.xml
+2025-02-18,ABNB,ABNB,162.2181,Chesky Brian,1834152,"Director, Officer (CEO and Chairman), 10% Owner",Sale,4574,741985.59,11885528,https://www.sec.gov/Archives/edgar/data/1559720/000095017025024405/ownership.xml
+2025-02-14,ABNB,ABNB,160.3918,Chesky Brian,1834152,"Director, Officer (CEO and Chairman), 10% Owner",Sale,88787,14240706.75,12142898,https://www.sec.gov/Archives/edgar/data/1559720/000095017025023518/ownership.xml
+2025-02-14,ABNB,ABNB,161.4552,Chesky Brian,1834152,"Director, Officer (CEO and Chairman), 10% Owner",Sale,121392,19599369.64,12021506,https://www.sec.gov/Archives/edgar/data/1559720/000095017025023518/ownership.xml
+2025-02-14,ABNB,ABNB,162.3891,Chesky Brian,1834152,"Director, Officer (CEO and Chairman), 10% Owner",Sale,14710,2388743.66,12006796,https://www.sec.gov/Archives/edgar/data/1559720/000095017025023518/ownership.xml
+2025-02-14,ABNB,ABNB,163.4088,Chesky Brian,1834152,"Director, Officer (CEO and Chairman), 10% Owner",Sale,5883,961333.97,12000913,https://www.sec.gov/Archives/edgar/data/1559720/000095017025023518/ownership.xml
+2025-02-14,ABNB,ABNB,160.0,Mertz Elinor,1938411,Officer (Chief Financial Officer),Sale,25000,4000000.0,459988,https://www.sec.gov/Archives/edgar/data/1559720/000095017025023515/ownership.xml
+2025-02-14,ABNB,ABNB,122.41,BALOGH ARISTOTLE N,1216924,Officer (Chief Technology Officer),Exercise or Conversion of Derivative Security,11488,1406246.08,192702,https://www.sec.gov/Archives/edgar/data/1216924/000095017025023508/ownership.xml
+2025-02-14,ABNB,ABNB,158.0,BALOGH ARISTOTLE N,1216924,Officer (Chief Technology Officer),Sale,11488,1815104.0,181214,https://www.sec.gov/Archives/edgar/data/1216924/000095017025023508/ownership.xml
+2025-02-14,ABNB,ABNB,40.18,Blecharczyk Nathan,1834147,"Director, Officer (Chief Strategy Officer), 10% Owner",Exercise or Conversion of Derivative Security,183078,7356074.04,347928,https://www.sec.gov/Archives/edgar/data/1559720/000095017025023496/ownership.xml
+2025-02-14,ABNB,ABNB,158.0,Blecharczyk Nathan,1834147,"Director, Officer (Chief Strategy Officer), 10% Owner",Sale,183078,28926324.0,164850,https://www.sec.gov/Archives/edgar/data/1559720/000095017025023496/ownership.xml
+2025-02-12,ABNB,ABNB,140.503,Chesky Brian,1834152,"Director, Officer (CEO and Chairman), 10% Owner",Sale,188197,26442243.09,12233789,https://www.sec.gov/Archives/edgar/data/1559720/000095017025021363/ownership.xml
+2025-02-12,ABNB,ABNB,141.0909,Chesky Brian,1834152,"Director, Officer (CEO and Chairman), 10% Owner",Sale,2104,296855.25,12231685,https://www.sec.gov/Archives/edgar/data/1559720/000095017025021363/ownership.xml
+2025-02-11,ABNB,ABNB,135.24,BALOGH ARISTOTLE N,1216924,Officer (Chief Technology Officer),Sale,700,94668.0,181214,https://www.sec.gov/Archives/edgar/data/1216924/000095017025019867/ownership.xml
+2025-02-11,ABNB,ABNB,134.7312,Gebbia Joseph,1834171,"Director, 10% Owner",Sale,95366,12848775.62,761779,https://www.sec.gov/Archives/edgar/data/1559720/000095017025019864/ownership.xml
+2025-02-11,ABNB,ABNB,135.258,Gebbia Joseph,1834171,"Director, 10% Owner",Sale,115714,15651244.21,646065,https://www.sec.gov/Archives/edgar/data/1559720/000095017025019864/ownership.xml
+2025-02-11,ABNB,ABNB,136.0846,Gebbia Joseph,1834171,"Director, 10% Owner",Sale,3205,436151.14,642860,https://www.sec.gov/Archives/edgar/data/1559720/000095017025019864/ownership.xml
+2025-02-04,ABNB,ABNB,129.58,Mertz Elinor,1938411,Officer (Chief Financial Officer),Sale,6250,809875.0,484988,https://www.sec.gov/Archives/edgar/data/1559720/000095017025015374/ownership.xml
+2025-02-04,ABNB,ABNB,129.58,BALOGH ARISTOTLE N,1216924,Officer (Chief Technology Officer),Sale,700,90706.0,181914,https://www.sec.gov/Archives/edgar/data/1216924/000095017025015373/ownership.xml
+2025-02-03,ABNB,ABNB,127.8674,Chesky Brian,1834152,"Director, Officer (CEO and Chairman), 10% Owner",Sale,3447,440758.93,12457000,https://www.sec.gov/Archives/edgar/data/1559720/000095017025014559/ownership.xml
+2025-02-03,ABNB,ABNB,128.4163,Chesky Brian,1834152,"Director, Officer (CEO and Chairman), 10% Owner",Sale,4900,629239.87,12452100,https://www.sec.gov/Archives/edgar/data/1559720/000095017025014559/ownership.xml
+2025-02-03,ABNB,ABNB,129.7851,Chesky Brian,1834152,"Director, Officer (CEO and Chairman), 10% Owner",Sale,3688,478647.45,12448412,https://www.sec.gov/Archives/edgar/data/1559720/000095017025014559/ownership.xml
+2025-02-03,ABNB,ABNB,130.415,Chesky Brian,1834152,"Director, Officer (CEO and Chairman), 10% Owner",Sale,26426,3446346.79,12421986,https://www.sec.gov/Archives/edgar/data/1559720/000095017025014559/ownership.xml
+2025-01-28,ABNB,ABNB,128.15,BALOGH ARISTOTLE N,1216924,Officer (Chief Technology Officer),Sale,700,89705.0,182614,https://www.sec.gov/Archives/edgar/data/1216924/000095017025011072/ownership.xml
+2025-01-28,ABNB,ABNB,127.4646,Gebbia Joseph,1834171,"Director, 10% Owner",Sale,32415,4131765.01,1039015,https://www.sec.gov/Archives/edgar/data/1559720/000095017025011069/ownership.xml
+2025-01-28,ABNB,ABNB,128.5203,Gebbia Joseph,1834171,"Director, 10% Owner",Sale,23064,2964192.2,1015951,https://www.sec.gov/Archives/edgar/data/1559720/000095017025011069/ownership.xml
+2025-01-28,ABNB,ABNB,129.4354,Gebbia Joseph,1834171,"Director, 10% Owner",Sale,121484,15724330.13,894467,https://www.sec.gov/Archives/edgar/data/1559720/000095017025011069/ownership.xml
+2025-01-28,ABNB,ABNB,130.3994,Gebbia Joseph,1834171,"Director, 10% Owner",Sale,37322,4866766.41,857145,https://www.sec.gov/Archives/edgar/data/1559720/000095017025011069/ownership.xml
+2025-01-21,ABNB,ABNB,135.47,BALOGH ARISTOTLE N,1216924,Officer (Chief Technology Officer),Sale,700,94829.0,183314,https://www.sec.gov/Archives/edgar/data/1216924/000095017025008321/ownership.xml
+2025-01-21,ABNB,ABNB,131.6868,Chesky Brian,1834152,"Director, Officer (CEO and Chairman), 10% Owner",Sale,10197,1342810.3,12488711,https://www.sec.gov/Archives/edgar/data/1559720/000095017025008314/ownership.xml
+2025-01-21,ABNB,ABNB,132.53,Chesky Brian,1834152,"Director, Officer (CEO and Chairman), 10% Owner",Sale,10331,1369167.43,12478380,https://www.sec.gov/Archives/edgar/data/1559720/000095017025008314/ownership.xml
+2025-01-21,ABNB,ABNB,133.545,Chesky Brian,1834152,"Director, Officer (CEO and Chairman), 10% Owner",Sale,2927,390886.21,12475453,https://www.sec.gov/Archives/edgar/data/1559720/000095017025008314/ownership.xml
+2025-01-21,ABNB,ABNB,134.5133,Chesky Brian,1834152,"Director, Officer (CEO and Chairman), 10% Owner",Sale,13006,1749479.98,12462447,https://www.sec.gov/Archives/edgar/data/1559720/000095017025008314/ownership.xml
+2025-01-21,ABNB,ABNB,135.2143,Chesky Brian,1834152,"Director, Officer (CEO and Chairman), 10% Owner",Sale,2000,270428.6,12460447,https://www.sec.gov/Archives/edgar/data/1559720/000095017025008314/ownership.xml
+2025-01-14,ABNB,ABNB,129.82,BALOGH ARISTOTLE N,1216924,Officer (Chief Technology Officer),Sale,700,90874.0,184014,https://www.sec.gov/Archives/edgar/data/1216924/000095017025006188/ownership.xml
+2025-01-14,ABNB,ABNB,127.4329,Gebbia Joseph,1834171,"Director, 10% Owner",Sale,29597,3771631.54,1256118,https://www.sec.gov/Archives/edgar/data/1559720/000095017025006187/ownership.xml
+2025-01-14,ABNB,ABNB,128.4851,Gebbia Joseph,1834171,"Director, 10% Owner",Sale,93864,12060125.43,1162254,https://www.sec.gov/Archives/edgar/data/1559720/000095017025006187/ownership.xml
+2025-01-14,ABNB,ABNB,129.577,Gebbia Joseph,1834171,"Director, 10% Owner",Sale,48895,6335667.42,1113359,https://www.sec.gov/Archives/edgar/data/1559720/000095017025006187/ownership.xml
+2025-01-14,ABNB,ABNB,130.3197,Gebbia Joseph,1834171,"Director, 10% Owner",Sale,41822,5450230.49,1071537,https://www.sec.gov/Archives/edgar/data/1559720/000095017025006187/ownership.xml
+2025-01-14,ABNB,ABNB,131.0571,Gebbia Joseph,1834171,"Director, 10% Owner",Sale,107,14023.11,1071430,https://www.sec.gov/Archives/edgar/data/1559720/000095017025006187/ownership.xml
+2025-01-06,ABNB,ABNB,137.0,Mertz Elinor,1938411,Officer (Chief Financial Officer),Sale,6250,856250.0,491238,https://www.sec.gov/Archives/edgar/data/1559720/000095017025003464/ownership.xml
+2025-01-06,ABNB,ABNB,134.8794,Gebbia Joseph,1834171,"Director, 10% Owner",Sale,28444,3836509.65,1471556,https://www.sec.gov/Archives/edgar/data/1559720/000095017025003461/ownership.xml
+2025-01-06,ABNB,ABNB,135.5787,Gebbia Joseph,1834171,"Director, 10% Owner",Sale,100900,13679890.83,1370656,https://www.sec.gov/Archives/edgar/data/1559720/000095017025003461/ownership.xml
+2025-01-06,ABNB,ABNB,136.1798,Gebbia Joseph,1834171,"Director, 10% Owner",Sale,48481,6602132.88,1322175,https://www.sec.gov/Archives/edgar/data/1559720/000095017025003461/ownership.xml
+2025-01-06,ABNB,ABNB,137.4648,Gebbia Joseph,1834171,"Director, 10% Owner",Sale,36001,4948870.26,1286174,https://www.sec.gov/Archives/edgar/data/1559720/000095017025003461/ownership.xml
+2025-01-06,ABNB,ABNB,138.0743,Gebbia Joseph,1834171,"Director, 10% Owner",Sale,459,63376.1,1285715,https://www.sec.gov/Archives/edgar/data/1559720/000095017025003461/ownership.xml
+2025-01-07,ABNB,ABNB,135.35,BALOGH ARISTOTLE N,1216924,Officer (Chief Technology Officer),Sale,700,94745.0,184714,https://www.sec.gov/Archives/edgar/data/1216924/000095017025003458/ownership.xml
+2025-01-06,ABNB,ABNB,134.8627,Chesky Brian,1834152,"Director, Officer (CEO and Chairman), 10% Owner",Sale,4737,638844.61,12532632,https://www.sec.gov/Archives/edgar/data/1559720/000095017025003456/ownership.xml
+2025-01-06,ABNB,ABNB,135.5613,Chesky Brian,1834152,"Director, Officer (CEO and Chairman), 10% Owner",Sale,21948,2975299.41,12510684,https://www.sec.gov/Archives/edgar/data/1559720/000095017025003456/ownership.xml
+2025-01-06,ABNB,ABNB,136.1913,Chesky Brian,1834152,"Director, Officer (CEO and Chairman), 10% Owner",Sale,7076,963689.64,12503608,https://www.sec.gov/Archives/edgar/data/1559720/000095017025003456/ownership.xml
+2025-01-06,ABNB,ABNB,137.4603,Chesky Brian,1834152,"Director, Officer (CEO and Chairman), 10% Owner",Sale,4700,646063.41,12498908,https://www.sec.gov/Archives/edgar/data/1559720/000095017025003456/ownership.xml
+2025-01-02,ABNB,ABNB,40.18,BALOGH ARISTOTLE N,1216924,Officer (Chief Technology Officer),Exercise or Conversion of Derivative Security,20000,803600.0,205414,https://www.sec.gov/Archives/edgar/data/1216924/000095017025002040/ownership.xml
+2025-01-02,ABNB,ABNB,131.87,BALOGH ARISTOTLE N,1216924,Officer (Chief Technology Officer),Sale,20000,2637400.0,185414,https://www.sec.gov/Archives/edgar/data/1216924/000095017025002040/ownership.xml

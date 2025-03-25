@@ -1,0 +1,38 @@
+[
+    {
+        "ticker": "COP",
+        "name": "ConocoPhillips"
+    },
+    {
+        "ticker": "EOG",
+        "name": "EOG Resources Inc"
+    },
+    {
+        "ticker": "HES",
+        "name": "Hess Corp"
+    },
+    {
+        "ticker": "FANG",
+        "name": "Diamondback Energy Inc"
+    },
+    {
+        "ticker": "EQT",
+        "name": "EQT Corp"
+    },
+    {
+        "ticker": "VG",
+        "name": "Venture Global Inc"
+    },
+    {
+        "ticker": "EXE",
+        "name": "Expand Energy Corp"
+    },
+    {
+        "ticker": "DVN",
+        "name": "Devon Energy Corp"
+    },
+    {
+        "ticker": "CTRA",
+        "name": "Coterra Energy Inc"
+    }
+]

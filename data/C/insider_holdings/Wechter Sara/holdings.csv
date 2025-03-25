@@ -1,0 +1,24 @@
+issuerTradingSymbol,relationship,date,transaction_type,cost,shares,value,shares_total
+C,Officer (Chief Human Resources Officer),2025-02-13,"Grant, Award, or Other Acquisition",0,29478.65,0.0,124905.36
+C,Officer (Chief Human Resources Officer),2025-02-13,Sale,81.01,14313,1159496.13,110592.36
+C,Officer (Chief Human Resources Officer),2025-02-13,Sale,81.02,812,65788.24,109780.36
+C,Officer (Chief Human Resources Officer),2025-02-13,Gift,0,1250,0.0,108530.36
+C,Officer (Chief Human Resources Officer),2025-02-13,Gift,0,625,0.0,107905.36
+C,Officer (Chief Human Resources Officer),2025-01-20,Tax Withholding (RSU Vesting),79.99,13463.51,1076946.16,95426.71
+C,Officer (Chief Human Resources Officer),2024-02-15,"Grant, Award, or Other Acquisition",0,36114,0.0,108890.22
+C,Officer (Chief Human Resources Officer),2024-01-20,Tax Withholding (RSU Vesting),51.52,10003.11,515360.23,72776.22
+C,,2023-02-16,"Grant, Award, or Other Acquisition",0.00,36126.83,0.0,85729.33
+C,,2023-02-21,Sale,50.77,2950,149771.5,82779.33
+C,,2023-01-20,Tax Withholding (RSU Vesting),49.37,6693.65,330465.5,49602.5
+C,,2022-02-10,"Grant, Award, or Other Acquisition",0.00,24863.22,0.0,71843.15
+C,,2022-02-11,Sale,68.555,14800,1014614.0,57043.15
+C,,2022-02-11,Gift,0.00,747,0.0,56296.15
+C,,2022-01-20,Tax Withholding (RSU Vesting),64.24,4589.53,294831.41,46979.93
+C,,2021-05-07,Gift,0.00,1352,0.0,51569.46
+C,,2021-02-11,"Grant, Award, or Other Acquisition",0.00,17473.96,0.0,52921.46
+C,,2021-01-20,Tax Withholding (RSU Vesting),63.69,3121.35,198798.78,35447.5
+C,,2020-02-13,"Grant, Award, or Other Acquisition",0.00,14256.39,0.0,38568.85
+C,,2020-01-20,Tax Withholding (RSU Vesting),81.12,2343.21,190081.2,24312.46
+C,,2019-02-14,"Grant, Award, or Other Acquisition",0.00,8969.02,0.0,28270.67
+C,,2019-02-14,Gift,0.00,1615,0.0,26655.67
+C,,2019-01-20,Tax Withholding (RSU Vesting),63.12,1828.63,115423.13,19301.65

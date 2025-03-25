@@ -1,0 +1,183 @@
+issuerTradingSymbol,relationship,date,transaction_type,cost,shares,value,shares_total
+META,,2025-02-15,Conversion of Security,0.0,2400,0.0,49169
+META,,2025-02-15,Conversion of Security,0.0,1888,0.0,51057
+META,,2025-02-15,Conversion of Security,0.0,1181,0.0,52238
+META,,2025-02-15,Conversion of Security,0.0,4103,0.0,56341
+META,,2025-02-15,Sale,736.67,4548,3350375.16,51793
+META,,2025-02-15,Exercise or Conversion of Derivative Security,0.0,6791,0.0,58584
+META,,2025-02-15,Exercise or Conversion of Derivative Security,0.0,2679,0.0,61263
+META,,2025-02-15,Tax Withholding (RSU Vesting),736.67,4696,3459402.32,56567
+META,,2025-02-15,Conversion of Security,0.0,3005,0.0,59572
+META,,2025-02-15,Conversion of Security,0.0,5471,0.0,65043
+META,,2025-02-15,Sale,736.67,4005,2950363.35,61038
+META,,2025-02-15,Exercise or Conversion of Derivative Security,0.0,6791,0.0,67829
+META,,2025-02-15,Exercise or Conversion of Derivative Security,0.0,2679,0.0,70508
+META,,2025-02-15,Tax Withholding (RSU Vesting),736.67,4696,3459402.32,65812
+META,,2024-11-15,Conversion of Security,0.0,2399,0.0,49168
+META,,2024-11-15,Conversion of Security,0.0,1888,0.0,51056
+META,,2024-11-15,Conversion of Security,0.0,1180,0.0,52236
+META,,2024-11-15,Conversion of Security,0.0,4103,0.0,56339
+META,,2024-11-15,Sale,577.16,4748,2740355.68,51591
+META,,2024-11-15,Exercise or Conversion of Derivative Security,0.0,6791,0.0,58382
+META,,2024-11-15,Exercise or Conversion of Derivative Security,0.0,2680,0.0,61062
+META,,2024-11-15,Tax Withholding (RSU Vesting),577.16,4696,2710343.36,56366
+META,,2024-11-15,Conversion of Security,0.0,3005,0.0,59371
+META,,2024-11-15,Conversion of Security,0.0,5470,0.0,64841
+META,,2024-11-15,Sale,577.16,4203,2425803.48,60638
+META,,2024-11-15,Exercise or Conversion of Derivative Security,0.0,6791,0.0,67429
+META,,2024-11-15,Exercise or Conversion of Derivative Security,0.0,2680,0.0,70109
+META,,2024-11-15,Tax Withholding (RSU Vesting),577.16,4696,2710343.36,65413
+META,,2024-11-18,Sale,552.5536,3780,2088652.61,61633
+META,,2024-11-18,Sale,553.2981,9166,5071530.38,52467
+META,,2024-11-18,Sale,554.3649,4106,2276222.28,48361
+META,,2024-11-18,Sale,555.2549,1592,883965.8,46769
+META,,2024-10-08,Gift,0.0,22988,0.0,46769
+META,,2024-10-08,Gift,0.0,22988,0.0,22988
+META,,2024-08-27,Sale,516.1329,1185,611617.49,87214
+META,,2024-08-27,Sale,517.0759,2479,1281831.16,84735
+META,,2024-08-27,Sale,518.0889,3329,1724717.95,81406
+META,,2024-08-27,Sale,519.2885,1878,975223.8,79528
+META,,2024-08-27,Sale,519.8567,725,376896.11,78803
+META,,2024-08-27,Sale,516.1329,1118,577036.58,77685
+META,,2024-08-27,Sale,517.0759,2336,1207889.3,75349
+META,,2024-08-27,Sale,518.0889,3138,1625762.97,72211
+META,,2024-08-27,Sale,519.2885,1770,919140.65,70441
+META,,2024-08-27,Sale,519.8567,684,355581.98,69757
+META,,2024-08-27,Sale,516.005,1394,719310.97,12982
+META,,2024-08-27,Sale,516.958,3963,2048704.55,9019
+META,,2024-08-27,Sale,518.0543,4864,2519816.12,4155
+META,,2024-08-27,Sale,519.1433,2738,1421414.36,1417
+META,,2024-08-27,Sale,519.7305,1417,736458.12,0
+META,,2024-08-15,Conversion of Security,0.0,2399,0.0,72156
+META,,2024-08-15,Conversion of Security,0.0,1180,0.0,73336
+META,,2024-08-15,Conversion of Security,0.0,1888,0.0,75224
+META,,2024-08-15,Conversion of Security,0.0,4102,0.0,79326
+META,,2024-08-15,Sale,526.76,4747,2500529.72,74579
+META,,2024-08-15,Exercise or Conversion of Derivative Security,0.0,6791,0.0,81370
+META,,2024-08-15,Exercise or Conversion of Derivative Security,0.0,2679,0.0,84049
+META,,2024-08-15,Tax Withholding (RSU Vesting),526.76,4696,2473664.96,79353
+META,,2024-08-15,Conversion of Security,0.0,3005,0.0,82358
+META,,2024-08-15,Conversion of Security,0.0,5470,0.0,87828
+META,,2024-08-15,Sale,526.76,4203,2213972.28,83625
+META,,2024-08-15,Exercise or Conversion of Derivative Security,0.0,6791,0.0,90416
+META,,2024-08-15,Exercise or Conversion of Derivative Security,0.0,2679,0.0,93095
+META,,2024-08-15,Tax Withholding (RSU Vesting),526.76,4696,2473664.96,88399
+META,,2024-05-15,Conversion of Security,0.0,2400,0.0,72157
+META,,2024-05-15,Conversion of Security,0.0,1180,0.0,73337
+META,,2024-05-15,Conversion of Security,0.0,1888,0.0,75225
+META,,2024-05-15,Conversion of Security,0.0,4103,0.0,79328
+META,,2024-05-15,Sale,471.85,4748,2240343.8,74580
+META,,2024-05-15,Exercise or Conversion of Derivative Security,0.0,6791,0.0,81371
+META,,2024-05-15,Exercise or Conversion of Derivative Security,0.0,2679,0.0,84050
+META,,2024-05-15,Tax Withholding (RSU Vesting),471.85,4696,2215807.6,79354
+META,,2024-05-15,Conversion of Security,0.0,3005,0.0,82359
+META,,2024-05-15,Conversion of Security,0.0,5470,0.0,87829
+META,,2024-05-15,Sale,471.85,4203,1983185.55,83626
+META,,2024-05-15,Exercise or Conversion of Derivative Security,0.0,6791,0.0,90417
+META,,2024-05-15,Exercise or Conversion of Derivative Security,0.0,2679,0.0,93096
+META,,2024-05-15,Tax Withholding (RSU Vesting),471.85,4696,2215807.6,88400
+META,,2024-05-16,Sale,474.0704,1750,829623.2,86650
+META,,2024-05-16,Sale,475.2119,5936,2820857.84,80714
+META,,2024-05-16,Sale,475.9364,6778,3225896.92,73936
+META,,2024-05-16,Sale,476.7567,4179,1992366.25,69757
+META,,2024-02-15,Conversion of Security,0.0,1487,0.0,71244
+META,,2024-02-15,Conversion of Security,0.0,2399,0.0,73643
+META,,2024-02-15,Conversion of Security,0.0,1500,0.0,75143
+META,,2024-02-15,Conversion of Security,0.0,1180,0.0,76323
+META,,2024-02-15,Conversion of Security,0.0,1888,0.0,78211
+META,,2024-02-15,Conversion of Security,0.0,4103,0.0,82314
+META,,2024-02-15,Sale,473.28,5916,2799924.48,76398
+META,,2024-02-15,Exercise or Conversion of Derivative Security,0.0,6791,0.0,83189
+META,,2024-02-15,Tax Withholding (RSU Vesting),473.28,3367,1593533.76,79822
+META,,2024-02-15,Conversion of Security,0.0,744,0.0,80566
+META,,2024-02-15,Conversion of Security,0.0,1569,0.0,82135
+META,,2024-02-15,Conversion of Security,0.0,3005,0.0,85140
+META,,2024-02-15,Conversion of Security,0.0,5471,0.0,90611
+META,,2024-02-15,Sale,473.28,5040,2385331.2,85571
+META,,2024-02-15,Exercise or Conversion of Derivative Security,0.0,6791,0.0,92362
+META,,2024-02-15,Tax Withholding (RSU Vesting),473.28,3367,1593533.76,88995
+META,,2024-02-16,Sale,475.4079,3014,1432879.41,85981
+META,,2024-02-16,Sale,476.2095,8099,3856820.74,77882
+META,,2024-02-16,Sale,477.1698,4837,2308070.32,73045
+META,,2024-02-16,Sale,478.1597,3288,1572189.09,69757
+META,,2023-11-20,Gift,0.0,14376,0.0,69757
+META,,2023-11-20,Gift,0.0,14376,0.0,14376
+META,,2023-11-15,Conversion of Security,0.0,1487,0.0,85620
+META,,2023-11-15,Conversion of Security,0.0,2399,0.0,88019
+META,,2023-11-15,Conversion of Security,0.0,1500,0.0,89519
+META,,2023-11-15,Conversion of Security,0.0,1180,0.0,90699
+META,,2023-11-15,Conversion of Security,0.0,4102,0.0,94801
+META,,2023-11-15,Sale,336.31,5292,1779752.52,89509
+META,,2023-11-15,Exercise or Conversion of Derivative Security,0.0,6791,0.0,96300
+META,,2023-11-15,Tax Withholding (RSU Vesting),336.31,3367,1132355.77,92933
+META,,2023-11-15,Conversion of Security,0.0,743,0.0,93676
+META,,2023-11-15,Conversion of Security,0.0,1569,0.0,95245
+META,,2023-11-15,Conversion of Security,0.0,3004,0.0,98249
+META,,2023-11-15,Conversion of Security,0.0,5470,0.0,103719
+META,,2023-11-15,Sale,336.31,5350,1799258.5,98369
+META,,2023-11-15,Exercise or Conversion of Derivative Security,0.0,6791,0.0,105160
+META,,2023-11-15,Tax Withholding (RSU Vesting),336.31,3367,1132355.77,101793
+META,,2023-11-16,Sale,329.1,17660,5811906.0,84133
+META,,2023-08-15,Conversion of Security,0.0,1487,0.0,87728
+META,,2023-08-15,Conversion of Security,0.0,2400,0.0,90128
+META,,2023-08-15,Conversion of Security,0.0,1499,0.0,91627
+META,,2023-08-15,Conversion of Security,0.0,1180,0.0,92807
+META,,2023-08-15,Conversion of Security,0.0,4103,0.0,96910
+META,,2023-08-15,Sale,306.19,5293,1620663.67,91617
+META,,2023-08-15,Exercise or Conversion of Derivative Security,0.0,6791,0.0,98408
+META,,2023-08-15,Tax Withholding (RSU Vesting),306.19,3367,1030941.73,95041
+META,,2023-08-15,Conversion of Security,0.0,744,0.0,95785
+META,,2023-08-15,Conversion of Security,0.0,1569,0.0,97354
+META,,2023-08-15,Conversion of Security,0.0,3005,0.0,100359
+META,,2023-08-15,Conversion of Security,0.0,5470,0.0,105829
+META,,2023-08-15,Sale,306.19,5350,1638116.5,100479
+META,,2023-08-15,Exercise or Conversion of Derivative Security,0.0,6791,0.0,107270
+META,,2023-08-15,Tax Withholding (RSU Vesting),306.19,3367,1030941.73,103903
+META,,2023-08-16,Sale,298.5436,7959,2376108.51,95944
+META,,2023-08-16,Sale,299.3064,5006,1498327.84,90938
+META,,2023-08-16,Sale,300.171,6805,2042663.66,84133
+META,,2023-05-15,Conversion of Security,0.0,1487,0.0,70069
+META,,2023-05-15,Conversion of Security,0.0,2399,0.0,72468
+META,,2023-05-15,Conversion of Security,0.0,1500,0.0,73968
+META,,2023-05-15,Conversion of Security,0.0,1180,0.0,75148
+META,,2023-05-15,Conversion of Security,0.0,4103,0.0,79251
+META,,2023-05-15,Sale,233.81,5293,1237556.33,73958
+META,,2023-05-15,Exercise or Conversion of Derivative Security,0.0,6790,0.0,80748
+META,,2023-05-15,Tax Withholding (RSU Vesting),233.81,3367,787238.27,77381
+META,,2023-05-15,Conversion of Security,0.0,743,0.0,78124
+META,,2023-05-15,Conversion of Security,0.0,1569,0.0,79693
+META,,2023-05-15,Conversion of Security,0.0,3005,0.0,82698
+META,,2023-05-15,Conversion of Security,0.0,5470,0.0,88168
+META,,2023-05-15,Sale,233.81,5350,1250883.5,82818
+META,,2023-05-15,Exercise or Conversion of Derivative Security,0.0,6790,0.0,89608
+META,,2023-05-15,Tax Withholding (RSU Vesting),233.81,3367,787238.27,86241
+META,,2023-02-15,Conversion of Security,0.0,1209,0.0,5984
+META,,2023-02-15,Conversion of Security,0.0,1487,0.0,7471
+META,,2023-02-15,Conversion of Security,0.0,2399,0.0,9870
+META,,2023-02-15,Conversion of Security,0.0,1500,0.0,11370
+META,,2023-02-15,Conversion of Security,0.0,1181,0.0,12551
+META,,2023-02-15,Conversion of Security,0.0,4102,0.0,16653
+META,,2023-02-15,Sale,179.48,5070,909963.6,11583
+META,,2023-02-15,Conversion of Security,0.0,744,0.0,7107
+META,,2023-02-15,Conversion of Security,0.0,1837,0.0,8944
+META,,2023-02-15,Conversion of Security,0.0,1569,0.0,10513
+META,,2023-02-15,Conversion of Security,0.0,3005,0.0,13518
+META,,2023-02-15,Conversion of Security,0.0,5471,0.0,18989
+META,,2023-02-15,Sale,179.48,5443,976909.64,13546
+META,,2022-11-15,Conversion of Security,0.0,1208,0.0,1208
+META,,2022-11-15,Conversion of Security,0.0,1487,0.0,2695
+META,,2022-11-15,Conversion of Security,0.0,1499,0.0,4194
+META,,2022-11-15,Conversion of Security,0.0,1180,0.0,5374
+META,,2022-11-15,Conversion of Security,0.0,4103,0.0,9477
+META,,2022-11-15,Sale,114.22,4702,537062.44,4775
+META,,2022-11-15,Conversion of Security,0.0,743,0.0,743
+META,,2022-11-15,Conversion of Security,0.0,1837,0.0,2580
+META,,2022-11-15,Conversion of Security,0.0,1569,0.0,4149
+META,,2022-11-15,Conversion of Security,0.0,3005,0.0,7154
+META,,2022-11-15,Conversion of Security,0.0,5470,0.0,12624
+META,,2022-11-15,Sale,114.22,6261,715131.42,6363
+ALK,,2022-05-05,"Grant, Award, or Other Acquisition",0.0,2346,0.0,10698
+ALK,Director,2021-05-06,"Grant, Award, or Other Acquisition",0.0,1566,0.0,8352
+ALK,Director,2020-05-07,"Grant, Award, or Other Acquisition",0.0,3539,0.0,6786
+ALK,Director,2019-05-09,"Grant, Award, or Other Acquisition",0.0,1658,0.0,3247
+ALK,Director,2018-05-03,"Grant, Award, or Other Acquisition",62.92,1589,99979.88,1589

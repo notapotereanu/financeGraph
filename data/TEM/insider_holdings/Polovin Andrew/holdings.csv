@@ -1,0 +1,28 @@
+issuerTradingSymbol,relationship,date,transaction_type,cost,shares,value,shares_total
+TEM,Officer (EVP and General Counsel),2025-03-18,Sale,45.78,9379,429370.62,157927
+TEM,Officer (EVP and General Counsel),2025-03-18,Sale,46.38,3356,155651.28,154571
+TEM,Officer (EVP and General Counsel),2025-03-18,Sale,47.37,400,18948.0,154171
+TEM,Officer (EVP and General Counsel),2025-02-18,Sale,79.63,4021,320192.23,233217
+TEM,Officer (EVP and General Counsel),2025-02-18,Sale,80.56,18272,1471992.32,214945
+TEM,Officer (EVP and General Counsel),2025-02-18,Sale,81.74,15812,1292472.88,199133
+TEM,Officer (EVP and General Counsel),2025-02-18,Sale,82.46,9482,781885.72,189651
+TEM,Officer (EVP and General Counsel),2025-02-18,Sale,83.60,7580,633688.0,182071
+TEM,Officer (EVP and General Counsel),2025-02-18,Sale,84.66,3313,280478.58,178758
+TEM,Officer (EVP and General Counsel),2025-02-18,Sale,85.52,2100,179592.0,176658
+TEM,Officer (EVP and General Counsel),2025-02-18,Sale,86.45,500,43225.0,176158
+TEM,Officer (EVP and General Counsel),2025-02-18,Sale,87.78,500,43890.0,175658
+TEM,Officer (EVP and General Counsel),2025-02-18,Sale,89.28,1000,89280.0,174658
+TEM,Officer (EVP and General Counsel),2025-02-18,Sale,90.36,1200,108432.0,173458
+TEM,Officer (EVP and General Counsel),2025-02-18,Sale,91,601,54691.0,172857
+TEM,Officer (EVP and General Counsel),2025-02-19,Sale,81.83,2228,182317.24,170629
+TEM,Officer (EVP and General Counsel),2025-02-19,Sale,82.36,201,16554.36,170428
+TEM,Officer (EVP and General Counsel),2025-02-19,Sale,81.87,3122,255598.14,167306
+TEM,Officer (EVP and General Counsel),2025-02-05,Sale,67.57,7717,521437.69,237238
+TEM,Officer (EVP and General Counsel),2024-12-16,Sale,40.23,1130,45459.9,244955
+TEM,Officer (EVP and General Counsel),2024-12-11,Sale,40.88,3900,159432.0,293689
+TEM,Officer (EVP and General Counsel),2024-12-11,Sale,41.75,20420,852535.0,273269
+TEM,Officer (EVP and General Counsel),2024-12-11,Sale,42.96,22040,946838.4,251229
+TEM,Officer (EVP and General Counsel),2024-12-11,Sale,43.62,5144,224381.28,246085
+TEM,Officer (EVP and General Counsel),2024-11-01,"Grant, Award, or Other Acquisition",0,30000,0.0,297589
+TEM,Officer (EVP and General Counsel),2024-06-13,"Grant, Award, or Other Acquisition",0,370000,0.0,370000
+TEM,Officer (EVP and General Counsel),2024-06-14,Tax Withholding (RSU Vesting),37,102411,3789207.0,267589

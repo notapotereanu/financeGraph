@@ -1,0 +1,9 @@
+issuerTradingSymbol,relationship,date,transaction_type,cost,shares,value,shares_total
+MTDR,,2025-02-21,Purchase,54.99,1000,54990.0,3750
+MTDR,,2025-02-16,Tax Withholding (RSU Vesting),57.19,1050,60049.5,77762
+MTDR,,2025-02-17,Tax Withholding (RSU Vesting),57.19,1527,87329.13,76235
+MTDR,,2025-01-07,"Grant, Award, or Other Acquisition",0.0,13711,0.0,84364
+MTDR,,2025-01-07,Tax Withholding (RSU Vesting),58.35,5552,323959.2,78812
+MTDR,,2024-09-06,Purchase,50.35,1000,50350.0,2750
+MTDR,,2024-06-14,Purchase,55.9,1750,97825.0,1750
+MTDR,,2024-06-04,Tax Withholding (RSU Vesting),59.21,1640,97104.4,70226

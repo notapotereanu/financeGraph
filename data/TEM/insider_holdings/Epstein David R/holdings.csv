@@ -1,0 +1,48 @@
+issuerTradingSymbol,relationship,date,transaction_type,cost,shares,value,shares_total
+TEM,Director,2025-03-17,Sale,46.83,990,46361.7,26284
+TEM,Director,2025-03-03,Sale,57.52,250,14380.0,27274
+TEM,Director,2025-02-03,Sale,53.31,370,19724.7,27524
+TEM,Director,2024-12-11,Sale,41.81,620,25922.2,27894
+TEM,Director,2024-06-13,"Grant, Award, or Other Acquisition",0,28514,0.0,28514
+SGEN,"Director, Officer (CEO)",2023-12-14,Disposition to the Issuer (Shares returned to company),229.00,16407,3757203.0,0
+SGEN,,2023-11-10,Sale,213.01,10620,2262166.2,136598
+SGEN,,2023-08-15,"Grant, Award, or Other Acquisition",0.0,39650,0.0,147218
+SGEN,,2022-11-09,"Grant, Award, or Other Acquisition",0.00,107389,0.0,107389
+EVLO,,2022-06-30,Exercise or Conversion of Derivative Security,0,2053,0.0,91058
+EVLO,,2022-06-30,Exercise or Conversion of Derivative Security,0,2874,0.0,93932
+SNTI,,2022-06-08,"Grant, Award, or Other Acquisition",0,112519,0.0,123252
+AXLA,,2022-05-19,"Grant, Award, or Other Acquisition",0,47059,0.0,209756
+EVLO,,2022-05-31,Exercise or Conversion of Derivative Security,0,2052,0.0,86132
+EVLO,,2022-05-31,Exercise or Conversion of Derivative Security,0,2873,0.0,89005
+EVLO,,2022-05-27,Purchase,1.46,17123,24999.58,84080
+EVLO,,2022-05-02,Exercise or Conversion of Derivative Security,0,2053,0.0,64084
+EVLO,,2022-05-02,Exercise or Conversion of Derivative Security,0,2873,0.0,66957
+RUBY,,2022-04-21,Purchase,1.4443,30000,43329.0,4720012
+EVLO,,2022-03-31,Exercise or Conversion of Derivative Security,0,2052,0.0,59157
+EVLO,,2022-03-31,Exercise or Conversion of Derivative Security,0,2874,0.0,62031
+AXLA,,2022-03-18,Exercise or Conversion of Derivative Security,,1535,,162697
+AXLA,,2022-03-16,Purchase,1.91,26178,49999.98,161162
+EVLO,,2022-02-28,Exercise or Conversion of Derivative Security,0,2053,0.0,54232
+EVLO,,2022-02-28,Exercise or Conversion of Derivative Security,0,2873,0.0,57105
+AXLA,,2022-02-18,Exercise or Conversion of Derivative Security,,1534,,134984
+EVLO,,2022-01-31,Exercise or Conversion of Derivative Security,0,2052,0.0,49306
+EVLO,,2022-01-31,Exercise or Conversion of Derivative Security,0,2873,0.0,52179
+AXLA,,2022-01-18,Exercise or Conversion of Derivative Security,,1535,,133450
+EVLO,,2021-12-31,Exercise or Conversion of Derivative Security,0,2052,0.0,44380
+EVLO,,2021-12-31,Exercise or Conversion of Derivative Security,0,2874,0.0,47254
+AXLA,,2021-12-17,Exercise or Conversion of Derivative Security,,1535,,131915
+EVLO,,2021-11-30,Exercise or Conversion of Derivative Security,0,2053,0.0,39455
+EVLO,,2021-11-30,Exercise or Conversion of Derivative Security,0,2873,0.0,42328
+AXLA,,2021-11-18,Exercise or Conversion of Derivative Security,,1534,,130380
+EVLO,,2021-11-01,Exercise or Conversion of Derivative Security,0,2052,0.0,34529
+EVLO,,2021-11-01,Exercise or Conversion of Derivative Security,0,2873,0.0,37402
+AXLA,,2021-10-18,Exercise or Conversion of Derivative Security,,1535,,128846
+EVLO,,2021-10-01,Exercise or Conversion of Derivative Security,0,2053,0.0,29603
+EVLO,,2021-10-01,Exercise or Conversion of Derivative Security,0,2874,0.0,32477
+AXLA,,2021-09-17,Exercise or Conversion of Derivative Security,,1535,,127311
+EVLO,,2021-09-03,Exercise or Conversion of Derivative Security,0,4104,0.0,21804
+EVLO,,2021-09-03,Exercise or Conversion of Derivative Security,0,5746,0.0,27550
+AXLA,,2021-08-18,Exercise or Conversion of Derivative Security,,1534,,125776
+AXLA,,2021-07-16,Exercise or Conversion of Derivative Security,,1535,,124242
+AXLA,,2021-06-18,Exercise or Conversion of Derivative Security,,1535,,122707
+AXLA,,2021-05-18,Exercise or Conversion of Derivative Security,,1534,,121172

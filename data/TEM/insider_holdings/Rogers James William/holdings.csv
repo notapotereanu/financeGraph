@@ -1,0 +1,25 @@
+issuerTradingSymbol,relationship,date,transaction_type,cost,shares,value,shares_total
+TEM,Officer (Chief Financial Officer),2025-03-18,Sale,45.78,17168,785951.04,170612
+TEM,Officer (Chief Financial Officer),2025-03-18,Sale,46.41,5162,239568.42,165450
+TEM,Officer (Chief Financial Officer),2025-03-18,Sale,47.40,700,33180.0,164750
+TEM,Officer (Chief Financial Officer),2025-02-18,Sale,79.62,2340,186310.8,218760
+TEM,Officer (Chief Financial Officer),2025-02-18,Sale,80.61,9217,742982.37,209543
+TEM,Officer (Chief Financial Officer),2025-02-18,Sale,81.80,7645,625361.0,201898
+TEM,Officer (Chief Financial Officer),2025-02-18,Sale,82.52,4244,350214.88,197654
+TEM,Officer (Chief Financial Officer),2025-02-18,Sale,83.72,4330,362507.6,193324
+TEM,Officer (Chief Financial Officer),2025-02-18,Sale,84.79,1498,127015.42,191826
+TEM,Officer (Chief Financial Officer),2025-02-18,Sale,85.77,801,68701.77,191025
+TEM,Officer (Chief Financial Officer),2025-02-18,Sale,88.61,300,26583.0,190725
+TEM,Officer (Chief Financial Officer),2025-02-18,Sale,89.77,805,72264.85,189920
+TEM,Officer (Chief Financial Officer),2025-02-18,Sale,90.61,600,54366.0,189320
+TEM,Officer (Chief Financial Officer),2025-02-19,Sale,81.83,1412,115543.96,187908
+TEM,Officer (Chief Financial Officer),2025-02-19,Sale,82.36,128,10542.08,187780
+TEM,Officer (Chief Financial Officer),2025-02-05,Sale,67.57,8712,588669.84,221100
+TEM,Officer (Chief Financial Officer),2024-12-16,Sale,40.23,1468,59057.64,229812
+TEM,Officer (Chief Financial Officer),2024-12-11,Sale,40.83,12940,528340.2,301365
+TEM,Officer (Chief Financial Officer),2024-12-11,Sale,41.73,26578,1109099.94,274787
+TEM,Officer (Chief Financial Officer),2024-12-11,Sale,42.97,35899,1542580.03,238888
+TEM,Officer (Chief Financial Officer),2024-12-11,Sale,43.63,7608,331937.04,231280
+TEM,Officer (Chief Financial Officer),2024-11-01,"Grant, Award, or Other Acquisition",0,30000,0.0,314305
+TEM,Officer (Chief Financial Officer),2024-06-13,"Grant, Award, or Other Acquisition",0,370000,0.0,370000
+TEM,Officer (Chief Financial Officer),2024-06-14,Tax Withholding (RSU Vesting),37,85695,3170715.0,284305

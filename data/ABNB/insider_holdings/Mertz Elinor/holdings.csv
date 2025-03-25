@@ -1,0 +1,24 @@
+issuerTradingSymbol,relationship,date,transaction_type,cost,shares,value,shares_total
+ABNB,Officer (Chief Financial Officer),2025-03-04,Sale,140.1,6250,875625.0,449463
+ABNB,Officer (Chief Financial Officer),2025-03-05,Sale,141.87,6086,863420.82,443377
+ABNB,Officer (Chief Financial Officer),2025-02-19,Tax Withholding (RSU Vesting),160.6,4275,686565.0,455713
+ABNB,Officer (Chief Financial Officer),2025-02-14,Sale,160.0,25000,4000000.0,459988
+ABNB,Officer (Chief Financial Officer),2025-02-04,Sale,129.58,6250,809875.0,484988
+ABNB,Officer (Chief Financial Officer),2025-01-06,Sale,137.0,6250,856250.0,491238
+ABNB,Officer (Chief Financial Officer),2024-12-03,Sale,136.97,10500,1438185.0,503738
+ABNB,Officer (Chief Financial Officer),2024-12-04,Sale,136.55,6250,853437.5,497488
+ABNB,Officer (Chief Financial Officer),2024-11-19,Tax Withholding (RSU Vesting),132.19,10334,1366051.46,514238
+ABNB,Officer (Chief Financial Officer),2024-11-04,Sale,136.23,6250,851437.5,524572
+ABNB,Officer (Chief Financial Officer),2024-10-04,Sale,128.42,6250,802625.0,530822
+ABNB,Officer (Chief Financial Officer),2024-09-17,Sale,120.0,6250,750000.0,537072
+ABNB,Officer (Chief Financial Officer),2024-09-03,Sale,116.5,7578,882837.0,546244
+ABNB,Officer (Chief Financial Officer),2024-09-04,Sale,114.27,2922,333896.94,543322
+ABNB,Officer (Chief Financial Officer),2024-08-19,Tax Withholding (RSU Vesting),116.31,10332,1201714.92,553822
+DASH,Director,2024-06-20,"Grant, Award, or Other Acquisition",0.0,2495,0.0,12659
+ABNB,Officer (Chief Financial Officer),2024-06-03,Sale,145.74,7578,1104417.72,564154
+ABNB,Officer (Chief Financial Officer),2024-05-20,Tax Withholding (RSU Vesting),145.66,10332,1504959.12,571732
+ABNB,Officer (Chief Financial Officer),2024-04-05,"Grant, Award, or Other Acquisition",0.0,46534,0.0,582064
+ABNB,Officer (Chief Financial Officer),2024-03-05,Sale,156.76,9196,1441564.96,535530
+DASH,,2023-06-20,"Grant, Award, or Other Acquisition",0.0,3424,0.0,10164
+DASH,,2022-08-20,"Grant, Award, or Other Acquisition",0.0,3465,0.0,3465
+DASH,,2022-08-20,"Grant, Award, or Other Acquisition",0.0,3275,0.0,6740
