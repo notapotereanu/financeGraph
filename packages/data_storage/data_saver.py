@@ -29,7 +29,7 @@ class DataSaver:
                     os.makedirs(stocks_dir)
                 for stock_ticker, stock_df in value.items():
                     stock_path = os.path.join(stocks_dir, f'{stock_ticker}.csv')
-                    stock_df.to_csv(stock_path)
+                    stock_df.to_csv(stock_path, index=False)
             else:
                 file_path = os.path.join(directory, f'{key}')
                 if isinstance(value, pd.DataFrame):
