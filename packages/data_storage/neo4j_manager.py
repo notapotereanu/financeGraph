@@ -182,6 +182,9 @@ class Neo4jManager:
                         logger.error(f"Error processing {label} for {ticker}: {e}")
                     
                     logger.info(f"Completed {label} in {time.time() - category_start:.2f} seconds")
+                
+                # Connect insiders to committees if they are the same person
+                self._connect_insiders_to_committees(session, ticker)
             
             total_time = time.time() - start_time
             logger.info(f"Completed saving all data for {ticker} in {total_time:.2f} seconds")
@@ -189,6 +192,198 @@ class Neo4jManager:
         except Exception as e:
             logger.error(f"Failed to save data for {ticker}: {e}")
             raise
+
+    def _normalize_name(self, name):
+        """
+        Normalize a name for comparison by removing punctuation, extra spaces,
+        and converting to lowercase.
+        
+        Args:
+            name: The name to normalize
+            
+        Returns:
+            The normalized name
+        """
+        if not name:
+            return ""
+            
+        # Convert to string if not already
+        name = str(name)
+        
+        # Convert to uppercase for case-insensitive comparison
+        name = name.upper()
+        
+        # Remove common titles and suffixes
+        titles_and_suffixes = ["DR.", "DR ", "MR.", "MR ", "MS.", "MS ", "MRS.", "MRS ", 
+                              "PHD", "PH.D.", "MBA", "M.B.A.", "JR.", "JR ", "SR.", "SR ", 
+                              "III", "II", "IV", "ESQ", "ESQ.", "CPA", "C.P.A."]
+        for title in titles_and_suffixes:
+            name = name.replace(title, " ")
+        
+        # Remove punctuation and extra spaces
+        import re
+        name = re.sub(r'[^\w\s]', ' ', name)  # Replace punctuation with spaces
+        name = re.sub(r'\s+', ' ', name)      # Replace multiple spaces with single space
+        name = name.strip()                   # Remove leading/trailing spaces
+        
+        return name
+    
+    def _name_similarity(self, name1, name2, threshold=0.8):
+        """
+        Calculate the similarity between two names.
+        
+        Args:
+            name1: First name
+            name2: Second name
+            threshold: Similarity threshold (0.0 to 1.0)
+            
+        Returns:
+            True if the names are similar enough, False otherwise
+        """
+        from difflib import SequenceMatcher
+        
+        if not name1 or not name2:
+            return False
+            
+        # Normalize names for comparison
+        norm_name1 = self._normalize_name(name1)
+        norm_name2 = self._normalize_name(name2)
+        
+        # Check for exact match after normalization
+        if norm_name1 == norm_name2:
+            return True
+            
+        # Check for one name being a part of the other
+        if norm_name1 in norm_name2 or norm_name2 in norm_name1:
+            # If one name is a substantial part of the other (> 70% of characters)
+            longer = max(len(norm_name1), len(norm_name2))
+            shorter = min(len(norm_name1), len(norm_name2))
+            if shorter > 0 and shorter / longer > 0.7:
+                return True
+        
+        # Calculate string similarity
+        similarity = SequenceMatcher(None, norm_name1, norm_name2).ratio()
+        
+        return similarity >= threshold
+    
+    def _connect_insiders_to_committees(self, session, ticker):
+        """
+        Connect Insider nodes to Committee nodes when they represent the same person.
+        Also connect Insider nodes directly to Officer nodes when they're the same person.
+        
+        Args:
+            session: The Neo4j session
+            ticker: The stock ticker symbol
+        """
+        logger.info(f"Connecting Insiders to Officers and Committees for {ticker}")
+        
+        try:
+            # Get all Insider nodes
+            insider_result = session.run("""
+                MATCH (i:Insider {ticker: $ticker})
+                RETURN id(i) as id, i.name as name
+            """, ticker=ticker)
+            insiders = [dict(record) for record in insider_result]
+            logger.info(f"Found {len(insiders)} insider nodes for {ticker}")
+            
+            # Get all Officer nodes
+            officer_result = session.run("""
+                MATCH (o:Officer {ticker: $ticker})
+                RETURN id(o) as id, o.name as name
+            """, ticker=ticker)
+            officers = [dict(record) for record in officer_result]
+            logger.info(f"Found {len(officers)} officer nodes for {ticker}")
+            
+            # Track connections made
+            officer_connections = 0
+            committee_connections = 0
+            
+            # Connect Insiders to Officers and their Committees
+            for insider in insiders:
+                insider_id = insider['id']
+                insider_name = insider['name']
+                
+                # Try to match Insider to Officer with a lower threshold for better matching
+                matched_officer = None
+                best_match_score = 0
+                
+                for officer in officers:
+                    officer_id = officer['id']
+                    officer_name = officer['name']
+                    
+                    # Compute similarity with a lower threshold
+                    from difflib import SequenceMatcher
+                    
+                    # Normalize names for comparison
+                    norm_insider_name = self._normalize_name(insider_name)
+                    norm_officer_name = self._normalize_name(officer_name)
+                    
+                    # Calculate similarity score
+                    similarity = SequenceMatcher(None, norm_insider_name, norm_officer_name).ratio()
+                    
+                    logger.debug(f"Similarity between '{insider_name}' and '{officer_name}': {similarity}")
+                    
+                    # Check for name parts appearing in the other name (handles "COOK TIMOTHY" vs "Tim Cook")
+                    insider_parts = set(norm_insider_name.split())
+                    officer_parts = set(norm_officer_name.split())
+                    common_parts = insider_parts.intersection(officer_parts)
+                    
+                    # Special handling for first/last name reversal
+                    if len(insider_parts) >= 2 and len(officer_parts) >= 2:
+                        if (len(common_parts) > 0) or similarity > 0.6:
+                            # If we find some common parts or decent similarity, prefer this match
+                            if similarity > best_match_score:
+                                best_match_score = similarity
+                                matched_officer = officer
+                                logger.debug(f"Found potential match: {insider_name} <-> {officer_name} (score: {similarity})")
+                
+                # If matched, connect Insider to Officer and to the same Committees
+                if matched_officer:
+                    officer_id = matched_officer['id']
+                    officer_name = matched_officer['name']
+                    logger.info(f"Matched Insider '{insider_name}' to Officer '{officer_name}' with score {best_match_score}")
+                    
+                    # 1. Create direct SAME_PERSON relationship between Insider and Officer
+                    try:
+                        session.run("""
+                            MATCH (i:Insider), (o:Officer)
+                            WHERE id(i) = $insider_id AND id(o) = $officer_id
+                            MERGE (i)-[:SAME_PERSON]->(o)
+                        """, insider_id=insider_id, officer_id=officer_id)
+                        
+                        officer_connections += 1
+                        logger.info(f"Connected Insider '{insider_name}' to Officer '{officer_name}' with SAME_PERSON relationship")
+                    except Exception as e:
+                        logger.error(f"Error connecting Insider '{insider_name}' to Officer '{officer_name}': {e}")
+                    
+                    # 2. Get Officer's Committees and connect Insider to them
+                    officer_committees_result = session.run("""
+                        MATCH (o:Officer)-[:MEMBER_OF]->(c:Committee {ticker: $ticker})
+                        WHERE id(o) = $officer_id
+                        RETURN id(c) as id, c.name as name
+                    """, ticker=ticker, officer_id=officer_id)
+                    
+                    officer_committees = [dict(record) for record in officer_committees_result]
+                    
+                    # Connect Insider to each Committee
+                    for committee in officer_committees:
+                        try:
+                            session.run("""
+                                MATCH (i:Insider), (c:Committee)
+                                WHERE id(i) = $insider_id AND id(c) = $committee_id
+                                MERGE (i)-[:MEMBER_OF]->(c)
+                            """, insider_id=insider_id, committee_id=committee['id'])
+                            
+                            committee_connections += 1
+                            logger.info(f"Connected Insider '{insider_name}' to Committee '{committee['name']}'")
+                        except Exception as e:
+                            logger.error(f"Error connecting Insider '{insider_name}' to Committee '{committee['name']}': {e}")
+            
+            logger.info(f"Completed connecting Insiders: {officer_connections} officer connections, {committee_connections} committee connections")
+            
+        except Exception as e:
+            logger.error(f"Error connecting Insiders to Officers and Committees: {e}")
+            logger.info("Continuing with other processing")
             
     def _save_company_description(self, session, ticker, data):
         session.run(
@@ -477,10 +672,15 @@ class Neo4jManager:
             ticker: The stock ticker symbol
             company_officers: DataFrame or dictionary of company officers
         """
+        logger.info(f"Saving company officers for {ticker}")
+        
         if company_officers is None or (isinstance(company_officers, pd.DataFrame) and company_officers.empty):
+            logger.warning(f"No company officers data available for {ticker}")
             return
             
         # Create CompanyOfficers node and connect to stock
+        logger.info(f"Creating CompanyOfficers node for {ticker}")
+        officers_node_name = f"Company Officers - {ticker}"
         session.run(
             """
             MATCH (s:Stock {ticker: $ticker})
@@ -488,7 +688,7 @@ class Neo4jManager:
             MERGE (co)-[:ASSOCIATED_WITH]->(s)
             """,
             ticker=ticker,
-            officers_name=f"Company Officers - {ticker}"
+            officers_name=officers_node_name
         )
         
         # Store file path for company officers data
@@ -496,65 +696,145 @@ class Neo4jManager:
         
         try:
             # Add file path to the CompanyOfficers node
+            logger.debug(f"Setting data file path: {officers_file_path}")
             session.run(
                 """
                 MATCH (co:CompanyOfficers {name: $officers_name})-[:ASSOCIATED_WITH]->(s:Stock {ticker: $ticker})
                 SET co.data_file = $data_file
                 """,
                 ticker=ticker,
-                officers_name=f"Company Officers - {ticker}",
+                officers_name=officers_node_name,
                 data_file=officers_file_path
             )
+            
+            logger.info(f"Processing {len(company_officers)} officers")
+            officer_count = 0
+            committee_count = 0
+            skipped_count = 0
             
             # Process each officer
             for _, row in company_officers.iterrows():
                 name = row.get('name')
                 if pd.isna(name):
+                    logger.debug(f"Skipping officer due to missing name")
+                    skipped_count += 1
                     continue
                 
                 position = row.get('position', '')
                 age = int(row.get('age', 0)) if not pd.isna(row.get('age')) else 0
+                qualifications = row.get('qualificationsAndExperience', [])
+                
+                # Handle committee memberships
+                committees = row.get('committeeMemberships', [])
+                if pd.isna(committees):
+                    committees = []
+                elif isinstance(committees, str):
+                    # Try to parse string representation of list
+                    try:
+                        if committees.startswith('[') and committees.endswith(']'):
+                            committees = eval(committees)  # Safe for list literals
+                        else:
+                            committees = [committees]
+                    except:
+                        committees = [committees]
+                
+                logger.debug(f"Officer {name} has {len(committees)} committee memberships")
                 
                 # Create Officer node and connect to CompanyOfficers
+                logger.debug(f"Creating Officer node for {name}")
                 session.run(
                     """
                     MATCH (co:CompanyOfficers {name: $officers_name})-[:ASSOCIATED_WITH]->(s:Stock {ticker: $ticker})
                     MERGE (o:Officer {name: $name, ticker: $ticker})
                     SET o.position = $position,
-                        o.age = $age
+                        o.age = $age,
+                        o.committees = $committees
                     MERGE (o)-[:BELONGS_TO]->(co)
                     """,
                     ticker=ticker,
-                    officers_name=f"Company Officers - {ticker}",
+                    officers_name=officers_node_name,
                     name=name,
                     position=position,
-                    age=age
+                    age=age,
+                    committees=committees
                 )
+                officer_count += 1
+                
+                # Create Committee nodes and relationships for each committee membership
+                if committees and len(committees) > 0:
+                    for committee in committees:
+                        if not committee or pd.isna(committee):
+                            continue
+                            
+                        try:
+                            # Create or find Committee node and connect officer to it
+                            logger.debug(f"Creating Committee node for {committee}")
+                            session.run(
+                                """
+                                MATCH (o:Officer {name: $name, ticker: $ticker})
+                                MERGE (c:Committee {name: $committee, ticker: $ticker})
+                                MERGE (o)-[:MEMBER_OF]->(c)
+                                """,
+                                name=name,
+                                ticker=ticker,
+                                committee=committee
+                            )
+                            committee_count += 1
+                        except Exception as e:
+                            logger.error(f"Error creating committee relationship for {name} to {committee}: {e}")
+            
+            logger.info(f"Completed saving company officers: {officer_count} officers created, {committee_count} committee relationships, {skipped_count} skipped")
+                
         except Exception as e:
-            print(f"Error saving company officers: {e}")
-            # Fallback approach - connect directly to stock
+            logger.error(f"Error saving company officers: {e}")
+            logger.info("Trying fallback approach - connect directly to stock")
+            
             try:
+                fallback_count = 0
                 for _, row in company_officers.iterrows():
                     name = row.get('name')
                     if pd.isna(name):
                         continue
+                    
+                    position = row.get('position', '')
+                    age = int(row.get('age', 0)) if not pd.isna(row.get('age')) else 0
+                    
+                    # Handle committee memberships
+                    committees = row.get('committeeMemberships', [])
+                    if pd.isna(committees):
+                        committees = []
+                    elif isinstance(committees, str):
+                        # Try to parse string representation of list
+                        try:
+                            if committees.startswith('[') and committees.endswith(']'):
+                                committees = eval(committees)  # Safe for list literals
+                            else:
+                                committees = [committees]
+                        except:
+                            committees = [committees]
                         
                     # Create Officer node with direct connection to stock
+                    logger.debug(f"Creating Officer node with fallback approach for {name}")
                     session.run(
                         """
                         MATCH (s:Stock {ticker: $ticker})
                         MERGE (o:Officer {name: $name, ticker: $ticker})
                         SET o.position = $position,
-                            o.age = $age
+                            o.age = $age,
+                            o.committees = $committees
                         MERGE (o)-[:WORKS_FOR]->(s)
                         """,
                         ticker=ticker,
                         name=name,
-                        position=row.get('position', ''),
-                        age=int(row.get('age', 0)) if not pd.isna(row.get('age')) else 0
+                        position=position,
+                        age=age,
+                        committees=committees
                     )
+                    fallback_count += 1
+                
+                logger.info(f"Completed fallback approach: {fallback_count} direct relationships created")
             except Exception as e:
-                print(f"Fallback for company officers also failed: {e}")
+                logger.error(f"Fallback for company officers also failed: {e}")
     
     def _save_institutional_holders(self, session, ticker, institutional_holders):
         """

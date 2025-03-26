@@ -1,0 +1,45 @@
+issuerTradingSymbol,relationship,date,transaction_type,cost,shares,value,shares_total
+AAPL,,2025-02-01,Exercise or Conversion of Derivative Security,,1516,,109311
+UBER,Director,2024-05-05,Exercise or Conversion of Derivative Security,,8850.00,,56398.00
+AAPL,,2024-02-01,Exercise or Conversion of Derivative Security,,1852,,107795
+AMGN,,2023-05-19,"Grant, Award, or Other Acquisition",0,939,0.0,19682
+UBER,Director,2023-05-07,Exercise or Conversion of Derivative Security,,8402.00,,47548.00
+AAPL,,2023-02-01,Exercise or Conversion of Derivative Security,,1685,,105943
+CVX,,2022-05-25,"Grant, Award, or Other Acquisition",0,1303,0.0,57483
+AMGN,,2022-05-17,"Grant, Award, or Other Acquisition",0,855,0.0,18156
+UBER,Director,2022-05-08,Exercise or Conversion of Derivative Security,,2460.00,,39146.00
+AAPL,,2022-02-01,Exercise or Conversion of Derivative Security,,1986,,104258
+UBER,Director,2021-12-31,Exercise or Conversion of Derivative Security,,4772.00,,36686.00
+CVX,,2021-05-26,"Grant, Award, or Other Acquisition",0,2166,0.0,53698
+AMGN,,2021-05-18,"Grant, Award, or Other Acquisition",0,837,0.0,16764
+AMGN,,2021-05-12,Exercise or Conversion of Derivative Security,71.64,1000,71640.0,16927
+AMGN,,2021-05-12,Sale,250.59,1000,250590.0,15927
+AMGN,,2021-04-14,Exercise or Conversion of Derivative Security,71.64,1000,71640.0,16927
+AMGN,,2021-04-14,Sale,249.98,1000,249980.0,15927
+AMGN,,2021-03-10,Exercise or Conversion of Derivative Security,71.64,1000,71640.0,16805
+AMGN,,2021-03-10,Sale,231.53,1000,231530.0,15805
+AMGN,,2021-02-10,Exercise or Conversion of Derivative Security,71.64,1000,71640.0,16805
+AMGN,,2021-02-10,Sale,238.40,1000,238400.0,15805
+AAPL,,2021-02-01,Exercise or Conversion of Derivative Security,,3416,,102272
+AMGN,,2021-01-13,Exercise or Conversion of Derivative Security,71.64,1000,71640.0,16805
+AMGN,,2021-01-13,Sale,235.99,1000,235990.0,15805
+AMGN,,2020-08-19,Exercise or Conversion of Derivative Security,54.69,1000,54690.0,16589
+AMGN,,2020-08-19,Sale,241.02,1000,241020.0,15589
+AMGN,,2020-07-22,Exercise or Conversion of Derivative Security,54.69,1000,54690.0,16589
+AMGN,,2020-07-22,Sale,259.79,1000,259790.0,15589
+AMGN,,2020-06-17,Exercise or Conversion of Derivative Security,54.69,1000,54690.0,16576
+AMGN,,2020-06-17,Sale,228.54,1000,228540.0,15576
+CVX,,2020-05-27,"Grant, Award, or Other Acquisition",0,2411,0.0,48817
+AMGN,,2020-05-20,Exercise or Conversion of Derivative Security,54.69,1000,54690.0,16482
+AMGN,,2020-05-20,Sale,229.27,1000,229270.0,15482
+AMGN,,2020-05-05,"Grant, Award, or Other Acquisition",0,846,0.0,15482
+AMGN,,2020-04-22,Exercise or Conversion of Derivative Security,54.69,1000,54690.0,15636
+AMGN,,2020-04-22,Sale,233.35,1000,233350.0,14636
+AAPL,,2020-02-01,Exercise or Conversion of Derivative Security,,1429,,24714
+UBER,Director,2019-11-08,Purchase,27.20,35000.00,952000.0,157489.00
+AMGN,,2019-11-06,Exercise or Conversion of Derivative Security,54.71,2000,109420.0,16436
+AMGN,,2019-11-06,Sale,215.45,2000,430900.0,14436
+AMGN,,2019-10-02,Exercise or Conversion of Derivative Security,54.71,2000,109420.0,16436
+AMGN,,2019-10-02,Sale,193.58,2000,387160.0,14436
+AMGN,,2019-09-04,Exercise or Conversion of Derivative Security,54.71,2000,109420.0,16336
+AMGN,,2019-09-04,Sale,206.70,2000,413400.0,14336

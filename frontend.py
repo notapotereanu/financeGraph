@@ -15,6 +15,8 @@ import base64
 import shutil
 import uuid
 import html
+import numpy as np
+from scipy import stats
 
 # Neo4j connection parameters
 NEO4J_URI = "bolt://localhost:7687"
@@ -37,6 +39,7 @@ def get_graph_data():
             RETURN id(n) AS id, labels(n) AS labels, n.name AS name, n.ticker AS ticker, 
                    CASE 
                      WHEN 'Insider' IN labels(n) OR 'Officer' IN labels(n) THEN n.name
+                     WHEN 'Committee' IN labels(n) THEN n.name
                      WHEN n.ticker IS NOT NULL THEN n.ticker 
                      ELSE n.name 
                    END AS display_name,
@@ -71,7 +74,15 @@ def get_graph_data():
         
         officers = [dict(record) for record in officers_result]
         
-    return nodes, relationships, stocks, officers
+        # Get Committee nodes for debugging
+        committees_result = session.run("""
+            MATCH (c:Committee)
+            RETURN id(c) AS id, c.name AS name, c.ticker AS ticker, properties(c) as properties
+        """)
+        
+        committees = [dict(record) for record in committees_result]
+        
+    return nodes, relationships, stocks, officers, committees
 
 # Direct database clearing function
 def direct_clear_database():
@@ -220,6 +231,10 @@ def create_network_graph(nodes, relationships, physics_settings=None):
                 node_label = f"{display_name} ({ticker})"
             else:
                 node_label = display_name
+        elif "Committee" in node['labels']:
+            # For committee nodes, always use the name of the committee
+            display_name = node.get('name', 'Unknown Committee')
+            node_label = display_name
         else:
             # For other nodes, use the display_name from the query
             display_name = str(node.get('display_name', 'Unknown'))
@@ -255,6 +270,10 @@ def create_network_graph(nodes, relationships, physics_settings=None):
             color = "#E15759"  # darker red
             size = 25
             shape = "diamond"
+        elif "Committee" in node['labels']:
+            color = "#8A2BE2"  # violet
+            size = 22
+            shape = "hexagon"
         elif "Institution" in node['labels']:
             color = "#59A14F"  # green
             size = 25
@@ -510,10 +529,10 @@ with st.sidebar:
 
 # Main content area
 try:
-    nodes, relationships, stocks, officers = get_graph_data()
+    nodes, relationships, stocks, officers, committees = get_graph_data()
     
     # Display some stats in a nice format
-    col1, col2, col3, col4 = st.columns(4)
+    col1, col2, col3, col4, col5 = st.columns(5)
     with col1:
         st.metric("Total Nodes", len(nodes))
     with col2:
@@ -522,6 +541,8 @@ try:
         st.metric("Stocks", len(stocks))
     with col4:
         st.metric("Company Officers", len(officers))
+    with col5:
+        st.metric("Committees", len(committees))
     
     # Stock Selection
     if stocks:
@@ -551,6 +572,24 @@ try:
             
             # Show suggestions
             st.warning("If officer names are incorrect, check how CompanyOfficer nodes are created in the Neo4j database")
+    
+    # Debug Committee data if available
+    if committees:
+        with st.expander("Debug: Committees", expanded=False):
+            st.subheader("Committee Data")
+            # Display raw committee data for debugging
+            committee_df = pd.DataFrame([
+                {
+                    'ID': c.get('id', ''),
+                    'Name': c.get('name', ''),
+                    'Ticker': c.get('ticker', ''),
+                    'All Properties': json.dumps(c.get('properties', {}), indent=2)
+                } for c in committees
+            ])
+            st.dataframe(committee_df, use_container_width=True)
+            
+            # Show suggestions
+            st.warning("Committee data should show the actual name of the committee")
 
     # Graph Visualization 
     if nodes and relationships:
@@ -737,7 +776,7 @@ try:
             st.plotly_chart(network_graph, use_container_width=True)
         
         # Add tab views for different node types
-        tabs = st.tabs(["Stocks", "Insiders", "Company Officers"])
+        tabs = st.tabs(["Stocks", "Insiders", "Company Officers", "Committees"])
         
         with tabs[0]:
             stock_nodes = [n for n in nodes if "Stock" in n.get('labels', [])]
@@ -768,10 +807,502 @@ try:
                     'Name': n.get('name', ''),
                     'Position': n.get('properties', {}).get('position', ''),
                     'Ticker': n.get('ticker', ''),
+                    'Committees': format_tooltip_value(n.get('properties', {}).get('committees', [])),
                     'ID': n.get('id', '')
                 } for n in officer_nodes]), use_container_width=True, hide_index=True)
             else:
                 st.info("No company officer nodes found")
+                
+        with tabs[3]:
+            committee_nodes = [n for n in nodes if "Committee" in n.get('labels', [])]
+            if committee_nodes:
+                st.dataframe(pd.DataFrame([{
+                    'Name': n.get('name', ''),
+                    'Ticker': n.get('ticker', ''),
+                    'ID': n.get('id', '')
+                } for n in committee_nodes]), use_container_width=True, hide_index=True)
+                
+                # Also show committee membership
+                if committee_nodes and officer_nodes:
+                    st.subheader("Committee Membership")
+                    committee_memberships = []
+                    for rel in relationships:
+                        if rel.get('type') == 'MEMBER_OF':
+                            # Find source officer and target committee
+                            source_id = rel.get('source')
+                            target_id = rel.get('target')
+                            
+                            officer = next((n for n in nodes if n.get('id') == source_id and "Officer" in n.get('labels', [])), None)
+                            committee = next((n for n in nodes if n.get('id') == target_id and "Committee" in n.get('labels', [])), None)
+                            
+                            if officer and committee:
+                                committee_memberships.append({
+                                    'Officer': officer.get('name', ''),
+                                    'Committee': committee.get('name', '')
+                                })
+                    
+                    if committee_memberships:
+                        st.dataframe(pd.DataFrame(committee_memberships), use_container_width=True, hide_index=True)
+                    else:
+                        st.info("No committee membership relationships found")
+            else:
+                st.info("No committee nodes found")
+        
+        # News Sentiment Analysis Section
+        st.header("News Sentiment Analysis and Stock Price Correlation")
+        st.write("Analyze how news sentiment impacts stock prices, measure market reaction time, and identify influential news sources.")
+        
+        # Select stock for analysis
+        if stocks:
+            selected_stock = st.selectbox(
+                "Select a stock to analyze:",
+                options=[s['ticker'] for s in stocks],
+                index=0,
+                format_func=lambda x: f"{x} - {next((s['name'] for s in stocks if s['ticker'] == x), x)}"
+            )
+            
+            if selected_stock:
+                # Load news sentiment data
+                try:
+                    news_file = f"data/{selected_stock}/news_sentiment.csv"
+                    stock_file = f"data/{selected_stock}/stock_prices.csv"
+                    
+                    if os.path.exists(news_file) and os.path.exists(stock_file):
+                        # Load data
+                        news_df = pd.read_csv(news_file)
+                        stock_df = pd.read_csv(stock_file)
+                        
+                        # Clean and prepare the data
+                        if 'Published At' in news_df.columns and 'Sentiment Score' in news_df.columns:
+                            # Convert dates to datetime
+                            news_df['Date'] = pd.to_datetime(news_df['Published At']).dt.date
+                            
+                            if 'Date' in stock_df.columns:
+                                stock_df['Date'] = pd.to_datetime(stock_df['Date']).dt.date
+                                
+                                # Aggregate news sentiment by date
+                                daily_sentiment = news_df.groupby('Date')['Sentiment Score'].agg(['mean', 'count']).reset_index()
+                                daily_sentiment.columns = ['Date', 'Average Sentiment', 'News Count']
+                                
+                                # Merge with stock data
+                                merged_df = pd.merge(stock_df, daily_sentiment, on='Date', how='left')
+                                merged_df['Average Sentiment'].fillna(0, inplace=True)
+                                merged_df['News Count'].fillna(0, inplace=True)
+                                
+                                # Calculate daily returns
+                                merged_df['Daily Return'] = merged_df['Close'].pct_change() * 100
+                                
+                                # Only keep rows with both sentiment and price data
+                                analysis_df = merged_df.dropna(subset=['Average Sentiment', 'Daily Return']).copy()
+                                
+                                # Create tabs for different analysis views
+                                sentiment_tabs = st.tabs(["Sentiment vs. Price", "Correlation Analysis", "News Source Impact", "Market Reaction Time"])
+                                
+                                with sentiment_tabs[0]:
+                                    st.subheader("News Sentiment and Stock Price Movement")
+                                    
+                                    # Create dual-axis chart for sentiment and price
+                                    fig = go.Figure()
+                                    
+                                    # Add price line
+                                    fig.add_trace(go.Scatter(
+                                        x=merged_df['Date'], 
+                                        y=merged_df['Close'],
+                                        name='Closing Price',
+                                        line=dict(color='blue', width=2),
+                                        yaxis='y'
+                                    ))
+                                    
+                                    # Add sentiment bars with size based on news count
+                                    fig.add_trace(go.Bar(
+                                        x=merged_df['Date'],
+                                        y=merged_df['Average Sentiment'],
+                                        name='News Sentiment',
+                                        marker=dict(
+                                            color=merged_df['Average Sentiment'].apply(
+                                                lambda x: 'green' if x > 0.1 else ('red' if x < -0.1 else 'gray')
+                                            ),
+                                            opacity=0.7
+                                        ),
+                                        width=merged_df['News Count'].apply(lambda x: min(0.8, 0.2 + x/20)),
+                                        yaxis='y2'
+                                    ))
+                                    
+                                    # Set up the layout with two y-axes
+                                    fig.update_layout(
+                                        title=f"{selected_stock} - Stock Price and News Sentiment",
+                                        xaxis=dict(title='Date'),
+                                        yaxis=dict(
+                                            title='Stock Price ($)',
+                                            titlefont=dict(color='blue'),
+                                            tickfont=dict(color='blue')
+                                        ),
+                                        yaxis2=dict(
+                                            title='Sentiment Score',
+                                            titlefont=dict(color='green'),
+                                            tickfont=dict(color='green'),
+                                            anchor='x',
+                                            overlaying='y',
+                                            side='right',
+                                            range=[-1, 1]
+                                        ),
+                                        legend=dict(
+                                            orientation='h',
+                                            yanchor='bottom',
+                                            y=1.02,
+                                            xanchor='center',
+                                            x=0.5
+                                        ),
+                                        height=500,
+                                        hovermode='x unified'
+                                    )
+                                    
+                                    st.plotly_chart(fig, use_container_width=True)
+                                    
+                                    # Show notable days with high sentiment/price change
+                                    st.subheader("Notable Trading Days")
+                                    significant_df = merged_df[
+                                        (merged_df['News Count'] > 3) | 
+                                        (abs(merged_df['Daily Return']) > 2) |
+                                        (abs(merged_df['Average Sentiment']) > 0.4)
+                                    ].sort_values('Date', ascending=False).head(10)
+                                    
+                                    if not significant_df.empty:
+                                        significant_df = significant_df[['Date', 'Close', 'Daily Return', 'Average Sentiment', 'News Count']]
+                                        st.dataframe(significant_df, use_container_width=True)
+                                    else:
+                                        st.info("No significant trading days found.")
+                                
+                                with sentiment_tabs[1]:
+                                    st.subheader("Correlation Analysis")
+                                    
+                                    # Calculate correlation between sentiment and returns
+                                    sentiment_corr = analysis_df['Average Sentiment'].corr(analysis_df['Daily Return'])
+                                    
+                                    # Show current day and next day (lagged) correlation
+                                    analysis_df['Next Day Return'] = analysis_df['Daily Return'].shift(-1)
+                                    next_day_corr = analysis_df['Average Sentiment'].corr(analysis_df['Next Day Return'])
+                                    
+                                    # Create two columns
+                                    col1, col2 = st.columns(2)
+                                    
+                                    with col1:
+                                        st.metric(
+                                            label="Same-Day Correlation", 
+                                            value=f"{sentiment_corr:.3f}",
+                                            delta=f"{sentiment_corr:.1%}",
+                                            delta_color="normal"
+                                        )
+                                    
+                                    with col2:
+                                        st.metric(
+                                            label="Next-Day Correlation", 
+                                            value=f"{next_day_corr:.3f}",
+                                            delta=f"{(next_day_corr - sentiment_corr):.3f}",
+                                            delta_color="normal"
+                                        )
+                                    
+                                    # Create scatter plot for sentiment vs returns
+                                    fig = go.Figure()
+                                    
+                                    fig.add_trace(go.Scatter(
+                                        x=analysis_df['Average Sentiment'],
+                                        y=analysis_df['Daily Return'],
+                                        mode='markers',
+                                        name='Same Day',
+                                        marker=dict(
+                                            size=10,
+                                            color='blue',
+                                            opacity=0.7
+                                        ),
+                                        text=analysis_df['Date'],
+                                        hovertemplate='<b>Date:</b> %{text}<br><b>Sentiment:</b> %{x:.3f}<br><b>Return:</b> %{y:.2f}%<extra></extra>'
+                                    ))
+                                    
+                                    fig.add_trace(go.Scatter(
+                                        x=analysis_df['Average Sentiment'],
+                                        y=analysis_df['Next Day Return'],
+                                        mode='markers',
+                                        name='Next Day',
+                                        marker=dict(
+                                            size=10,
+                                            color='green',
+                                            opacity=0.7
+                                        ),
+                                        text=analysis_df['Date'],
+                                        hovertemplate='<b>Date:</b> %{text}<br><b>Sentiment:</b> %{x:.3f}<br><b>Next Day Return:</b> %{y:.2f}%<extra></extra>'
+                                    ))
+                                    
+                                    # Add regression lines
+                                    slope, intercept, r_value, p_value, std_err = stats.linregress(
+                                        analysis_df['Average Sentiment'], 
+                                        analysis_df['Daily Return']
+                                    )
+                                    
+                                    x_range = np.linspace(
+                                        analysis_df['Average Sentiment'].min(), 
+                                        analysis_df['Average Sentiment'].max(), 
+                                        100
+                                    )
+                                    
+                                    fig.add_trace(go.Scatter(
+                                        x=x_range,
+                                        y=intercept + slope * x_range,
+                                        mode='lines',
+                                        line=dict(color='blue', width=2, dash='dash'),
+                                        name=f'Same Day (r={r_value:.3f})'
+                                    ))
+                                    
+                                    # Next day regression
+                                    slope, intercept, r_value, p_value, std_err = stats.linregress(
+                                        analysis_df['Average Sentiment'].dropna(), 
+                                        analysis_df['Next Day Return'].dropna()
+                                    )
+                                    
+                                    fig.add_trace(go.Scatter(
+                                        x=x_range,
+                                        y=intercept + slope * x_range,
+                                        mode='lines',
+                                        line=dict(color='green', width=2, dash='dash'),
+                                        name=f'Next Day (r={r_value:.3f})'
+                                    ))
+                                    
+                                    fig.update_layout(
+                                        title="News Sentiment vs. Stock Returns",
+                                        xaxis_title="Average Daily News Sentiment",
+                                        yaxis_title="Stock Return (%)",
+                                        legend=dict(
+                                            yanchor="top",
+                                            y=0.99,
+                                            xanchor="left",
+                                            x=0.01
+                                        ),
+                                        height=500
+                                    )
+                                    
+                                    st.plotly_chart(fig, use_container_width=True)
+                                    
+                                    # Interpretation
+                                    st.subheader("Interpretation")
+                                    if abs(sentiment_corr) < 0.1:
+                                        st.write("There appears to be little to no correlation between news sentiment and same-day stock returns.")
+                                    elif sentiment_corr > 0:
+                                        st.write(f"There is a **positive correlation** ({sentiment_corr:.2f}) between news sentiment and same-day stock returns. Positive news tends to correspond with price increases.")
+                                    else:
+                                        st.write(f"There is a **negative correlation** ({sentiment_corr:.2f}) between news sentiment and same-day stock returns, which is contrary to typical expectations.")
+                                        
+                                    if abs(next_day_corr) > abs(sentiment_corr):
+                                        st.write(f"The correlation is **stronger on the next day** ({next_day_corr:.2f}), suggesting a delayed market reaction to news sentiment.")
+                                    else:
+                                        st.write(f"The correlation is **weaker on the next day** ({next_day_corr:.2f}), suggesting immediate market reaction to news sentiment rather than delayed effects.")
+                                
+                                with sentiment_tabs[2]:
+                                    st.subheader("News Source Impact Analysis")
+                                    
+                                    if 'source' in news_df.columns and isinstance(news_df['source'].iloc[0], dict) and 'name' in news_df['source'].iloc[0]:
+                                        # Extract source names from the complex structure
+                                        news_df['source_name'] = news_df['source'].apply(lambda x: x.get('name') if isinstance(x, dict) else x)
+                                    elif 'source' in news_df.columns:
+                                        news_df['source_name'] = news_df['source']
+                                    else:
+                                        # Try to extract source from URL if source column doesn't exist
+                                        news_df['source_name'] = news_df['URL'].apply(
+                                            lambda x: x.split('/')[2].replace('www.', '').split('.')[0].capitalize() 
+                                            if isinstance(x, str) and '/' in x 
+                                            else 'Unknown'
+                                        )
+                                    
+                                    # Group by source and calculate average sentiment and count
+                                    source_impact = news_df.groupby('source_name').agg(
+                                        avg_sentiment=('Sentiment Score', 'mean'),
+                                        count=('Sentiment Score', 'count')
+                                    ).reset_index()
+                                    
+                                    # Only include sources with at least 3 articles
+                                    source_impact = source_impact[source_impact['count'] >= 3].sort_values('avg_sentiment', ascending=False)
+                                    
+                                    if not source_impact.empty:
+                                        # Create bar chart of source sentiment
+                                        fig = go.Figure()
+                                        
+                                        fig.add_trace(go.Bar(
+                                            x=source_impact['source_name'],
+                                            y=source_impact['avg_sentiment'],
+                                            marker=dict(
+                                                color=source_impact['avg_sentiment'].apply(
+                                                    lambda x: 'green' if x > 0.1 else ('red' if x < -0.1 else 'gray')
+                                                ),
+                                                opacity=0.7,
+                                                line=dict(width=1, color='black')
+                                            ),
+                                            width=0.6,
+                                            text=source_impact['count'],
+                                            textposition='outside',
+                                            hovertemplate='<b>%{x}</b><br>Average Sentiment: %{y:.3f}<br>Article Count: %{text}<extra></extra>'
+                                        ))
+                                        
+                                        fig.update_layout(
+                                            title="Average Sentiment by News Source",
+                                            xaxis_title="News Source",
+                                            yaxis_title="Average Sentiment Score",
+                                            yaxis=dict(range=[-1, 1]),
+                                            height=500
+                                        )
+                                        
+                                        st.plotly_chart(fig, use_container_width=True)
+                                        
+                                        # Show top positive and negative sources
+                                        col1, col2 = st.columns(2)
+                                        
+                                        with col1:
+                                            st.subheader("Most Positive Sources")
+                                            positive_sources = source_impact.sort_values('avg_sentiment', ascending=False).head(5)
+                                            st.dataframe(positive_sources, use_container_width=True, hide_index=True)
+                                            
+                                        with col2:
+                                            st.subheader("Most Negative Sources")
+                                            negative_sources = source_impact.sort_values('avg_sentiment', ascending=True).head(5)
+                                            st.dataframe(negative_sources, use_container_width=True, hide_index=True)
+                                    else:
+                                        st.info("Not enough news sources with sufficient articles for analysis.")
+                                
+                                with sentiment_tabs[3]:
+                                    st.subheader("Market Reaction Time Analysis")
+                                    
+                                    # Create a DataFrame with daily price changes and lagged sentiment
+                                    lag_analysis = pd.DataFrame({
+                                        'Date': merged_df['Date'],
+                                        'Daily Return': merged_df['Daily Return'],
+                                        'Same Day Sentiment': merged_df['Average Sentiment'],
+                                        'Previous Day Sentiment': merged_df['Average Sentiment'].shift(1),
+                                        'Two Days Prior Sentiment': merged_df['Average Sentiment'].shift(2),
+                                        'Three Days Prior Sentiment': merged_df['Average Sentiment'].shift(3),
+                                    }).dropna()
+                                    
+                                    # Calculate correlations for each lag
+                                    correlations = [
+                                        lag_analysis['Same Day Sentiment'].corr(lag_analysis['Daily Return']),
+                                        lag_analysis['Previous Day Sentiment'].corr(lag_analysis['Daily Return']),
+                                        lag_analysis['Two Days Prior Sentiment'].corr(lag_analysis['Daily Return']),
+                                        lag_analysis['Three Days Prior Sentiment'].corr(lag_analysis['Daily Return'])
+                                    ]
+                                    
+                                    # Find max correlation and its lag
+                                    max_corr = max(correlations, key=abs)
+                                    max_lag = correlations.index(max_corr)
+                                    lag_labels = ['Same Day', '1 Day', '2 Days', '3 Days']
+                                    
+                                    # Show the lag with the strongest correlation
+                                    st.metric(
+                                        label="Optimal Reaction Time", 
+                                        value=lag_labels[max_lag],
+                                        delta=f"Correlation: {max_corr:.3f}"
+                                    )
+                                    
+                                    # Plot the correlations
+                                    fig = go.Figure()
+                                    
+                                    fig.add_trace(go.Bar(
+                                        x=lag_labels,
+                                        y=correlations,
+                                        marker=dict(
+                                            color=[abs(c) * 100 for c in correlations],
+                                            colorscale='Viridis',
+                                            line=dict(width=1, color='black')
+                                        ),
+                                        text=[f"{c:.3f}" for c in correlations],
+                                        textposition='outside'
+                                    ))
+                                    
+                                    fig.update_layout(
+                                        title="Correlation Between News Sentiment and Returns by Lag",
+                                        xaxis_title="Sentiment Lag",
+                                        yaxis_title="Correlation",
+                                        height=400
+                                    )
+                                    
+                                    st.plotly_chart(fig, use_container_width=True)
+                                    
+                                    # Show examples of significant news and subsequent market reactions
+                                    st.subheader("Significant News and Market Reactions")
+                                    
+                                    # Find days with high absolute sentiment
+                                    high_sentiment_days = news_df[abs(news_df['Sentiment Score']) > 0.5].sort_values('Published At', ascending=False)
+                                    
+                                    if not high_sentiment_days.empty:
+                                        for idx, row in high_sentiment_days.head(5).iterrows():
+                                            news_date = pd.to_datetime(row['Published At']).date()
+                                            
+                                            # Find subsequent stock prices
+                                            next_days = stock_df[pd.to_datetime(stock_df['Date']).dt.date >= news_date].head(4)
+                                            
+                                            if not next_days.empty:
+                                                sentiment_label = "Positive" if row['Sentiment Score'] > 0 else "Negative"
+                                                sentiment_color = "green" if row['Sentiment Score'] > 0 else "red"
+                                                
+                                                # Calculate price change
+                                                base_price = next_days.iloc[0]['Close']
+                                                price_changes = [(p / base_price - 1) * 100 for p in next_days['Close']]
+                                                
+                                                # Create expandable section for each news item
+                                                with st.expander(f"{row['Title']} ({news_date}) - {sentiment_label} Sentiment: {row['Sentiment Score']:.2f}", expanded=False):
+                                                    st.markdown(f"""
+                                                    **Source:** {row.get('source_name', 'Unknown')}  
+                                                    **Date:** {row['Published At']}  
+                                                    **Sentiment:** <span style='color:{sentiment_color}'>{row['Sentiment Score']:.3f}</span>
+                                                    
+                                                    **Market Reaction:**
+                                                    """)
+                                                    
+                                                    # Create small price chart
+                                                    if len(next_days) > 1:
+                                                        price_fig = go.Figure()
+                                                        days = [0, 1, 2, 3][:len(next_days)]
+                                                        
+                                                        price_fig.add_trace(go.Scatter(
+                                                            x=days,
+                                                            y=next_days['Close'],
+                                                            mode='lines+markers',
+                                                            name='Price',
+                                                            line=dict(width=2)
+                                                        ))
+                                                        
+                                                        price_fig.update_layout(
+                                                            margin=dict(t=20, b=20, l=20, r=20),
+                                                            height=200,
+                                                            xaxis=dict(
+                                                                tickvals=days,
+                                                                ticktext=['News Day', '+1 Day', '+2 Days', '+3 Days'][:len(next_days)]
+                                                            ),
+                                                            yaxis_title='Price ($)'
+                                                        )
+                                                        
+                                                        st.plotly_chart(price_fig, use_container_width=True)
+                                                    
+                                                    # Provide interpretation
+                                                    if len(price_changes) > 1:
+                                                        direction = "increased" if price_changes[1] > 0 else "decreased"
+                                                        alignment = "aligned" if (row['Sentiment Score'] > 0 and price_changes[1] > 0) or (row['Sentiment Score'] < 0 and price_changes[1] < 0) else "contrary"
+                                                        
+                                                        st.markdown(f"""
+                                                        After this news, the stock price **{direction}** by **{abs(price_changes[1]):.2f}%** on the next trading day, 
+                                                        which is **{alignment}** with the news sentiment.
+                                                        """)
+                                            else:
+                                                st.info(f"No price data available after {news_date}")
+                                    else:
+                                        st.info("No significant news items with high sentiment found.")
+                            else:
+                                st.error("Stock data doesn't contain a Date column in the expected format.")
+                        else:
+                            st.error("News data doesn't contain 'Published At' or 'Sentiment Score' columns.")
+                    else:
+                        st.error(f"Missing data files for {selected_stock}. Please ensure both news sentiment and stock price data are available.")
+                except Exception as e:
+                    st.error(f"Error analyzing news sentiment: {str(e)}")
+                    st.exception(e)
+        else:
+            st.info("No stocks available for analysis. Please add stock data to the database.")
     
     else:
         st.info("No graph data found. Please add some tickers to populate the database.")

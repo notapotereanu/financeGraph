@@ -57,7 +57,7 @@ class SECDataManager:
         Returns:
             List of dictionaries containing board member information
         """
-        print(f"[INFO] Looking up board members for {self.stock_ticker}...")
+        print("🔍 Looking up board members...")
         try:
             directorsBoardMembersApi = DirectorsBoardMembersApi(api_key=self.api_token,)
             
@@ -67,12 +67,13 @@ class SECDataManager:
                 "size": 50,
                 "sort": [{ "filedAt": { "order": "desc" } }]
             }
-            
+        
             response = directorsBoardMembersApi.get_data(search_params)
 
             stock_data = pd.DataFrame(response["data"])
-            
-            # Extract the nested directors data
+
+            stock_data = stock_data.explode("directors")
+
             columns = [
             'name',
             'position',
@@ -94,7 +95,7 @@ class SECDataManager:
             return latest_data[['name', 'position', 'age', 'directorClass', 'qualificationsAndExperience', 'committeeMemberships']]
             
         except Exception as e:
-            print(f"[ERROR] Error getting board members: {e}")
+            print(f"❌ Error getting board members: {e}")
             return []
     
     def _get_sec_cik(self) -> str:

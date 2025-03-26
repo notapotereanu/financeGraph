@@ -40,9 +40,8 @@ class FinancialDataAnalyzer:
                 for ticker in self.tickers:
                     try:
                         print(f"[INFO] Saving data to Neo4j graph database for {ticker}...")
-                        # Load data from saved files for this ticker
-                        data_gatherer = DataGatherer(ticker)
-                        data = data_gatherer.load_saved_data()
+                        # Load data from saved files for this ticker using the existing data_saver
+                        data = self.data_saver.load_saved_data(ticker)
                         if data:
                             self.neo4j_manager.save_stock_data(ticker, data)
                             print(f"[SUCCESS] Data successfully saved to Neo4j graph database for {ticker}.")

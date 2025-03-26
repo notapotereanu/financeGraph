@@ -1377,3 +1377,644 @@
 2025-03-25 17:12:52,039 - Neo4jManager - INFO - Neo4j connection closed successfully
 2025-03-25 17:16:28,023 - Neo4jManager - INFO - Initializing Neo4jManager with URI: bolt://localhost:7687, database: neo4j
 2025-03-25 17:16:30,103 - Neo4jManager - INFO - Successfully connected to Neo4j database
+2025-03-25 18:10:42,232 - Neo4jManager - INFO - Initializing Neo4jManager with URI: bolt://localhost:7687, database: neo4j
+2025-03-25 18:10:44,298 - Neo4jManager - INFO - Successfully connected to Neo4j database
+2025-03-25 18:14:15,674 - Neo4jManager - INFO - Closing Neo4j connection
+2025-03-25 18:14:15,675 - Neo4jManager - INFO - Neo4j connection closed successfully
+2025-03-25 18:15:52,143 - Neo4jManager - INFO - Initializing Neo4jManager with URI: bolt://localhost:7687, database: neo4j
+2025-03-25 18:15:54,220 - Neo4jManager - INFO - Successfully connected to Neo4j database
+2025-03-25 18:18:20,441 - Neo4jManager - INFO - Initializing Neo4jManager with URI: bolt://localhost:7687, database: neo4j
+2025-03-25 18:18:22,507 - Neo4jManager - INFO - Successfully connected to Neo4j database
+2025-03-25 18:18:51,664 - Neo4jManager - INFO - Closing Neo4j connection
+2025-03-25 18:18:51,665 - Neo4jManager - INFO - Neo4j connection closed successfully
+2025-03-25 18:29:27,953 - Neo4jManager - INFO - Initializing Neo4jManager with URI: bolt://localhost:7687, database: neo4j
+2025-03-25 18:29:30,027 - Neo4jManager - INFO - Successfully connected to Neo4j database
+2025-03-25 18:29:56,786 - Neo4jManager - INFO - Starting to save data for ticker: C
+2025-03-25 18:29:56,786 - Neo4jManager - INFO - Creating main Stock node for C
+2025-03-25 18:29:57,010 - Neo4jManager - INFO - Main Stock node created/updated for C
+2025-03-25 18:29:57,011 - Neo4jManager - INFO - Saving stock price data to CSV for C
+2025-03-25 18:29:57,016 - Neo4jManager - INFO - Saved 123 price records to data/C/stock_prices.csv
+2025-03-25 18:29:57,017 - Neo4jManager - INFO - Processing Insider Holdings for C
+2025-03-25 18:29:57,017 - Neo4jManager - INFO - Saving insider holdings for C
+2025-03-25 18:29:57,018 - Neo4jManager - INFO - Creating InsiderTraders node for C
+2025-03-25 18:29:57,145 - Neo4jManager - INFO - InsiderTraders node created: Insider Trading - C
+2025-03-25 18:29:57,145 - Neo4jManager - INFO - Processing 13 insider records
+2025-03-25 18:29:57,146 - Neo4jManager - INFO - Processing insider: KHALIQ SYED SHAHMIR with 9 holdings records
+2025-03-25 18:29:57,316 - Neo4jManager - INFO - Processing 1 securities held by KHALIQ SYED SHAHMIR
+2025-03-25 18:29:57,319 - Neo4jManager - INFO - Processing insider: Livingstone David with 33 holdings records
+2025-03-25 18:29:57,331 - Neo4jManager - INFO - Processing 1 securities held by Livingstone David
+2025-03-25 18:29:57,332 - Neo4jManager - INFO - Processing insider: LUCHETTI GONZALO with 6 holdings records
+2025-03-25 18:29:57,340 - Neo4jManager - INFO - Processing 1 securities held by LUCHETTI GONZALO
+2025-03-25 18:29:57,342 - Neo4jManager - INFO - Processing insider: Mason Mark with 37 holdings records
+2025-03-25 18:29:57,484 - Neo4jManager - INFO - Processing 3 securities held by Mason Mark
+2025-03-25 18:29:57,609 - Neo4jManager - INFO - Processing insider: McIntosh Brent with 10 holdings records
+2025-03-25 18:29:57,617 - Neo4jManager - INFO - Processing 1 securities held by McIntosh Brent
+2025-03-25 18:29:57,619 - Neo4jManager - INFO - Processing insider: MORTON ANDREW JOHN with 9 holdings records
+2025-03-25 18:29:57,626 - Neo4jManager - INFO - Processing 1 securities held by MORTON ANDREW JOHN
+2025-03-25 18:29:57,627 - Neo4jManager - INFO - Processing insider: Selvakesari Anand with 15 holdings records
+2025-03-25 18:29:57,634 - Neo4jManager - INFO - Processing 1 securities held by Selvakesari Anand
+2025-03-25 18:29:57,634 - Neo4jManager - INFO - Processing insider: Sieg Andrew M with 45 holdings records
+2025-03-25 18:29:57,642 - Neo4jManager - INFO - Processing 2 securities held by Sieg Andrew M
+2025-03-25 18:29:57,762 - Neo4jManager - INFO - Processing insider: Skyler Edward with 11 holdings records
+2025-03-25 18:29:57,770 - Neo4jManager - INFO - Processing 1 securities held by Skyler Edward
+2025-03-25 18:29:57,772 - Neo4jManager - INFO - Processing insider: Torres Cantu Ernesto with 20 holdings records
+2025-03-25 18:29:57,779 - Neo4jManager - INFO - Processing 1 securities held by Torres Cantu Ernesto
+2025-03-25 18:29:57,781 - Neo4jManager - INFO - Processing insider: Turek Zdenek with 20 holdings records
+2025-03-25 18:29:57,788 - Neo4jManager - INFO - Processing 1 securities held by Turek Zdenek
+2025-03-25 18:29:57,789 - Neo4jManager - INFO - Processing insider: WALSH ROBERT T with 1 holdings records
+2025-03-25 18:29:57,844 - Neo4jManager - INFO - Processing 1 securities held by WALSH ROBERT T
+2025-03-25 18:29:57,845 - Neo4jManager - INFO - Processing insider: Wechter Sara with 23 holdings records
+2025-03-25 18:29:57,852 - Neo4jManager - INFO - Processing 1 securities held by Wechter Sara
+2025-03-25 18:29:57,853 - Neo4jManager - INFO - Successfully completed saving insider holdings for C
+2025-03-25 18:29:57,854 - Neo4jManager - INFO - Completed saving Insider Holdings for C
+2025-03-25 18:29:57,854 - Neo4jManager - INFO - Completed Insider Holdings in 0.84 seconds
+2025-03-25 18:29:57,855 - Neo4jManager - INFO - Processing SEC Transactions for C
+2025-03-25 18:29:57,855 - Neo4jManager - INFO - Saving SEC transactions for C
+2025-03-25 18:29:57,856 - Neo4jManager - INFO - Processing 34 SEC transactions
+2025-03-25 18:29:58,768 - Neo4jManager - INFO - Completed saving SEC transactions: 34 created, 0 skipped
+2025-03-25 18:29:58,769 - Neo4jManager - INFO - Completed saving SEC Transactions for C
+2025-03-25 18:29:58,769 - Neo4jManager - INFO - Completed SEC Transactions in 0.91 seconds
+2025-03-25 18:29:58,770 - Neo4jManager - INFO - Processing Company Officers for C
+2025-03-25 18:29:59,650 - Neo4jManager - INFO - Completed saving Company Officers for C
+2025-03-25 18:29:59,651 - Neo4jManager - INFO - Completed Company Officers in 0.88 seconds
+2025-03-25 18:29:59,651 - Neo4jManager - INFO - Processing Institutional Holders for C
+2025-03-25 18:29:59,652 - Neo4jManager - INFO - Saving institutional holders for C
+2025-03-25 18:29:59,652 - Neo4jManager - INFO - Creating InstitutionalHolders node for C
+2025-03-25 18:29:59,734 - Neo4jManager - INFO - InstitutionalHolders node created: Institutional Holders - C
+2025-03-25 18:29:59,798 - Neo4jManager - INFO - Processing 10 institutional holders
+2025-03-25 18:30:00,373 - Neo4jManager - INFO - Completed saving institutional holders: 10 created, 0 skipped
+2025-03-25 18:30:00,373 - Neo4jManager - INFO - Completed saving Institutional Holders for C
+2025-03-25 18:30:00,374 - Neo4jManager - INFO - Completed Institutional Holders in 0.72 seconds
+2025-03-25 18:30:00,374 - Neo4jManager - INFO - Processing Competitors for C
+2025-03-25 18:30:00,697 - Neo4jManager - INFO - Completed saving Competitors for C
+2025-03-25 18:30:00,698 - Neo4jManager - INFO - Completed Competitors in 0.32 seconds
+2025-03-25 18:30:00,699 - Neo4jManager - INFO - Processing Analyst Ratings for C
+2025-03-25 18:30:00,699 - Neo4jManager - ERROR - Error processing Analyst Ratings for C: 'Neo4jManager' object has no attribute '_save_analysts_ratings'
+2025-03-25 18:30:00,699 - Neo4jManager - INFO - Completed Analyst Ratings in 0.00 seconds
+2025-03-25 18:30:00,700 - Neo4jManager - INFO - Processing News Sentiment for C
+2025-03-25 18:30:00,700 - Neo4jManager - INFO - Saving news sentiment for C
+2025-03-25 18:30:00,701 - Neo4jManager - INFO - Creating NewsFeed node for C
+2025-03-25 18:30:00,772 - Neo4jManager - INFO - NewsFeed node created: News Feed - C with path data/C/news_sentiment.csv
+2025-03-25 18:30:00,775 - Neo4jManager - INFO - Saved 99 news items to CSV
+2025-03-25 18:30:00,776 - Neo4jManager - INFO - Processing 99 news items for individual nodes
+2025-03-25 18:30:00,793 - Neo4jManager - INFO - Completed saving news sentiment: 0 created, 99 skipped
+2025-03-25 18:30:00,793 - Neo4jManager - INFO - Completed saving News Sentiment for C
+2025-03-25 18:30:00,794 - Neo4jManager - INFO - Completed News Sentiment in 0.09 seconds
+2025-03-25 18:30:00,795 - Neo4jManager - INFO - Completed saving all data for C in 4.01 seconds
+2025-03-25 18:30:00,796 - Neo4jManager - INFO - Closing Neo4j connection
+2025-03-25 18:30:00,797 - Neo4jManager - INFO - Neo4j connection closed successfully
+2025-03-25 22:49:56,906 - Neo4jManager - INFO - Initializing Neo4jManager with URI: bolt://localhost:7687, database: neo4j
+2025-03-25 22:49:58,969 - Neo4jManager - INFO - Successfully connected to Neo4j database
+2025-03-25 22:50:44,323 - Neo4jManager - INFO - Starting to save data for ticker: C
+2025-03-25 22:50:44,324 - Neo4jManager - INFO - Creating main Stock node for C
+2025-03-25 22:50:44,385 - Neo4jManager - INFO - Main Stock node created/updated for C
+2025-03-25 22:50:44,385 - Neo4jManager - INFO - Saving stock price data to CSV for C
+2025-03-25 22:50:44,389 - Neo4jManager - INFO - Saved 123 price records to data/C/stock_prices.csv
+2025-03-25 22:50:44,390 - Neo4jManager - INFO - Processing Insider Holdings for C
+2025-03-25 22:50:44,390 - Neo4jManager - INFO - Saving insider holdings for C
+2025-03-25 22:50:44,390 - Neo4jManager - INFO - Creating InsiderTraders node for C
+2025-03-25 22:50:44,555 - Neo4jManager - INFO - InsiderTraders node created: Insider Trading - C
+2025-03-25 22:50:44,555 - Neo4jManager - INFO - Processing 13 insider records
+2025-03-25 22:50:44,556 - Neo4jManager - INFO - Processing insider: KHALIQ SYED SHAHMIR with 9 holdings records
+2025-03-25 22:50:44,719 - Neo4jManager - INFO - Processing 1 securities held by KHALIQ SYED SHAHMIR
+2025-03-25 22:50:44,722 - Neo4jManager - INFO - Processing insider: Livingstone David with 33 holdings records
+2025-03-25 22:50:44,727 - Neo4jManager - INFO - Processing 1 securities held by Livingstone David
+2025-03-25 22:50:44,729 - Neo4jManager - INFO - Processing insider: LUCHETTI GONZALO with 6 holdings records
+2025-03-25 22:50:44,739 - Neo4jManager - INFO - Processing 1 securities held by LUCHETTI GONZALO
+2025-03-25 22:50:44,740 - Neo4jManager - INFO - Processing insider: Mason Mark with 37 holdings records
+2025-03-25 22:50:44,861 - Neo4jManager - INFO - Processing 3 securities held by Mason Mark
+2025-03-25 22:50:44,973 - Neo4jManager - INFO - Processing insider: McIntosh Brent with 10 holdings records
+2025-03-25 22:50:44,977 - Neo4jManager - INFO - Processing 1 securities held by McIntosh Brent
+2025-03-25 22:50:44,979 - Neo4jManager - INFO - Processing insider: MORTON ANDREW JOHN with 9 holdings records
+2025-03-25 22:50:44,985 - Neo4jManager - INFO - Processing 1 securities held by MORTON ANDREW JOHN
+2025-03-25 22:50:44,986 - Neo4jManager - INFO - Processing insider: Selvakesari Anand with 15 holdings records
+2025-03-25 22:50:44,990 - Neo4jManager - INFO - Processing 1 securities held by Selvakesari Anand
+2025-03-25 22:50:44,991 - Neo4jManager - INFO - Processing insider: Sieg Andrew M with 45 holdings records
+2025-03-25 22:50:44,996 - Neo4jManager - INFO - Processing 2 securities held by Sieg Andrew M
+2025-03-25 22:50:45,090 - Neo4jManager - INFO - Processing insider: Skyler Edward with 11 holdings records
+2025-03-25 22:50:45,096 - Neo4jManager - INFO - Processing 1 securities held by Skyler Edward
+2025-03-25 22:50:45,097 - Neo4jManager - INFO - Processing insider: Torres Cantu Ernesto with 20 holdings records
+2025-03-25 22:50:45,102 - Neo4jManager - INFO - Processing 1 securities held by Torres Cantu Ernesto
+2025-03-25 22:50:45,102 - Neo4jManager - INFO - Processing insider: Turek Zdenek with 20 holdings records
+2025-03-25 22:50:45,111 - Neo4jManager - INFO - Processing 1 securities held by Turek Zdenek
+2025-03-25 22:50:45,113 - Neo4jManager - INFO - Processing insider: WALSH ROBERT T with 1 holdings records
+2025-03-25 22:50:45,122 - Neo4jManager - INFO - Processing 1 securities held by WALSH ROBERT T
+2025-03-25 22:50:45,123 - Neo4jManager - INFO - Processing insider: Wechter Sara with 23 holdings records
+2025-03-25 22:50:45,133 - Neo4jManager - INFO - Processing 1 securities held by Wechter Sara
+2025-03-25 22:50:45,134 - Neo4jManager - INFO - Successfully completed saving insider holdings for C
+2025-03-25 22:50:45,135 - Neo4jManager - INFO - Completed saving Insider Holdings for C
+2025-03-25 22:50:45,135 - Neo4jManager - INFO - Completed Insider Holdings in 0.74 seconds
+2025-03-25 22:50:45,136 - Neo4jManager - INFO - Processing SEC Transactions for C
+2025-03-25 22:50:45,137 - Neo4jManager - INFO - Saving SEC transactions for C
+2025-03-25 22:50:45,139 - Neo4jManager - INFO - Processing 34 SEC transactions
+2025-03-25 22:50:45,661 - Neo4jManager - INFO - Completed saving SEC transactions: 34 created, 0 skipped
+2025-03-25 22:50:45,661 - Neo4jManager - INFO - Completed saving SEC Transactions for C
+2025-03-25 22:50:45,662 - Neo4jManager - INFO - Completed SEC Transactions in 0.53 seconds
+2025-03-25 22:50:45,662 - Neo4jManager - INFO - Processing Company Officers for C
+2025-03-25 22:50:45,662 - Neo4jManager - INFO - Saving company officers for C
+2025-03-25 22:50:45,663 - Neo4jManager - INFO - Creating CompanyOfficers node for C
+2025-03-25 22:50:45,799 - Neo4jManager - INFO - Processing 15 officers
+2025-03-25 22:50:47,326 - Neo4jManager - INFO - Completed saving company officers: 15 officers created, 102 committee relationships, 0 skipped
+2025-03-25 22:50:47,326 - Neo4jManager - INFO - Completed saving Company Officers for C
+2025-03-25 22:50:47,326 - Neo4jManager - INFO - Completed Company Officers in 1.66 seconds
+2025-03-25 22:50:47,327 - Neo4jManager - INFO - Processing Institutional Holders for C
+2025-03-25 22:50:47,327 - Neo4jManager - INFO - Saving institutional holders for C
+2025-03-25 22:50:47,327 - Neo4jManager - INFO - Creating InstitutionalHolders node for C
+2025-03-25 22:50:47,401 - Neo4jManager - INFO - InstitutionalHolders node created: Institutional Holders - C
+2025-03-25 22:50:47,448 - Neo4jManager - INFO - Processing 10 institutional holders
+2025-03-25 22:50:47,691 - Neo4jManager - INFO - Completed saving institutional holders: 10 created, 0 skipped
+2025-03-25 22:50:47,691 - Neo4jManager - INFO - Completed saving Institutional Holders for C
+2025-03-25 22:50:47,692 - Neo4jManager - INFO - Completed Institutional Holders in 0.36 seconds
+2025-03-25 22:50:47,692 - Neo4jManager - INFO - Processing Competitors for C
+2025-03-25 22:50:48,002 - Neo4jManager - INFO - Completed saving Competitors for C
+2025-03-25 22:50:48,002 - Neo4jManager - INFO - Completed Competitors in 0.31 seconds
+2025-03-25 22:50:48,003 - Neo4jManager - INFO - Processing Analyst Ratings for C
+2025-03-25 22:50:48,003 - Neo4jManager - ERROR - Error processing Analyst Ratings for C: 'Neo4jManager' object has no attribute '_save_analysts_ratings'
+2025-03-25 22:50:48,003 - Neo4jManager - INFO - Completed Analyst Ratings in 0.00 seconds
+2025-03-25 22:50:48,003 - Neo4jManager - INFO - Processing News Sentiment for C
+2025-03-25 22:50:48,004 - Neo4jManager - INFO - Saving news sentiment for C
+2025-03-25 22:50:48,004 - Neo4jManager - INFO - Creating NewsFeed node for C
+2025-03-25 22:50:48,071 - Neo4jManager - INFO - NewsFeed node created: News Feed - C with path data/C/news_sentiment.csv
+2025-03-25 22:50:48,074 - Neo4jManager - INFO - Saved 99 news items to CSV
+2025-03-25 22:50:48,074 - Neo4jManager - INFO - Processing 99 news items for individual nodes
+2025-03-25 22:50:48,081 - Neo4jManager - INFO - Completed saving news sentiment: 0 created, 99 skipped
+2025-03-25 22:50:48,081 - Neo4jManager - INFO - Completed saving News Sentiment for C
+2025-03-25 22:50:48,081 - Neo4jManager - INFO - Completed News Sentiment in 0.08 seconds
+2025-03-25 22:50:48,082 - Neo4jManager - INFO - Completed saving all data for C in 3.76 seconds
+2025-03-25 22:50:48,082 - Neo4jManager - INFO - Closing Neo4j connection
+2025-03-25 22:50:48,083 - Neo4jManager - INFO - Neo4j connection closed successfully
+2025-03-25 23:04:42,065 - Neo4jManager - INFO - Initializing Neo4jManager with URI: bolt://localhost:7687, database: neo4j
+2025-03-25 23:04:44,117 - Neo4jManager - INFO - Successfully connected to Neo4j database
+2025-03-25 23:29:59,384 - yfinance - ERROR - 
+1 Failed download:
+2025-03-25 23:29:59,385 - yfinance - ERROR - ['WLP']: YFPricesMissingError('possibly delisted; no price data found  (1d 2024-09-26 23:29:59.248811 -> 2025-03-25 23:29:59.248819)')
+2025-03-25 23:30:26,373 - Neo4jManager - INFO - Starting to save data for ticker: JPM
+2025-03-25 23:30:26,373 - Neo4jManager - INFO - Creating main Stock node for JPM
+2025-03-25 23:30:26,406 - Neo4jManager - INFO - Main Stock node created/updated for JPM
+2025-03-25 23:30:26,407 - Neo4jManager - INFO - Saving stock price data to CSV for JPM
+2025-03-25 23:30:26,409 - Neo4jManager - INFO - Saved 122 price records to data/JPM/stock_prices.csv
+2025-03-25 23:30:26,409 - Neo4jManager - INFO - Processing Insider Holdings for JPM
+2025-03-25 23:30:26,409 - Neo4jManager - INFO - Saving insider holdings for JPM
+2025-03-25 23:30:26,410 - Neo4jManager - INFO - Creating InsiderTraders node for JPM
+2025-03-25 23:30:26,451 - Neo4jManager - INFO - InsiderTraders node created: Insider Trading - JPM
+2025-03-25 23:30:26,451 - Neo4jManager - INFO - Processing 18 insider records
+2025-03-25 23:30:26,451 - Neo4jManager - INFO - Processing insider: BAMMANN LINDA with 16 holdings records
+2025-03-25 23:30:26,512 - Neo4jManager - INFO - Processing 2 securities held by BAMMANN LINDA
+2025-03-25 23:30:26,558 - Neo4jManager - INFO - Processing insider: Beer Lori A with 56 holdings records
+2025-03-25 23:30:26,561 - Neo4jManager - INFO - Processing 2 securities held by Beer Lori A
+2025-03-25 23:30:26,564 - Neo4jManager - INFO - Processing insider: Boler-Davis Alicia S with 36 holdings records
+2025-03-25 23:30:26,568 - Neo4jManager - INFO - Processing 3 securities held by Boler-Davis Alicia S
+2025-03-25 23:30:26,575 - Neo4jManager - INFO - Processing insider: BURKE STEPHEN B with 52 holdings records
+2025-03-25 23:30:26,579 - Neo4jManager - INFO - Processing 3 securities held by BURKE STEPHEN B
+2025-03-25 23:30:26,586 - Neo4jManager - INFO - Processing insider: Combs Todd A with 10 holdings records
+2025-03-25 23:30:26,590 - Neo4jManager - INFO - Processing 1 securities held by Combs Todd A
+2025-03-25 23:30:26,591 - Neo4jManager - INFO - Processing insider: DIMON JAMES with 70 holdings records
+2025-03-25 23:30:26,594 - Neo4jManager - INFO - Processing 1 securities held by DIMON JAMES
+2025-03-25 23:30:26,595 - Neo4jManager - INFO - Processing insider: Erdoes Mary E with 53 holdings records
+2025-03-25 23:30:26,597 - Neo4jManager - INFO - Processing 1 securities held by Erdoes Mary E
+2025-03-25 23:30:26,598 - Neo4jManager - INFO - Processing insider: Friedman Stacey with 54 holdings records
+2025-03-25 23:30:26,601 - Neo4jManager - INFO - Processing 1 securities held by Friedman Stacey
+2025-03-25 23:30:26,602 - Neo4jManager - INFO - Processing insider: Gorsky Alex with 25 holdings records
+2025-03-25 23:30:26,605 - Neo4jManager - INFO - Processing 3 securities held by Gorsky Alex
+2025-03-25 23:30:26,613 - Neo4jManager - INFO - Processing insider: HOBSON MELLODY L with 41 holdings records
+2025-03-25 23:30:26,616 - Neo4jManager - INFO - Processing 2 securities held by HOBSON MELLODY L
+2025-03-25 23:30:26,621 - Neo4jManager - INFO - Processing insider: Leopold Robin with 57 holdings records
+2025-03-25 23:30:26,625 - Neo4jManager - INFO - Processing 1 securities held by Leopold Robin
+2025-03-25 23:30:26,625 - Neo4jManager - INFO - Processing insider: NOVAKOVIC PHEBE N with 69 holdings records
+2025-03-25 23:30:26,685 - Neo4jManager - INFO - Processing 3 securities held by NOVAKOVIC PHEBE N
+2025-03-25 23:30:26,791 - Neo4jManager - INFO - Processing insider: Petno Douglas B with 49 holdings records
+2025-03-25 23:30:26,795 - Neo4jManager - INFO - Processing 1 securities held by Petno Douglas B
+2025-03-25 23:30:26,796 - Neo4jManager - INFO - Processing insider: Piepszak Jennifer with 42 holdings records
+2025-03-25 23:30:26,799 - Neo4jManager - INFO - Processing 1 securities held by Piepszak Jennifer
+2025-03-25 23:30:26,800 - Neo4jManager - INFO - Processing insider: Rohrbaugh Troy L with 10 holdings records
+2025-03-25 23:30:26,804 - Neo4jManager - INFO - Processing 1 securities held by Rohrbaugh Troy L
+2025-03-25 23:30:26,805 - Neo4jManager - INFO - Processing insider: Rometty Virginia M with 44 holdings records
+2025-03-25 23:30:26,808 - Neo4jManager - INFO - Processing 2 securities held by Rometty Virginia M
+2025-03-25 23:30:26,811 - Neo4jManager - INFO - Processing insider: SMITH BRAD D with 101 holdings records
+2025-03-25 23:30:26,814 - Neo4jManager - INFO - Processing 6 securities held by SMITH BRAD D
+2025-03-25 23:30:26,829 - Neo4jManager - INFO - Processing insider: WEINBERGER MARK A with 24 holdings records
+2025-03-25 23:30:26,833 - Neo4jManager - INFO - Processing 3 securities held by WEINBERGER MARK A
+2025-03-25 23:30:26,839 - Neo4jManager - INFO - Successfully completed saving insider holdings for JPM
+2025-03-25 23:30:26,840 - Neo4jManager - INFO - Completed saving Insider Holdings for JPM
+2025-03-25 23:30:26,840 - Neo4jManager - INFO - Completed Insider Holdings in 0.43 seconds
+2025-03-25 23:30:26,840 - Neo4jManager - INFO - Processing SEC Transactions for JPM
+2025-03-25 23:30:26,840 - Neo4jManager - INFO - Saving SEC transactions for JPM
+2025-03-25 23:30:26,841 - Neo4jManager - INFO - Processing 29 SEC transactions
+2025-03-25 23:30:26,999 - Neo4jManager - INFO - Completed saving SEC transactions: 29 created, 0 skipped
+2025-03-25 23:30:26,999 - Neo4jManager - INFO - Completed saving SEC Transactions for JPM
+2025-03-25 23:30:27,000 - Neo4jManager - INFO - Completed SEC Transactions in 0.16 seconds
+2025-03-25 23:30:27,000 - Neo4jManager - INFO - Processing Company Officers for JPM
+2025-03-25 23:30:27,000 - Neo4jManager - INFO - Saving company officers for JPM
+2025-03-25 23:30:27,000 - Neo4jManager - INFO - Creating CompanyOfficers node for JPM
+2025-03-25 23:30:27,059 - Neo4jManager - INFO - Processing 16 officers
+2025-03-25 23:30:27,503 - Neo4jManager - INFO - Completed saving company officers: 16 officers created, 24 committee relationships, 0 skipped
+2025-03-25 23:30:27,504 - Neo4jManager - INFO - Completed saving Company Officers for JPM
+2025-03-25 23:30:27,504 - Neo4jManager - INFO - Completed Company Officers in 0.50 seconds
+2025-03-25 23:30:27,504 - Neo4jManager - INFO - Processing Institutional Holders for JPM
+2025-03-25 23:30:27,504 - Neo4jManager - INFO - Saving institutional holders for JPM
+2025-03-25 23:30:27,505 - Neo4jManager - INFO - Creating InstitutionalHolders node for JPM
+2025-03-25 23:30:27,535 - Neo4jManager - INFO - InstitutionalHolders node created: Institutional Holders - JPM
+2025-03-25 23:30:27,551 - Neo4jManager - INFO - Processing 10 institutional holders
+2025-03-25 23:30:27,741 - Neo4jManager - INFO - Completed saving institutional holders: 10 created, 0 skipped
+2025-03-25 23:30:27,741 - Neo4jManager - INFO - Completed saving Institutional Holders for JPM
+2025-03-25 23:30:27,742 - Neo4jManager - INFO - Completed Institutional Holders in 0.24 seconds
+2025-03-25 23:30:27,742 - Neo4jManager - INFO - Processing Competitors for JPM
+2025-03-25 23:30:27,947 - Neo4jManager - INFO - Completed saving Competitors for JPM
+2025-03-25 23:30:27,947 - Neo4jManager - INFO - Completed Competitors in 0.21 seconds
+2025-03-25 23:30:27,948 - Neo4jManager - INFO - Processing Analyst Ratings for JPM
+2025-03-25 23:30:27,948 - Neo4jManager - ERROR - Error processing Analyst Ratings for JPM: 'Neo4jManager' object has no attribute '_save_analysts_ratings'
+2025-03-25 23:30:27,948 - Neo4jManager - INFO - Completed Analyst Ratings in 0.00 seconds
+2025-03-25 23:30:27,948 - Neo4jManager - INFO - Processing News Sentiment for JPM
+2025-03-25 23:30:27,949 - Neo4jManager - INFO - Saving news sentiment for JPM
+2025-03-25 23:30:27,949 - Neo4jManager - INFO - Creating NewsFeed node for JPM
+2025-03-25 23:30:27,981 - Neo4jManager - INFO - NewsFeed node created: News Feed - JPM with path data/JPM/news_sentiment.csv
+2025-03-25 23:30:27,983 - Neo4jManager - INFO - Saved 100 news items to CSV
+2025-03-25 23:30:27,984 - Neo4jManager - INFO - Processing 100 news items for individual nodes
+2025-03-25 23:30:27,989 - Neo4jManager - INFO - Completed saving news sentiment: 0 created, 100 skipped
+2025-03-25 23:30:27,989 - Neo4jManager - INFO - Completed saving News Sentiment for JPM
+2025-03-25 23:30:27,989 - Neo4jManager - INFO - Completed News Sentiment in 0.04 seconds
+2025-03-25 23:30:27,990 - Neo4jManager - INFO - Completed saving all data for JPM in 1.62 seconds
+2025-03-25 23:30:27,990 - Neo4jManager - INFO - Closing Neo4j connection
+2025-03-25 23:30:27,991 - Neo4jManager - INFO - Neo4j connection closed successfully
+2025-03-26 00:26:51,279 - Neo4jManager - INFO - Initializing Neo4jManager with URI: bolt://localhost:7687, database: neo4j
+2025-03-26 00:26:53,336 - Neo4jManager - INFO - Successfully connected to Neo4j database
+2025-03-26 00:41:44,920 - Neo4jManager - INFO - Starting to save data for ticker: AAPL
+2025-03-26 00:41:44,920 - Neo4jManager - INFO - Creating main Stock node for AAPL
+2025-03-26 00:41:44,968 - Neo4jManager - INFO - Main Stock node created/updated for AAPL
+2025-03-26 00:41:44,968 - Neo4jManager - INFO - Saving stock price data to CSV for AAPL
+2025-03-26 00:41:44,970 - Neo4jManager - INFO - Saved 122 price records to data/AAPL/stock_prices.csv
+2025-03-26 00:41:44,970 - Neo4jManager - INFO - Processing Insider Holdings for AAPL
+2025-03-26 00:41:44,971 - Neo4jManager - INFO - Saving insider holdings for AAPL
+2025-03-26 00:41:44,971 - Neo4jManager - INFO - Creating InsiderTraders node for AAPL
+2025-03-26 00:41:45,030 - Neo4jManager - INFO - InsiderTraders node created: Insider Trading - AAPL
+2025-03-26 00:41:45,030 - Neo4jManager - INFO - Processing 13 insider records
+2025-03-26 00:41:45,031 - Neo4jManager - INFO - Processing insider: Adams Katherine L with 97 holdings records
+2025-03-26 00:41:45,097 - Neo4jManager - INFO - Processing 2 securities held by Adams Katherine L
+2025-03-26 00:41:45,152 - Neo4jManager - INFO - Processing insider: Austin Wanda M with 27 holdings records
+2025-03-26 00:41:45,155 - Neo4jManager - INFO - Processing 4 securities held by Austin Wanda M
+2025-03-26 00:41:45,165 - Neo4jManager - INFO - Processing insider: COOK TIMOTHY D with 102 holdings records
+2025-03-26 00:41:45,169 - Neo4jManager - INFO - Processing 2 securities held by COOK TIMOTHY D
+2025-03-26 00:41:45,173 - Neo4jManager - INFO - Processing insider: Gorsky Alex with 25 holdings records
+2025-03-26 00:41:45,178 - Neo4jManager - INFO - Processing 3 securities held by Gorsky Alex
+2025-03-26 00:41:45,184 - Neo4jManager - INFO - Processing insider: JUNG ANDREA with 22 holdings records
+2025-03-26 00:41:45,187 - Neo4jManager - INFO - Processing 2 securities held by JUNG ANDREA
+2025-03-26 00:41:45,244 - Neo4jManager - INFO - Processing insider: KONDO CHRIS with 57 holdings records
+2025-03-26 00:41:45,248 - Neo4jManager - INFO - Processing 1 securities held by KONDO CHRIS
+2025-03-26 00:41:45,249 - Neo4jManager - INFO - Processing insider: LEVINSON ARTHUR D with 56 holdings records
+2025-03-26 00:41:45,251 - Neo4jManager - INFO - Processing 1 securities held by LEVINSON ARTHUR D
+2025-03-26 00:41:45,251 - Neo4jManager - INFO - Processing insider: LOZANO MONICA C with 25 holdings records
+2025-03-26 00:41:45,254 - Neo4jManager - INFO - Processing 4 securities held by LOZANO MONICA C
+2025-03-26 00:41:45,263 - Neo4jManager - INFO - Processing insider: Maestri Luca with 83 holdings records
+2025-03-26 00:41:45,267 - Neo4jManager - INFO - Processing 1 securities held by Maestri Luca
+2025-03-26 00:41:45,268 - Neo4jManager - INFO - Processing insider: O'BRIEN DEIRDRE with 65 holdings records
+2025-03-26 00:41:45,270 - Neo4jManager - INFO - Processing 1 securities held by O'BRIEN DEIRDRE
+2025-03-26 00:41:45,271 - Neo4jManager - INFO - Processing insider: SUGAR RONALD D with 44 holdings records
+2025-03-26 00:41:45,273 - Neo4jManager - INFO - Processing 4 securities held by SUGAR RONALD D
+2025-03-26 00:41:45,336 - Neo4jManager - INFO - Processing insider: WAGNER SUSAN with 31 holdings records
+2025-03-26 00:41:45,340 - Neo4jManager - INFO - Processing 3 securities held by WAGNER SUSAN
+2025-03-26 00:41:45,347 - Neo4jManager - INFO - Processing insider: WILLIAMS JEFFREY E with 91 holdings records
+2025-03-26 00:41:45,351 - Neo4jManager - INFO - Processing 1 securities held by WILLIAMS JEFFREY E
+2025-03-26 00:41:45,352 - Neo4jManager - INFO - Successfully completed saving insider holdings for AAPL
+2025-03-26 00:41:45,352 - Neo4jManager - INFO - Completed saving Insider Holdings for AAPL
+2025-03-26 00:41:45,352 - Neo4jManager - INFO - Completed Insider Holdings in 0.38 seconds
+2025-03-26 00:41:45,353 - Neo4jManager - INFO - Processing SEC Transactions for AAPL
+2025-03-26 00:41:45,353 - Neo4jManager - INFO - Saving SEC transactions for AAPL
+2025-03-26 00:41:45,353 - Neo4jManager - INFO - Processing 54 SEC transactions
+2025-03-26 00:41:45,651 - Neo4jManager - INFO - Completed saving SEC transactions: 54 created, 0 skipped
+2025-03-26 00:41:45,651 - Neo4jManager - INFO - Completed saving SEC Transactions for AAPL
+2025-03-26 00:41:45,652 - Neo4jManager - INFO - Completed SEC Transactions in 0.30 seconds
+2025-03-26 00:41:45,652 - Neo4jManager - INFO - Processing Company Officers for AAPL
+2025-03-26 00:41:45,652 - Neo4jManager - INFO - Saving company officers for AAPL
+2025-03-26 00:41:45,652 - Neo4jManager - INFO - Creating CompanyOfficers node for AAPL
+2025-03-26 00:41:45,710 - Neo4jManager - INFO - Processing 14 officers
+2025-03-26 00:41:46,312 - Neo4jManager - INFO - Completed saving company officers: 14 officers created, 15 committee relationships, 0 skipped
+2025-03-26 00:41:46,313 - Neo4jManager - INFO - Completed saving Company Officers for AAPL
+2025-03-26 00:41:46,313 - Neo4jManager - INFO - Completed Company Officers in 0.66 seconds
+2025-03-26 00:41:46,313 - Neo4jManager - INFO - Processing Institutional Holders for AAPL
+2025-03-26 00:41:46,313 - Neo4jManager - INFO - Saving institutional holders for AAPL
+2025-03-26 00:41:46,314 - Neo4jManager - INFO - Creating InstitutionalHolders node for AAPL
+2025-03-26 00:41:46,348 - Neo4jManager - INFO - InstitutionalHolders node created: Institutional Holders - AAPL
+2025-03-26 00:41:46,351 - Neo4jManager - INFO - Processing 10 institutional holders
+2025-03-26 00:41:46,482 - Neo4jManager - INFO - Completed saving institutional holders: 10 created, 0 skipped
+2025-03-26 00:41:46,482 - Neo4jManager - INFO - Completed saving Institutional Holders for AAPL
+2025-03-26 00:41:46,482 - Neo4jManager - INFO - Completed Institutional Holders in 0.17 seconds
+2025-03-26 00:41:46,482 - Neo4jManager - INFO - Processing Competitors for AAPL
+2025-03-26 00:41:46,566 - Neo4jManager - INFO - Completed saving Competitors for AAPL
+2025-03-26 00:41:46,567 - Neo4jManager - INFO - Completed Competitors in 0.08 seconds
+2025-03-26 00:41:46,567 - Neo4jManager - INFO - Processing Analyst Ratings for AAPL
+2025-03-26 00:41:46,568 - Neo4jManager - ERROR - Error processing Analyst Ratings for AAPL: 'Neo4jManager' object has no attribute '_save_analysts_ratings'
+2025-03-26 00:41:46,568 - Neo4jManager - INFO - Completed Analyst Ratings in 0.00 seconds
+2025-03-26 00:41:46,568 - Neo4jManager - INFO - Processing News Sentiment for AAPL
+2025-03-26 00:41:46,569 - Neo4jManager - INFO - Saving news sentiment for AAPL
+2025-03-26 00:41:46,569 - Neo4jManager - INFO - Creating NewsFeed node for AAPL
+2025-03-26 00:41:46,571 - Neo4jManager - INFO - NewsFeed node created: News Feed - AAPL with path data/AAPL/news_sentiment.csv
+2025-03-26 00:41:46,573 - Neo4jManager - INFO - Saved 100 news items to CSV
+2025-03-26 00:41:46,573 - Neo4jManager - INFO - Processing 100 news items for individual nodes
+2025-03-26 00:41:46,579 - Neo4jManager - INFO - Completed saving news sentiment: 0 created, 100 skipped
+2025-03-26 00:41:46,579 - Neo4jManager - INFO - Completed saving News Sentiment for AAPL
+2025-03-26 00:41:46,580 - Neo4jManager - INFO - Completed News Sentiment in 0.01 seconds
+2025-03-26 00:41:46,580 - Neo4jManager - INFO - Completed saving all data for AAPL in 1.66 seconds
+2025-03-26 00:41:46,581 - Neo4jManager - INFO - Closing Neo4j connection
+2025-03-26 00:41:46,581 - Neo4jManager - INFO - Neo4j connection closed successfully
+2025-03-26 00:44:11,521 - Neo4jManager - INFO - Initializing Neo4jManager with URI: bolt://localhost:7687, database: neo4j
+2025-03-26 00:44:13,564 - Neo4jManager - INFO - Successfully connected to Neo4j database
+2025-03-26 00:44:14,412 - Neo4jManager - INFO - Starting to save data for ticker: AAPL
+2025-03-26 00:44:14,412 - Neo4jManager - INFO - Creating main Stock node for AAPL
+2025-03-26 00:44:14,424 - Neo4jManager - INFO - Main Stock node created/updated for AAPL
+2025-03-26 00:44:14,425 - Neo4jManager - INFO - Saving stock price data to CSV for AAPL
+2025-03-26 00:44:14,428 - Neo4jManager - INFO - Saved 122 price records to data/AAPL/stock_prices.csv
+2025-03-26 00:44:14,429 - Neo4jManager - INFO - Processing Insider Holdings for AAPL
+2025-03-26 00:44:14,429 - Neo4jManager - INFO - Saving insider holdings for AAPL
+2025-03-26 00:44:14,429 - Neo4jManager - INFO - Creating InsiderTraders node for AAPL
+2025-03-26 00:44:14,446 - Neo4jManager - INFO - InsiderTraders node created: Insider Trading - AAPL
+2025-03-26 00:44:14,447 - Neo4jManager - INFO - Processing 13 insider records
+2025-03-26 00:44:14,447 - Neo4jManager - INFO - Processing insider: Adams Katherine L with 97 holdings records
+2025-03-26 00:44:14,477 - Neo4jManager - INFO - Processing 2 securities held by Adams Katherine L
+2025-03-26 00:44:14,520 - Neo4jManager - INFO - Processing insider: Austin Wanda M with 27 holdings records
+2025-03-26 00:44:14,524 - Neo4jManager - INFO - Processing 4 securities held by Austin Wanda M
+2025-03-26 00:44:14,534 - Neo4jManager - INFO - Processing insider: COOK TIMOTHY D with 102 holdings records
+2025-03-26 00:44:14,537 - Neo4jManager - INFO - Processing 2 securities held by COOK TIMOTHY D
+2025-03-26 00:44:14,539 - Neo4jManager - INFO - Processing insider: Gorsky Alex with 25 holdings records
+2025-03-26 00:44:14,545 - Neo4jManager - INFO - Processing 3 securities held by Gorsky Alex
+2025-03-26 00:44:14,551 - Neo4jManager - INFO - Processing insider: JUNG ANDREA with 22 holdings records
+2025-03-26 00:44:14,554 - Neo4jManager - INFO - Processing 2 securities held by JUNG ANDREA
+2025-03-26 00:44:14,600 - Neo4jManager - INFO - Processing insider: KONDO CHRIS with 57 holdings records
+2025-03-26 00:44:14,604 - Neo4jManager - INFO - Processing 1 securities held by KONDO CHRIS
+2025-03-26 00:44:14,605 - Neo4jManager - INFO - Processing insider: LEVINSON ARTHUR D with 56 holdings records
+2025-03-26 00:44:14,608 - Neo4jManager - INFO - Processing 1 securities held by LEVINSON ARTHUR D
+2025-03-26 00:44:14,609 - Neo4jManager - INFO - Processing insider: LOZANO MONICA C with 25 holdings records
+2025-03-26 00:44:14,613 - Neo4jManager - INFO - Processing 4 securities held by LOZANO MONICA C
+2025-03-26 00:44:14,621 - Neo4jManager - INFO - Processing insider: Maestri Luca with 83 holdings records
+2025-03-26 00:44:14,624 - Neo4jManager - INFO - Processing 1 securities held by Maestri Luca
+2025-03-26 00:44:14,624 - Neo4jManager - INFO - Processing insider: O'BRIEN DEIRDRE with 65 holdings records
+2025-03-26 00:44:14,628 - Neo4jManager - INFO - Processing 1 securities held by O'BRIEN DEIRDRE
+2025-03-26 00:44:14,629 - Neo4jManager - INFO - Processing insider: SUGAR RONALD D with 44 holdings records
+2025-03-26 00:44:14,632 - Neo4jManager - INFO - Processing 4 securities held by SUGAR RONALD D
+2025-03-26 00:44:14,684 - Neo4jManager - INFO - Processing insider: WAGNER SUSAN with 31 holdings records
+2025-03-26 00:44:14,687 - Neo4jManager - INFO - Processing 3 securities held by WAGNER SUSAN
+2025-03-26 00:44:14,694 - Neo4jManager - INFO - Processing insider: WILLIAMS JEFFREY E with 91 holdings records
+2025-03-26 00:44:14,697 - Neo4jManager - INFO - Processing 1 securities held by WILLIAMS JEFFREY E
+2025-03-26 00:44:14,698 - Neo4jManager - INFO - Successfully completed saving insider holdings for AAPL
+2025-03-26 00:44:14,698 - Neo4jManager - INFO - Completed saving Insider Holdings for AAPL
+2025-03-26 00:44:14,699 - Neo4jManager - INFO - Completed Insider Holdings in 0.27 seconds
+2025-03-26 00:44:14,699 - Neo4jManager - INFO - Processing SEC Transactions for AAPL
+2025-03-26 00:44:14,699 - Neo4jManager - INFO - Saving SEC transactions for AAPL
+2025-03-26 00:44:14,700 - Neo4jManager - INFO - Processing 54 SEC transactions
+2025-03-26 00:44:14,949 - Neo4jManager - INFO - Completed saving SEC transactions: 54 created, 0 skipped
+2025-03-26 00:44:14,949 - Neo4jManager - INFO - Completed saving SEC Transactions for AAPL
+2025-03-26 00:44:14,950 - Neo4jManager - INFO - Completed SEC Transactions in 0.25 seconds
+2025-03-26 00:44:14,950 - Neo4jManager - INFO - Processing Company Officers for AAPL
+2025-03-26 00:44:14,950 - Neo4jManager - INFO - Saving company officers for AAPL
+2025-03-26 00:44:14,950 - Neo4jManager - INFO - Creating CompanyOfficers node for AAPL
+2025-03-26 00:44:15,008 - Neo4jManager - INFO - Processing 14 officers
+2025-03-26 00:44:15,482 - Neo4jManager - INFO - Completed saving company officers: 14 officers created, 15 committee relationships, 0 skipped
+2025-03-26 00:44:15,482 - Neo4jManager - INFO - Completed saving Company Officers for AAPL
+2025-03-26 00:44:15,482 - Neo4jManager - INFO - Completed Company Officers in 0.53 seconds
+2025-03-26 00:44:15,482 - Neo4jManager - INFO - Processing Institutional Holders for AAPL
+2025-03-26 00:44:15,483 - Neo4jManager - INFO - Saving institutional holders for AAPL
+2025-03-26 00:44:15,483 - Neo4jManager - INFO - Creating InstitutionalHolders node for AAPL
+2025-03-26 00:44:15,517 - Neo4jManager - INFO - InstitutionalHolders node created: Institutional Holders - AAPL
+2025-03-26 00:44:15,535 - Neo4jManager - INFO - Processing 10 institutional holders
+2025-03-26 00:44:15,688 - Neo4jManager - INFO - Completed saving institutional holders: 10 created, 0 skipped
+2025-03-26 00:44:15,688 - Neo4jManager - INFO - Completed saving Institutional Holders for AAPL
+2025-03-26 00:44:15,689 - Neo4jManager - INFO - Completed Institutional Holders in 0.21 seconds
+2025-03-26 00:44:15,689 - Neo4jManager - INFO - Processing Competitors for AAPL
+2025-03-26 00:44:15,876 - Neo4jManager - INFO - Completed saving Competitors for AAPL
+2025-03-26 00:44:15,877 - Neo4jManager - INFO - Completed Competitors in 0.19 seconds
+2025-03-26 00:44:15,877 - Neo4jManager - INFO - Processing Analyst Ratings for AAPL
+2025-03-26 00:44:15,878 - Neo4jManager - ERROR - Error processing Analyst Ratings for AAPL: 'Neo4jManager' object has no attribute '_save_analysts_ratings'
+2025-03-26 00:44:15,878 - Neo4jManager - INFO - Completed Analyst Ratings in 0.00 seconds
+2025-03-26 00:44:15,878 - Neo4jManager - INFO - Processing News Sentiment for AAPL
+2025-03-26 00:44:15,879 - Neo4jManager - INFO - Saving news sentiment for AAPL
+2025-03-26 00:44:15,879 - Neo4jManager - INFO - Creating NewsFeed node for AAPL
+2025-03-26 00:44:15,912 - Neo4jManager - INFO - NewsFeed node created: News Feed - AAPL with path data/AAPL/news_sentiment.csv
+2025-03-26 00:44:15,914 - Neo4jManager - INFO - Saved 100 news items to CSV
+2025-03-26 00:44:15,914 - Neo4jManager - INFO - Processing 100 news items for individual nodes
+2025-03-26 00:44:15,917 - Neo4jManager - INFO - Completed saving news sentiment: 0 created, 100 skipped
+2025-03-26 00:44:15,918 - Neo4jManager - INFO - Completed saving News Sentiment for AAPL
+2025-03-26 00:44:15,918 - Neo4jManager - INFO - Completed News Sentiment in 0.04 seconds
+2025-03-26 00:44:15,918 - Neo4jManager - INFO - Connecting Insiders to Committees for AAPL
+2025-03-26 00:44:15,988 - Neo4jManager - INFO - Completed connecting Insiders to Committees: 0 connections made
+2025-03-26 00:44:15,989 - Neo4jManager - INFO - Completed saving all data for AAPL in 1.58 seconds
+2025-03-26 00:44:15,989 - Neo4jManager - INFO - Closing Neo4j connection
+2025-03-26 00:44:15,990 - Neo4jManager - INFO - Neo4j connection closed successfully
+2025-03-26 00:48:31,022 - Neo4jManager - INFO - Initializing Neo4jManager with URI: bolt://localhost:7687, database: neo4j
+2025-03-26 00:48:33,082 - Neo4jManager - INFO - Successfully connected to Neo4j database
+2025-03-26 01:03:53,727 - Neo4jManager - INFO - Starting to save data for ticker: AAPL
+2025-03-26 01:03:53,727 - Neo4jManager - INFO - Creating main Stock node for AAPL
+2025-03-26 01:03:53,766 - Neo4jManager - INFO - Main Stock node created/updated for AAPL
+2025-03-26 01:03:53,766 - Neo4jManager - INFO - Saving stock price data to CSV for AAPL
+2025-03-26 01:03:53,769 - Neo4jManager - INFO - Saved 122 price records to data/AAPL/stock_prices.csv
+2025-03-26 01:03:53,769 - Neo4jManager - INFO - Processing Insider Holdings for AAPL
+2025-03-26 01:03:53,769 - Neo4jManager - INFO - Saving insider holdings for AAPL
+2025-03-26 01:03:53,770 - Neo4jManager - INFO - Creating InsiderTraders node for AAPL
+2025-03-26 01:03:53,804 - Neo4jManager - INFO - InsiderTraders node created: Insider Trading - AAPL
+2025-03-26 01:03:53,805 - Neo4jManager - INFO - Processing 13 insider records
+2025-03-26 01:03:53,805 - Neo4jManager - INFO - Processing insider: Adams Katherine L with 97 holdings records
+2025-03-26 01:03:53,861 - Neo4jManager - INFO - Processing 2 securities held by Adams Katherine L
+2025-03-26 01:03:53,923 - Neo4jManager - INFO - Processing insider: Austin Wanda M with 27 holdings records
+2025-03-26 01:03:53,927 - Neo4jManager - INFO - Processing 4 securities held by Austin Wanda M
+2025-03-26 01:03:53,936 - Neo4jManager - INFO - Processing insider: COOK TIMOTHY D with 102 holdings records
+2025-03-26 01:03:53,939 - Neo4jManager - INFO - Processing 2 securities held by COOK TIMOTHY D
+2025-03-26 01:03:53,942 - Neo4jManager - INFO - Processing insider: Gorsky Alex with 25 holdings records
+2025-03-26 01:03:53,946 - Neo4jManager - INFO - Processing 3 securities held by Gorsky Alex
+2025-03-26 01:03:53,953 - Neo4jManager - INFO - Processing insider: JUNG ANDREA with 22 holdings records
+2025-03-26 01:03:53,956 - Neo4jManager - INFO - Processing 2 securities held by JUNG ANDREA
+2025-03-26 01:03:54,003 - Neo4jManager - INFO - Processing insider: KONDO CHRIS with 57 holdings records
+2025-03-26 01:03:54,007 - Neo4jManager - INFO - Processing 1 securities held by KONDO CHRIS
+2025-03-26 01:03:54,009 - Neo4jManager - INFO - Processing insider: LEVINSON ARTHUR D with 56 holdings records
+2025-03-26 01:03:54,011 - Neo4jManager - INFO - Processing 1 securities held by LEVINSON ARTHUR D
+2025-03-26 01:03:54,012 - Neo4jManager - INFO - Processing insider: LOZANO MONICA C with 25 holdings records
+2025-03-26 01:03:54,014 - Neo4jManager - INFO - Processing 4 securities held by LOZANO MONICA C
+2025-03-26 01:03:54,020 - Neo4jManager - INFO - Processing insider: Maestri Luca with 83 holdings records
+2025-03-26 01:03:54,024 - Neo4jManager - INFO - Processing 1 securities held by Maestri Luca
+2025-03-26 01:03:54,025 - Neo4jManager - INFO - Processing insider: O'BRIEN DEIRDRE with 65 holdings records
+2025-03-26 01:03:54,028 - Neo4jManager - INFO - Processing 1 securities held by O'BRIEN DEIRDRE
+2025-03-26 01:03:54,028 - Neo4jManager - INFO - Processing insider: SUGAR RONALD D with 44 holdings records
+2025-03-26 01:03:54,030 - Neo4jManager - INFO - Processing 4 securities held by SUGAR RONALD D
+2025-03-26 01:03:54,061 - Neo4jManager - INFO - Processing insider: WAGNER SUSAN with 31 holdings records
+2025-03-26 01:03:54,063 - Neo4jManager - INFO - Processing 3 securities held by WAGNER SUSAN
+2025-03-26 01:03:54,068 - Neo4jManager - INFO - Processing insider: WILLIAMS JEFFREY E with 91 holdings records
+2025-03-26 01:03:54,070 - Neo4jManager - INFO - Processing 1 securities held by WILLIAMS JEFFREY E
+2025-03-26 01:03:54,071 - Neo4jManager - INFO - Successfully completed saving insider holdings for AAPL
+2025-03-26 01:03:54,071 - Neo4jManager - INFO - Completed saving Insider Holdings for AAPL
+2025-03-26 01:03:54,071 - Neo4jManager - INFO - Completed Insider Holdings in 0.30 seconds
+2025-03-26 01:03:54,072 - Neo4jManager - INFO - Processing SEC Transactions for AAPL
+2025-03-26 01:03:54,072 - Neo4jManager - INFO - Saving SEC transactions for AAPL
+2025-03-26 01:03:54,072 - Neo4jManager - INFO - Processing 54 SEC transactions
+2025-03-26 01:03:54,224 - Neo4jManager - INFO - Completed saving SEC transactions: 54 created, 0 skipped
+2025-03-26 01:03:54,225 - Neo4jManager - INFO - Completed saving SEC Transactions for AAPL
+2025-03-26 01:03:54,225 - Neo4jManager - INFO - Completed SEC Transactions in 0.15 seconds
+2025-03-26 01:03:54,225 - Neo4jManager - INFO - Processing Company Officers for AAPL
+2025-03-26 01:03:54,226 - Neo4jManager - INFO - Saving company officers for AAPL
+2025-03-26 01:03:54,226 - Neo4jManager - INFO - Creating CompanyOfficers node for AAPL
+2025-03-26 01:03:54,256 - Neo4jManager - INFO - Processing 14 officers
+2025-03-26 01:03:54,424 - Neo4jManager - INFO - Completed saving company officers: 14 officers created, 15 committee relationships, 0 skipped
+2025-03-26 01:03:54,424 - Neo4jManager - INFO - Completed saving Company Officers for AAPL
+2025-03-26 01:03:54,424 - Neo4jManager - INFO - Completed Company Officers in 0.20 seconds
+2025-03-26 01:03:54,425 - Neo4jManager - INFO - Processing Institutional Holders for AAPL
+2025-03-26 01:03:54,425 - Neo4jManager - INFO - Saving institutional holders for AAPL
+2025-03-26 01:03:54,425 - Neo4jManager - INFO - Creating InstitutionalHolders node for AAPL
+2025-03-26 01:03:54,464 - Neo4jManager - INFO - InstitutionalHolders node created: Institutional Holders - AAPL
+2025-03-26 01:03:54,466 - Neo4jManager - INFO - Processing 10 institutional holders
+2025-03-26 01:03:54,579 - Neo4jManager - INFO - Completed saving institutional holders: 10 created, 0 skipped
+2025-03-26 01:03:54,580 - Neo4jManager - INFO - Completed saving Institutional Holders for AAPL
+2025-03-26 01:03:54,580 - Neo4jManager - INFO - Completed Institutional Holders in 0.15 seconds
+2025-03-26 01:03:54,580 - Neo4jManager - INFO - Processing Competitors for AAPL
+2025-03-26 01:03:54,717 - Neo4jManager - INFO - Completed saving Competitors for AAPL
+2025-03-26 01:03:54,718 - Neo4jManager - INFO - Completed Competitors in 0.14 seconds
+2025-03-26 01:03:54,718 - Neo4jManager - INFO - Processing Analyst Ratings for AAPL
+2025-03-26 01:03:54,718 - Neo4jManager - ERROR - Error processing Analyst Ratings for AAPL: 'Neo4jManager' object has no attribute '_save_analysts_ratings'
+2025-03-26 01:03:54,719 - Neo4jManager - INFO - Completed Analyst Ratings in 0.00 seconds
+2025-03-26 01:03:54,719 - Neo4jManager - INFO - Processing News Sentiment for AAPL
+2025-03-26 01:03:54,719 - Neo4jManager - INFO - Saving news sentiment for AAPL
+2025-03-26 01:03:54,719 - Neo4jManager - INFO - Creating NewsFeed node for AAPL
+2025-03-26 01:03:54,753 - Neo4jManager - INFO - NewsFeed node created: News Feed - AAPL with path data/AAPL/news_sentiment.csv
+2025-03-26 01:03:54,755 - Neo4jManager - INFO - Saved 100 news items to CSV
+2025-03-26 01:03:54,755 - Neo4jManager - INFO - Processing 100 news items for individual nodes
+2025-03-26 01:03:54,759 - Neo4jManager - INFO - Completed saving news sentiment: 0 created, 100 skipped
+2025-03-26 01:03:54,760 - Neo4jManager - INFO - Completed saving News Sentiment for AAPL
+2025-03-26 01:03:54,760 - Neo4jManager - INFO - Completed News Sentiment in 0.04 seconds
+2025-03-26 01:03:54,760 - Neo4jManager - INFO - Connecting Insiders to Officers and Committees for AAPL
+2025-03-26 01:03:54,762 - Neo4jManager - INFO - Found 13 insider nodes for AAPL
+2025-03-26 01:03:54,764 - Neo4jManager - INFO - Found 14 officer nodes for AAPL
+2025-03-26 01:03:54,765 - Neo4jManager - INFO - Matched Insider 'Austin Wanda M' to Officer 'Dr. Wanda Austin' with score 0.46153846153846156
+2025-03-26 01:03:54,927 - Neo4jManager - INFO - Connected Insider 'Austin Wanda M' to Officer 'Dr. Wanda Austin' with SAME_PERSON relationship
+2025-03-26 01:03:54,963 - Neo4jManager - INFO - Matched Insider 'COOK TIMOTHY D' to Officer 'Tim Cook' with score 0.36363636363636365
+2025-03-26 01:03:54,965 - Neo4jManager - INFO - Connected Insider 'COOK TIMOTHY D' to Officer 'Tim Cook' with SAME_PERSON relationship
+2025-03-26 01:03:54,968 - Neo4jManager - INFO - Matched Insider 'Gorsky Alex' to Officer 'Alex Gorsky' with score 0.5454545454545454
+2025-03-26 01:03:54,970 - Neo4jManager - INFO - Connected Insider 'Gorsky Alex' to Officer 'Alex Gorsky' with SAME_PERSON relationship
+2025-03-26 01:03:55,010 - Neo4jManager - INFO - Connected Insider 'Gorsky Alex' to Committee 'Audit Committee'
+2025-03-26 01:03:55,014 - Neo4jManager - INFO - Connected Insider 'Gorsky Alex' to Committee 'People and Compensation Committee'
+2025-03-26 01:03:55,018 - Neo4jManager - INFO - Connected Insider 'Gorsky Alex' to Committee 'Nominating Committee'
+2025-03-26 01:03:55,018 - Neo4jManager - INFO - Matched Insider 'JUNG ANDREA' to Officer 'Andrea Jung' with score 0.5454545454545454
+2025-03-26 01:03:55,021 - Neo4jManager - INFO - Connected Insider 'JUNG ANDREA' to Officer 'Andrea Jung' with SAME_PERSON relationship
+2025-03-26 01:03:55,029 - Neo4jManager - INFO - Connected Insider 'JUNG ANDREA' to Committee 'Audit Committee'
+2025-03-26 01:03:55,034 - Neo4jManager - INFO - Connected Insider 'JUNG ANDREA' to Committee 'People and Compensation Committee'
+2025-03-26 01:03:55,038 - Neo4jManager - INFO - Connected Insider 'JUNG ANDREA' to Committee 'Nominating Committee'
+2025-03-26 01:03:55,040 - Neo4jManager - INFO - Matched Insider 'LEVINSON ARTHUR D' to Officer 'Art Levinson' with score 0.5517241379310345
+2025-03-26 01:03:55,044 - Neo4jManager - INFO - Connected Insider 'LEVINSON ARTHUR D' to Officer 'Art Levinson' with SAME_PERSON relationship
+2025-03-26 01:03:55,061 - Neo4jManager - INFO - Connected Insider 'LEVINSON ARTHUR D' to Committee 'Audit Committee'
+2025-03-26 01:03:55,065 - Neo4jManager - INFO - Connected Insider 'LEVINSON ARTHUR D' to Committee 'People and Compensation Committee'
+2025-03-26 01:03:55,069 - Neo4jManager - INFO - Connected Insider 'LEVINSON ARTHUR D' to Committee 'Nominating Committee'
+2025-03-26 01:03:55,071 - Neo4jManager - INFO - Matched Insider 'LOZANO MONICA C' to Officer 'Monica Lozano' with score 0.5
+2025-03-26 01:03:55,074 - Neo4jManager - INFO - Connected Insider 'LOZANO MONICA C' to Officer 'Monica Lozano' with SAME_PERSON relationship
+2025-03-26 01:03:55,082 - Neo4jManager - INFO - Connected Insider 'LOZANO MONICA C' to Committee 'Audit Committee'
+2025-03-26 01:03:55,083 - Neo4jManager - INFO - Matched Insider 'Maestri Luca' to Officer 'Luca Maestri' with score 0.5833333333333334
+2025-03-26 01:03:55,086 - Neo4jManager - INFO - Connected Insider 'Maestri Luca' to Officer 'Luca Maestri' with SAME_PERSON relationship
+2025-03-26 01:03:55,090 - Neo4jManager - INFO - Matched Insider 'O'BRIEN DEIRDRE' to Officer 'Deirdre O’Brien' with score 0.4666666666666667
+2025-03-26 01:03:55,095 - Neo4jManager - INFO - Connected Insider 'O'BRIEN DEIRDRE' to Officer 'Deirdre O’Brien' with SAME_PERSON relationship
+2025-03-26 01:03:55,099 - Neo4jManager - INFO - Matched Insider 'SUGAR RONALD D' to Officer 'Ron Sugar' with score 0.43478260869565216
+2025-03-26 01:03:55,102 - Neo4jManager - INFO - Connected Insider 'SUGAR RONALD D' to Officer 'Ron Sugar' with SAME_PERSON relationship
+2025-03-26 01:03:55,128 - Neo4jManager - INFO - Connected Insider 'SUGAR RONALD D' to Committee 'Audit Committee (Chair)'
+2025-03-26 01:03:55,129 - Neo4jManager - INFO - Matched Insider 'WAGNER SUSAN' to Officer 'Sue Wagner' with score 0.5454545454545454
+2025-03-26 01:03:55,132 - Neo4jManager - INFO - Connected Insider 'WAGNER SUSAN' to Officer 'Sue Wagner' with SAME_PERSON relationship
+2025-03-26 01:03:55,136 - Neo4jManager - INFO - Connected Insider 'WAGNER SUSAN' to Committee 'Audit Committee'
+2025-03-26 01:03:55,139 - Neo4jManager - INFO - Connected Insider 'WAGNER SUSAN' to Committee 'People and Compensation Committee'
+2025-03-26 01:03:55,144 - Neo4jManager - INFO - Connected Insider 'WAGNER SUSAN' to Committee 'Nominating Committee (Chair)'
+2025-03-26 01:03:55,145 - Neo4jManager - INFO - Completed connecting Insiders: 10 officer connections, 14 committee connections
+2025-03-26 01:03:55,145 - Neo4jManager - INFO - Completed saving all data for AAPL in 1.42 seconds
+2025-03-26 01:03:55,146 - Neo4jManager - INFO - Closing Neo4j connection
+2025-03-26 01:03:55,146 - Neo4jManager - INFO - Neo4j connection closed successfully
+2025-03-26 01:06:39,357 - Neo4jManager - INFO - Initializing Neo4jManager with URI: bolt://localhost:7687, database: neo4j
+2025-03-26 01:06:41,394 - Neo4jManager - INFO - Successfully connected to Neo4j database
+2025-03-26 01:26:18,399 - yfinance - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/VMW?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=VMW&crumb=1..3XtMREYP
+2025-03-26 01:26:19,527 - yfinance - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/EQRX?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=EQRX&crumb=wqffVO9MiGA
+2025-03-26 01:28:13,742 - Neo4jManager - INFO - Starting to save data for ticker: IOT
+2025-03-26 01:28:13,742 - Neo4jManager - INFO - Creating main Stock node for IOT
+2025-03-26 01:28:13,745 - Neo4jManager - INFO - Main Stock node created/updated for IOT
+2025-03-26 01:28:13,745 - Neo4jManager - INFO - Saving stock price data to CSV for IOT
+2025-03-26 01:28:13,747 - Neo4jManager - INFO - Saved 122 price records to data/IOT/stock_prices.csv
+2025-03-26 01:28:13,748 - Neo4jManager - INFO - Processing Insider Holdings for IOT
+2025-03-26 01:28:13,748 - Neo4jManager - INFO - Saving insider holdings for IOT
+2025-03-26 01:28:13,748 - Neo4jManager - INFO - Creating InsiderTraders node for IOT
+2025-03-26 01:28:13,750 - Neo4jManager - INFO - InsiderTraders node created: Insider Trading - IOT
+2025-03-26 01:28:13,750 - Neo4jManager - INFO - Processing 11 insider records
+2025-03-26 01:28:13,751 - Neo4jManager - INFO - Processing insider: AH Parallel Fund IV, L.P with 124 holdings records
+2025-03-26 01:28:13,811 - Neo4jManager - INFO - Processing 5 securities held by AH Parallel Fund IV, L.P
+2025-03-26 01:28:13,824 - Neo4jManager - INFO - Processing insider: Andreessen Horowitz LSV Fund I, L.P with 133 holdings records
+2025-03-26 01:28:13,827 - Neo4jManager - INFO - Processing 3 securities held by Andreessen Horowitz LSV Fund I, L.P
+2025-03-26 01:28:13,833 - Neo4jManager - INFO - Processing insider: Andreessen Horowitz LSV Fund III, L.P with 69 holdings records
+2025-03-26 01:28:13,836 - Neo4jManager - INFO - Processing 1 securities held by Andreessen Horowitz LSV Fund III, L.P
+2025-03-26 01:28:13,837 - Neo4jManager - INFO - Processing insider: Andreessen Marc L with 228 holdings records
+2025-03-26 01:28:13,889 - Neo4jManager - INFO - Processing 11 securities held by Andreessen Marc L
+2025-03-26 01:28:13,917 - Neo4jManager - INFO - Processing insider: Bicket John with 233 holdings records
+2025-03-26 01:28:13,922 - Neo4jManager - INFO - Processing 2 securities held by Bicket John
+2025-03-26 01:28:13,965 - Neo4jManager - INFO - Processing insider: Biswas Sanjit with 260 holdings records
+2025-03-26 01:28:13,969 - Neo4jManager - INFO - Processing 2 securities held by Biswas Sanjit
+2025-03-26 01:28:13,972 - Neo4jManager - INFO - Processing insider: Caimi Lara with 90 holdings records
+2025-03-26 01:28:14,026 - Neo4jManager - INFO - Processing 3 securities held by Caimi Lara
+2025-03-26 01:28:14,118 - Neo4jManager - INFO - Processing insider: Chadwick Jonathan with 73 holdings records
+2025-03-26 01:28:14,121 - Neo4jManager - INFO - Processing 5 securities held by Chadwick Jonathan
+2025-03-26 01:28:14,130 - Neo4jManager - INFO - Processing insider: Eltoukhy Adam with 88 holdings records
+2025-03-26 01:28:14,133 - Neo4jManager - INFO - Processing 1 securities held by Eltoukhy Adam
+2025-03-26 01:28:14,134 - Neo4jManager - INFO - Processing insider: Munk James Andrew with 63 holdings records
+2025-03-26 01:28:14,136 - Neo4jManager - INFO - Processing 2 securities held by Munk James Andrew
+2025-03-26 01:28:14,140 - Neo4jManager - INFO - Processing insider: Phillips Dominic with 69 holdings records
+2025-03-26 01:28:14,144 - Neo4jManager - INFO - Processing 1 securities held by Phillips Dominic
+2025-03-26 01:28:14,144 - Neo4jManager - INFO - Successfully completed saving insider holdings for IOT
+2025-03-26 01:28:14,145 - Neo4jManager - INFO - Completed saving Insider Holdings for IOT
+2025-03-26 01:28:14,145 - Neo4jManager - INFO - Completed Insider Holdings in 0.40 seconds
+2025-03-26 01:28:14,145 - Neo4jManager - INFO - Processing SEC Transactions for IOT
+2025-03-26 01:28:14,145 - Neo4jManager - INFO - Saving SEC transactions for IOT
+2025-03-26 01:28:14,146 - Neo4jManager - INFO - Processing 307 SEC transactions
+2025-03-26 01:28:14,848 - Neo4jManager - INFO - Completed saving SEC transactions: 307 created, 0 skipped
+2025-03-26 01:28:14,849 - Neo4jManager - INFO - Completed saving SEC Transactions for IOT
+2025-03-26 01:28:14,849 - Neo4jManager - INFO - Completed SEC Transactions in 0.70 seconds
+2025-03-26 01:28:14,849 - Neo4jManager - INFO - Processing Company Officers for IOT
+2025-03-26 01:28:14,849 - Neo4jManager - INFO - Saving company officers for IOT
+2025-03-26 01:28:14,850 - Neo4jManager - INFO - Creating CompanyOfficers node for IOT
+2025-03-26 01:28:14,868 - Neo4jManager - INFO - Processing 12 officers
+2025-03-26 01:28:15,021 - Neo4jManager - INFO - Completed saving company officers: 12 officers created, 0 committee relationships, 0 skipped
+2025-03-26 01:28:15,022 - Neo4jManager - INFO - Completed saving Company Officers for IOT
+2025-03-26 01:28:15,022 - Neo4jManager - INFO - Completed Company Officers in 0.17 seconds
+2025-03-26 01:28:15,023 - Neo4jManager - INFO - Processing Institutional Holders for IOT
+2025-03-26 01:28:15,023 - Neo4jManager - INFO - Saving institutional holders for IOT
+2025-03-26 01:28:15,023 - Neo4jManager - INFO - Creating InstitutionalHolders node for IOT
+2025-03-26 01:28:15,025 - Neo4jManager - INFO - InstitutionalHolders node created: Institutional Holders - IOT
+2025-03-26 01:28:15,050 - Neo4jManager - INFO - Processing 10 institutional holders
+2025-03-26 01:28:15,151 - Neo4jManager - INFO - Completed saving institutional holders: 10 created, 0 skipped
+2025-03-26 01:28:15,151 - Neo4jManager - INFO - Completed saving Institutional Holders for IOT
+2025-03-26 01:28:15,151 - Neo4jManager - INFO - Completed Institutional Holders in 0.13 seconds
+2025-03-26 01:28:15,151 - Neo4jManager - INFO - Processing Competitors for IOT
+2025-03-26 01:28:15,197 - Neo4jManager - INFO - Completed saving Competitors for IOT
+2025-03-26 01:28:15,197 - Neo4jManager - INFO - Completed Competitors in 0.05 seconds
+2025-03-26 01:28:15,198 - Neo4jManager - INFO - Processing Analyst Ratings for IOT
+2025-03-26 01:28:15,198 - Neo4jManager - ERROR - Error processing Analyst Ratings for IOT: 'Neo4jManager' object has no attribute '_save_analysts_ratings'
+2025-03-26 01:28:15,198 - Neo4jManager - INFO - Completed Analyst Ratings in 0.00 seconds
+2025-03-26 01:28:15,198 - Neo4jManager - INFO - Processing News Sentiment for IOT
+2025-03-26 01:28:15,198 - Neo4jManager - INFO - Saving news sentiment for IOT
+2025-03-26 01:28:15,198 - Neo4jManager - INFO - Creating NewsFeed node for IOT
+2025-03-26 01:28:15,200 - Neo4jManager - INFO - NewsFeed node created: News Feed - IOT with path data/IOT/news_sentiment.csv
+2025-03-26 01:28:15,202 - Neo4jManager - INFO - Saved 100 news items to CSV
+2025-03-26 01:28:15,203 - Neo4jManager - INFO - Processing 100 news items for individual nodes
+2025-03-26 01:28:15,208 - Neo4jManager - INFO - Completed saving news sentiment: 0 created, 100 skipped
+2025-03-26 01:28:15,209 - Neo4jManager - INFO - Completed saving News Sentiment for IOT
+2025-03-26 01:28:15,209 - Neo4jManager - INFO - Completed News Sentiment in 0.01 seconds
+2025-03-26 01:28:15,209 - Neo4jManager - INFO - Connecting Insiders to Officers and Committees for IOT
+2025-03-26 01:28:15,230 - Neo4jManager - INFO - Found 11 insider nodes for IOT
+2025-03-26 01:28:15,250 - Neo4jManager - INFO - Found 12 officer nodes for IOT
+2025-03-26 01:28:15,251 - Neo4jManager - INFO - Matched Insider 'AH Parallel Fund IV, L.P' to Officer 'Ann Livermore' with score 0.3125
+2025-03-26 01:28:15,267 - Neo4jManager - INFO - Connected Insider 'AH Parallel Fund IV, L.P' to Officer 'Ann Livermore' with SAME_PERSON relationship
+2025-03-26 01:28:15,280 - Neo4jManager - INFO - Matched Insider 'Andreessen Horowitz LSV Fund I, L.P' to Officer 'Marc Andreessen' with score 0.40816326530612246
+2025-03-26 01:28:15,282 - Neo4jManager - INFO - Connected Insider 'Andreessen Horowitz LSV Fund I, L.P' to Officer 'Marc Andreessen' with SAME_PERSON relationship
+2025-03-26 01:28:15,285 - Neo4jManager - INFO - Matched Insider 'Andreessen Horowitz LSV Fund III, L.P' to Officer 'Marc Andreessen' with score 0.425531914893617
+2025-03-26 01:28:15,286 - Neo4jManager - INFO - Connected Insider 'Andreessen Horowitz LSV Fund III, L.P' to Officer 'Marc Andreessen' with SAME_PERSON relationship
+2025-03-26 01:28:15,291 - Neo4jManager - INFO - Matched Insider 'Andreessen Marc L' to Officer 'Marc Andreessen' with score 0.625
+2025-03-26 01:28:15,292 - Neo4jManager - INFO - Connected Insider 'Andreessen Marc L' to Officer 'Marc Andreessen' with SAME_PERSON relationship
+2025-03-26 01:28:15,295 - Neo4jManager - INFO - Matched Insider 'Bicket John' to Officer 'John Bicket' with score 0.5454545454545454
+2025-03-26 01:28:15,297 - Neo4jManager - INFO - Connected Insider 'Bicket John' to Officer 'John Bicket' with SAME_PERSON relationship
+2025-03-26 01:28:15,299 - Neo4jManager - INFO - Matched Insider 'Biswas Sanjit' to Officer 'Sanjit Biswas' with score 0.46153846153846156
+2025-03-26 01:28:15,300 - Neo4jManager - INFO - Connected Insider 'Biswas Sanjit' to Officer 'Sanjit Biswas' with SAME_PERSON relationship
+2025-03-26 01:28:15,302 - Neo4jManager - INFO - Matched Insider 'Caimi Lara' to Officer 'Lara Caimi' with score 0.5
+2025-03-26 01:28:15,304 - Neo4jManager - INFO - Connected Insider 'Caimi Lara' to Officer 'Lara Caimi' with SAME_PERSON relationship
+2025-03-26 01:28:15,308 - Neo4jManager - INFO - Matched Insider 'Chadwick Jonathan' to Officer 'Jonathan Chadwick' with score 0.47058823529411764
+2025-03-26 01:28:15,310 - Neo4jManager - INFO - Connected Insider 'Chadwick Jonathan' to Officer 'Jonathan Chadwick' with SAME_PERSON relationship
+2025-03-26 01:28:15,312 - Neo4jManager - INFO - Matched Insider 'Eltoukhy Adam' to Officer 'Adam Eltoukhy' with score 0.6153846153846154
+2025-03-26 01:28:15,313 - Neo4jManager - INFO - Connected Insider 'Eltoukhy Adam' to Officer 'Adam Eltoukhy' with SAME_PERSON relationship
+2025-03-26 01:28:15,316 - Neo4jManager - INFO - Matched Insider 'Phillips Dominic' to Officer 'Dominic Phillips' with score 0.5
+2025-03-26 01:28:15,317 - Neo4jManager - INFO - Connected Insider 'Phillips Dominic' to Officer 'Dominic Phillips' with SAME_PERSON relationship
+2025-03-26 01:28:15,319 - Neo4jManager - INFO - Completed connecting Insiders: 10 officer connections, 0 committee connections
+2025-03-26 01:28:15,319 - Neo4jManager - INFO - Completed saving all data for IOT in 1.58 seconds
+2025-03-26 01:28:15,320 - Neo4jManager - INFO - Closing Neo4j connection
+2025-03-26 01:28:15,320 - Neo4jManager - INFO - Neo4j connection closed successfully
