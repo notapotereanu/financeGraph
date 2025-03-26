@@ -7,7 +7,23 @@ from packages.data_analyzer.financial_data_analyzer import FinancialDataAnalyzer
 from packages.data_storage.neo4j_manager import Neo4jManager
 
 def add_ticker_to_database(ticker):
-    """Add a single ticker to the database"""
+    """
+    Add a single stock ticker to the Neo4j database.
+    
+    This function:
+    1. Initializes a FinancialDataAnalyzer with the specified ticker
+    2. Runs analysis to gather financial data (price, insiders, news, etc.)
+    3. Saves the collected data to local files
+    4. Loads the saved data and stores it in Neo4j
+    5. Maintains existing data in the database
+    
+    Args:
+        ticker (str): The stock ticker symbol to add (e.g., "AAPL", "MSFT")
+        
+    Returns:
+        tuple: (success, message) where success is a boolean indicating if the operation succeeded,
+               and message is a descriptive string about the result
+    """
     try:
         # Initialize analyzer with just the new ticker
         analyzer = FinancialDataAnalyzer([ticker])
@@ -31,7 +47,19 @@ def add_ticker_to_database(ticker):
         return False, f"Error adding {ticker}: {e}"
 
 def clear_database():
-    """Clear the entire Neo4j database"""
+    """
+    Clear the entire Neo4j database, removing all nodes and relationships.
+    
+    This function:
+    1. Creates a direct connection to the Neo4j database
+    2. Executes a Cypher query to remove all nodes and relationships
+    3. Verifies that the database was successfully cleared
+    4. Attempts a second clearing if needed
+    
+    Returns:
+        tuple: (success, message) where success is a boolean indicating if the operation succeeded,
+               and message is a descriptive string about the result
+    """
     try:
         print("Starting database clearing process...")
         # Create a direct Neo4jManager instance instead of going through FinancialDataAnalyzer
@@ -65,6 +93,18 @@ def clear_database():
         return False, f"Error clearing database: {e}"
 
 def main():
+    """
+    Main entry point for the application.
+    
+    This function:
+    1. Checks for command line arguments to determine operation mode
+    2. Launches the web interface if --web flag is provided
+    3. Otherwise processes specified stock tickers for analysis
+    4. Gathers financial data and saves it to Neo4j
+    
+    Returns:
+        int: 0 for successful execution, 1 for errors
+    """
     try:
         # Check for web interface flag
         if  "--web" in sys.argv:
@@ -91,7 +131,19 @@ def main():
     return 0
 
 def run_web_interface():
-    """Run the Streamlit web interface"""
+    """
+    Run the Streamlit web interface for interactive data visualization and management.
+    
+    This function:
+    1. Imports necessary modules for web interface
+    2. Locates the frontend.py file in the current directory
+    3. Launches Streamlit with the frontend file
+    4. Handles errors and provides feedback
+    
+    Raises:
+        ImportError: If Streamlit is not installed
+        Exception: For other errors during web interface startup
+    """
     print("Starting web interface. Please wait...")
     try:
         # We import here to avoid unnecessary dependencies when running in CLI mode

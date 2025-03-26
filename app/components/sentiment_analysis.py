@@ -7,7 +7,23 @@ import plotly.graph_objects as go
 from scipy import stats
 
 def load_sentiment_data(selected_stock):
-    """Load sentiment and price data for a given stock ticker."""
+    """
+    Load news sentiment and stock price data for a given stock ticker.
+    
+    This function:
+    1. Constructs file paths for news sentiment and stock price CSV files
+    2. Verifies that both required files exist
+    3. Loads the data into pandas DataFrames
+    
+    Args:
+        selected_stock (str): The stock ticker symbol (e.g., "AAPL")
+        
+    Returns:
+        tuple: (news_df, stock_df) where:
+            - news_df (DataFrame): News articles with sentiment scores
+            - stock_df (DataFrame): Historical stock price data
+            - Returns (None, None) if either file is not found
+    """
     news_file = f"data/{selected_stock}/news_sentiment.csv"
     stock_file = f"data/{selected_stock}/stock_prices.csv"
     
@@ -21,7 +37,27 @@ def load_sentiment_data(selected_stock):
     return news_df, stock_df
 
 def prepare_sentiment_data(news_df, stock_df):
-    """Prepare and clean sentiment data for analysis."""
+    """
+    Prepare and clean sentiment data for analysis by merging news and stock data.
+    
+    This function:
+    1. Validates input DataFrames have required columns
+    2. Converts dates to datetime format
+    3. Aggregates news sentiment by date (mean sentiment and count)
+    4. Merges news sentiment with stock price data
+    5. Calculates daily stock returns
+    6. Creates a clean dataset for correlation analysis
+    
+    Args:
+        news_df (DataFrame): News articles with sentiment scores
+        stock_df (DataFrame): Historical stock price data
+        
+    Returns:
+        tuple: (merged_df, analysis_df) where:
+            - merged_df (DataFrame): Combined stock and sentiment data
+            - analysis_df (DataFrame): Clean data for correlation analysis
+            - Returns None if required columns are missing or data cannot be merged
+    """
     if 'Published At' not in news_df.columns or 'Sentiment Score' not in news_df.columns:
         return None
         
@@ -62,7 +98,25 @@ def prepare_sentiment_data(news_df, stock_df):
     return merged_df, analysis_df
 
 def create_sentiment_price_chart(merged_df, ticker):
-    """Create a chart showing stock price, news count histogram, and normalized sentiment."""
+    """
+    Create an interactive chart showing stock price, news sentiment, and news volume.
+    
+    This function:
+    1. Prepares the data for visualization
+    2. Creates a multi-axis Plotly chart with:
+       - Stock price line (primary Y-axis)
+       - Normalized sentiment (secondary Y-axis)
+       - News count histogram (tertiary Y-axis)
+    3. Applies color coding based on sentiment values
+    4. Formats tooltips and axes for optimal readability
+    
+    Args:
+        merged_df (DataFrame): Combined stock and sentiment data with dates, prices, and sentiment
+        ticker (str): Stock ticker symbol for chart title
+        
+    Returns:
+        go.Figure: A Plotly figure object containing the interactive visualization
+    """
     # Make a copy of the dataframe to avoid modifying the original
     df = merged_df.copy()
     
@@ -209,27 +263,33 @@ def create_sentiment_price_chart(merged_df, ticker):
             bordercolor='rgba(0, 0, 0, 0.3)',
             borderwidth=1
         ),
+        margin=dict(b=50, t=80, l=50, r=50),
         height=600,
-        hovermode='closest',
-        margin=dict(t=80, b=50, l=70, r=70)
-    )
-    
-    # Add a note explaining the chart
-    fig.add_annotation(
-        x=0.5,
-        y=-0.15,
-        xref="paper",
-        yref="paper",
-        text="Note: Sentiment is normalized to 0-1 scale. Bar height shows number of news articles per day.",
-        showarrow=False,
-        font=dict(size=12),
-        align="center"
+        template='plotly_white'
     )
     
     return fig
 
 def create_correlation_scatter(analysis_df):
-    """Create scatter plot showing correlation between sentiment and returns."""
+    """
+    Create a scatter plot showing correlation between news sentiment and stock returns.
+    
+    This function:
+    1. Calculates next day stock returns from daily returns
+    2. Computes correlation coefficients between sentiment and both same-day and next-day returns
+    3. Creates a scatter plot with two series (same-day and next-day correlations)
+    4. Adds regression lines to visualize trend direction and strength
+    5. Includes correlation coefficients in the legend
+    
+    Args:
+        analysis_df (DataFrame): Clean data with sentiment scores and daily returns
+        
+    Returns:
+        tuple: (fig, same_day_corr, next_day_corr) where:
+            - fig (go.Figure): Plotly figure with correlation scatter plot
+            - same_day_corr (float): Correlation coefficient for same-day returns
+            - next_day_corr (float): Correlation coefficient for next-day returns
+    """
     # Add the next day returns
     analysis_df['Next Day Return'] = analysis_df['Daily Return'].shift(-1)
     
@@ -342,7 +402,23 @@ def create_correlation_scatter(analysis_df):
     return fig, same_day_corr, next_day_corr
 
 def analyze_news_sources(news_df):
-    """Analyze the sentiment across different news sources."""
+    """
+    Analyze sentiment across different news sources to identify influential sources.
+    
+    This function:
+    1. Extracts the news source name from various possible data formats
+    2. Groups news articles by source
+    3. Calculates average sentiment and article count for each source
+    4. Filters out sources with too few articles for statistical significance
+    5. Ranks sources by their average sentiment score
+    
+    Args:
+        news_df (DataFrame): News article data with sentiment scores
+        
+    Returns:
+        DataFrame: Aggregated data showing each news source's average sentiment and article count,
+                 sorted by sentiment score (most positive first)
+    """
     # Handle different source data formats
     if 'source' in news_df.columns:
         if isinstance(news_df['source'].iloc[0], dict) and 'name' in news_df['source'].iloc[0]:
@@ -373,7 +449,23 @@ def analyze_news_sources(news_df):
     return source_impact
 
 def create_news_source_chart(source_impact):
-    """Create a bar chart showing sentiment by news source."""
+    """
+    Create a bar chart showing average sentiment by news source.
+    
+    This function:
+    1. Creates a bar chart with news sources on the x-axis and sentiment on the y-axis
+    2. Color-codes bars based on positive, neutral, or negative sentiment
+    3. Displays article count for each source as text labels
+    4. Formats axis labels and chart title
+    
+    Args:
+        source_impact (DataFrame): Data from analyze_news_sources containing source names,
+                                  average sentiment, and article counts
+        
+    Returns:
+        go.Figure: Plotly figure with bar chart of news sources and their sentiment impact,
+                 or None if the input data is empty
+    """
     if source_impact.empty:
         return None
         
@@ -406,7 +498,25 @@ def create_news_source_chart(source_impact):
     return fig
 
 def analyze_reaction_time(merged_df):
-    """Analyze how quickly the market reacts to news sentiment."""
+    """
+    Analyze how quickly the market reacts to news sentiment by examining lagged correlations.
+    
+    This function:
+    1. Creates a DataFrame with price changes and sentiment scores with various lags
+    2. Calculates correlation between returns and sentiment at different time lags (0-3 days)
+    3. Determines which lag has the strongest correlation (positive or negative)
+    4. Creates a visualization of correlation strength by lag
+    
+    Args:
+        merged_df (DataFrame): Combined stock price and sentiment data
+        
+    Returns:
+        tuple: (fig, max_corr, max_lag_label) where:
+            - fig (go.Figure): Bar chart showing correlations at different lags
+            - max_corr (float): The correlation coefficient with the largest absolute value
+            - max_lag_label (str): Description of the lag with the strongest correlation
+            - Returns (None, None, None) if there's not enough data for analysis
+    """
     # Create a DataFrame with daily price changes and lagged sentiment
     lag_analysis = pd.DataFrame({
         'Date': merged_df['Date'],

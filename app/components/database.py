@@ -12,11 +12,37 @@ NEO4J_DATABASE = "neo4j"
 # Initialize Neo4j driver
 @st.cache_resource
 def get_neo4j_driver():
-    """Get Neo4j driver with connection caching."""
+    """
+    Get a Neo4j driver instance with connection caching.
+    
+    This function establishes a connection to the Neo4j database using the configured
+    connection parameters and is decorated with st.cache_resource to prevent
+    multiple connections being created during a Streamlit session.
+    
+    Returns:
+        GraphDatabase.driver: A Neo4j driver instance for database interactions
+    """
     return GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USER, NEO4J_PASSWORD))
 
 def get_graph_data():
-    """Get all nodes and relationships from the database."""
+    """
+    Retrieve all nodes and relationships from the Neo4j database.
+    
+    This function:
+    1. Executes multiple Cypher queries to get different entity types
+    2. Retrieves nodes with their properties and labels
+    3. Retrieves relationships between nodes
+    4. Gets specific node types (stocks, officers, committees) separately
+    5. Handles display names based on node type
+    
+    Returns:
+        tuple: Five elements containing:
+            - nodes (list): All nodes in the database with their properties
+            - relationships (list): All relationships with their properties
+            - stocks (list): Stock nodes with ticker and name
+            - officers (list): Company officer nodes with their properties
+            - committees (list): Committee nodes with their properties
+    """
     driver = get_neo4j_driver()
     with driver.session(database=NEO4J_DATABASE) as session:
         # Get nodes
@@ -71,7 +97,21 @@ def get_graph_data():
     return nodes, relationships, stocks, officers, committees
 
 def direct_clear_database():
-    """Directly clear the database using Cypher query."""
+    """
+    Directly clear the Neo4j database by removing all nodes and relationships.
+    
+    This function:
+    1. Creates a Neo4j session
+    2. Counts existing nodes before deletion
+    3. Executes a DETACH DELETE Cypher query to remove all nodes and relationships
+    4. Verifies that the database was successfully cleared
+    
+    The function communicates with the Streamlit UI to show progress and results.
+    
+    Returns:
+        tuple: (success, message) where success is a boolean indicating if the operation succeeded,
+               and message is a descriptive string about the result
+    """
     try:
         driver = get_neo4j_driver()
         with driver.session(database=NEO4J_DATABASE) as session:

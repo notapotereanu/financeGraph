@@ -16,13 +16,23 @@ from scipy import stats
 
 def load_insider_data(ticker):
     """
-    Load insider trading data for a specific stock.
+    Load insider trading data for a specific stock ticker from CSV files.
+    
+    This function:
+    1. Constructs paths to insider trading data directories
+    2. Searches for insider holdings data in two possible locations
+    3. Collects and combines data from multiple insider CSV files
+    4. Also loads corresponding stock price data for the ticker
+    5. Converts dates to datetime format for proper time-series analysis
     
     Args:
-        ticker (str): Stock ticker symbol
+        ticker (str): The stock ticker symbol (e.g., "AAPL")
         
     Returns:
-        tuple: (insider_holdings_df, stock_prices_df) containing insider transactions and stock prices
+        tuple: (insider_df, stock_df) where:
+            - insider_df (DataFrame): Combined insider transaction data from all insiders
+            - stock_df (DataFrame): Historical stock price data
+            - Returns (None, None) if no data is found
     """
     # Base path for data
     base_path = os.path.join("data", ticker)
@@ -71,11 +81,20 @@ def load_insider_data(ticker):
 
 def identify_committee_members(insider_df, ticker):
     """
-    Identify which insiders are committee members based on their relationship.
+    Identify which insiders are committee members based on their relationship field.
+    
+    This function:
+    1. Analyzes the 'relationship' field in insider records to detect committee-related keywords
+    2. Flags insiders as committee members if their relationship contains relevant keywords
+    3. Counts and logs committee members vs regular insiders for debugging
+    4. Provides samples of both groups for verification
+    
+    Committee membership is important because committee members may have different
+    trading patterns and market impact compared to regular insiders.
     
     Args:
         insider_df (DataFrame): DataFrame containing insider transactions
-        ticker (str): Stock ticker symbol
+        ticker (str): Stock ticker symbol for logging purposes
         
     Returns:
         dict: Dictionary mapping insider names to committee status (True/False)
@@ -125,13 +144,24 @@ def calculate_post_transaction_returns(insider_df, stock_df, windows=[1, 5, 10, 
     """
     Calculate stock returns following insider transactions over different time windows.
     
+    This function:
+    1. Matches each insider transaction date with the closest subsequent trading day
+    2. Calculates stock returns over various time windows after each transaction
+    3. Handles edge cases such as missing data or transactions near the end of the dataset
+    4. Creates new columns in the DataFrame for each return window
+    5. Provides error handling and debugging information
+    
+    The returns are used to analyze how markets react to different types of insider transactions
+    and whether committee members' transactions have different impacts than regular insiders.
+    
     Args:
         insider_df (DataFrame): DataFrame containing insider transactions
         stock_df (DataFrame): DataFrame containing stock prices
-        windows (list): List of day windows to calculate returns for
+        windows (list): List of day windows to calculate returns for (default: [1, 5, 10, 30])
         
     Returns:
-        DataFrame: Original insider_df with added columns for returns
+        DataFrame: Original insider_df with added columns for returns:
+                 'return_1d', 'return_5d', 'return_10d', 'return_30d', etc.
     """
     # Defensive check for empty dataframes
     if insider_df is None or stock_df is None or len(insider_df) == 0 or len(stock_df) == 0:
