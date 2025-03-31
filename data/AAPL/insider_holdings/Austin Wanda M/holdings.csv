@@ -1,28 +1,28 @@
 issuerTradingSymbol,relationship,date,transaction_type,cost,shares,value,shares_total
 AAPL,,2025-02-01,Exercise or Conversion of Derivative Security,,1516,,1588
-AMGN,,2024-05-31,"Grant, Award, or Other Acquisition",0,719,0.0,6544
-CVX,,2024-05-29,"Grant, Award, or Other Acquisition",0,1477,0.0,3060
-SPCE,,2023-06-08,"Grant, Award, or Other Acquisition",0,30414,0.0,87177
-CVX,,2023-05-31,"Grant, Award, or Other Acquisition",0,1534,0.0,2893
-AMGN,,2023-05-19,"Grant, Award, or Other Acquisition",0,939,0.0,5825
+AMGN,,2024-05-31,"Grant, Award, or Other Acquisition",0.0,719,0.0,6544
+CVX,,2024-05-29,"Grant, Award, or Other Acquisition",0.0,1477,0.0,3060
+SPCE,,2023-06-08,"Grant, Award, or Other Acquisition",0.0,30414,0.0,87177
+CVX,,2023-05-31,"Grant, Award, or Other Acquisition",0.0,1534,0.0,2893
+AMGN,,2023-05-19,"Grant, Award, or Other Acquisition",0.0,939,0.0,5825
 CVX,,2022-08-01,Exercise or Conversion of Derivative Security,116.77,11432,1334914.64,14992
 CVX,,2022-08-01,Sale,161.4478,11432,1845671.25,3560
-SPCE,,2022-06-09,"Grant, Award, or Other Acquisition",0,18657,0.0,56763
-CVX,,2022-05-27,Exercise or Conversion of Derivative Security,93.90,12039,1130462.1,15582
+SPCE,,2022-06-09,"Grant, Award, or Other Acquisition",0.0,18657,0.0,56763
+CVX,,2022-05-27,Exercise or Conversion of Derivative Security,93.9,12039,1130462.1,15582
 CVX,,2022-05-27,Sale,177.2943,12039,2134446.08,3543
-CVX,,2022-05-25,"Grant, Award, or Other Acquisition",0,1303,0.0,3543
-AMGN,,2022-05-17,"Grant, Award, or Other Acquisition",0,855,0.0,4886
-SPCE,,2021-08-25,"Grant, Award, or Other Acquisition",0,4760,0.0,38106
-CVX,,2021-05-26,"Grant, Award, or Other Acquisition",0,2166,0.0,4680
-AMGN,,2021-05-18,"Grant, Award, or Other Acquisition",0,837,0.0,4031
-SPCE,,2020-06-02,"Grant, Award, or Other Acquisition",0,7901,0.0,33346
-CVX,,2020-05-27,"Grant, Award, or Other Acquisition",0,2411,0.0,4436
-AMGN,,2020-05-05,"Grant, Award, or Other Acquisition",0,846,0.0,3194
-SPCE,,2019-12-30,"Grant, Award, or Other Acquisition",0.00,25445,0.0,25445
-CVX,,2019-05-29,"Grant, Award, or Other Acquisition",0,1901,0.0,7152
-AMGN,,2019-05-03,"Grant, Award, or Other Acquisition",0,1127,0.0,2348
-CVX,,2018-05-30,"Grant, Award, or Other Acquisition",0,1853,0.0,5073
-AMGN,,2018-04-27,"Grant, Award, or Other Acquisition",0,1127,0.0,1221
-AMGN,,2018-02-06,"Grant, Award, or Other Acquisition",0,94,0.0,94
-CVX,,2017-05-31,"Grant, Award, or Other Acquisition",0,2162,0.0,3140
-CVX,,2016-12-01,"Grant, Award, or Other Acquisition",0,968,0.0,968
+CVX,,2022-05-25,"Grant, Award, or Other Acquisition",0.0,1303,0.0,3543
+AMGN,,2022-05-17,"Grant, Award, or Other Acquisition",0.0,855,0.0,4886
+SPCE,,2021-08-25,"Grant, Award, or Other Acquisition",0.0,4760,0.0,38106
+CVX,,2021-05-26,"Grant, Award, or Other Acquisition",0.0,2166,0.0,4680
+AMGN,,2021-05-18,"Grant, Award, or Other Acquisition",0.0,837,0.0,4031
+SPCE,,2020-06-02,"Grant, Award, or Other Acquisition",0.0,7901,0.0,33346
+CVX,,2020-05-27,"Grant, Award, or Other Acquisition",0.0,2411,0.0,4436
+AMGN,,2020-05-05,"Grant, Award, or Other Acquisition",0.0,846,0.0,3194
+SPCE,,2019-12-30,"Grant, Award, or Other Acquisition",0.0,25445,0.0,25445
+CVX,,2019-05-29,"Grant, Award, or Other Acquisition",0.0,1901,0.0,7152
+AMGN,,2019-05-03,"Grant, Award, or Other Acquisition",0.0,1127,0.0,2348
+CVX,,2018-05-30,"Grant, Award, or Other Acquisition",0.0,1853,0.0,5073
+AMGN,,2018-04-27,"Grant, Award, or Other Acquisition",0.0,1127,0.0,1221
+AMGN,,2018-02-06,"Grant, Award, or Other Acquisition",0.0,94,0.0,94
+CVX,,2017-05-31,"Grant, Award, or Other Acquisition",0.0,2162,0.0,3140
+CVX,,2016-12-01,"Grant, Award, or Other Acquisition",0.0,968,0.0,968

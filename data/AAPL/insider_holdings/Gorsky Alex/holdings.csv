@@ -1,26 +1,26 @@
 issuerTradingSymbol,relationship,date,transaction_type,cost,shares,value,shares_total
-AAPL,,2025-02-01,Exercise or Conversion of Derivative Security,,1516,,5539
+AAPL,,2025-02-01,Exercise or Conversion of Derivative Security,,1516.0,,5539.0
 JPM,,2025-01-21,"Grant, Award, or Other Acquisition",261.8768,1011.9262,265000.0,6251.3491
-JPM,,2024-12-31,"Grant, Award, or Other Acquisition",239.7100,156.4390,37499.99,5212.8239
-JPM,,2024-09-30,"Grant, Award, or Other Acquisition",210.8600,177.8431,37500.0,5027.1534
-JPM,,2024-06-30,"Grant, Award, or Other Acquisition",202.2600,185.4049,37500.0,4822.7210
-JPM,,2024-03-29,"Grant, Award, or Other Acquisition",200.3000,187.2192,37500.01,4610.9716
-AAPL,,2024-02-01,Exercise or Conversion of Derivative Security,,1852,,4023
-JPM,,2024-01-16,"Grant, Award, or Other Acquisition",166.1950,1594.5125,265000.0,4423.7524
-JPM,,2023-12-31,"Grant, Award, or Other Acquisition",170.1000,191.0641,32500.0,2812.6314
-JPM,,2023-09-30,"Grant, Award, or Other Acquisition",145.0200,224.1070,32500.0,2603.3632
-JPM,,2023-06-30,"Grant, Award, or Other Acquisition",145.4400,223.4598,32499.99,2363.3660
-JPM,,2023-03-31,"Grant, Award, or Other Acquisition",130.3100,255.3485,33274.46,2123.9323
-AAPL,,2023-02-01,Exercise or Conversion of Derivative Security,,1685,,2171
+JPM,,2024-12-31,"Grant, Award, or Other Acquisition",239.71,156.439,37499.99,5212.8239
+JPM,,2024-09-30,"Grant, Award, or Other Acquisition",210.86,177.8431,37500.0,5027.1534
+JPM,,2024-06-30,"Grant, Award, or Other Acquisition",202.26,185.4049,37500.0,4822.721
+JPM,,2024-03-29,"Grant, Award, or Other Acquisition",200.3,187.2192,37500.01,4610.9716
+AAPL,,2024-02-01,Exercise or Conversion of Derivative Security,,1852.0,,4023.0
+JPM,,2024-01-16,"Grant, Award, or Other Acquisition",166.195,1594.5125,265000.0,4423.7524
+JPM,,2023-12-31,"Grant, Award, or Other Acquisition",170.1,191.0641,32500.0,2812.6314
+JPM,,2023-09-30,"Grant, Award, or Other Acquisition",145.02,224.107,32500.0,2603.3632
+JPM,,2023-06-30,"Grant, Award, or Other Acquisition",145.44,223.4598,32499.99,2363.366
+JPM,,2023-03-31,"Grant, Award, or Other Acquisition",130.31,255.3485,33274.46,2123.9323
+AAPL,,2023-02-01,Exercise or Conversion of Derivative Security,,1685.0,,2171.0
 JPM,,2023-01-17,"Grant, Award, or Other Acquisition",140.3825,1780.8488,250000.01,1868.5838
-JNJ,,2023-01-17,Exercise or Conversion of Derivative Security,72.5400,547692.0000,39729577.68,1133193.6710
-JNJ,,2023-01-17,Tax Withholding (RSU Vesting),173.4300,366610.0000,63581172.3,766583.6710
-JNJ,,2022-02-15,Exercise or Conversion of Derivative Security,0.0000,60965.0000,0.0,611919.1500
-JNJ,,2022-02-15,Tax Withholding (RSU Vesting),165.8900,26472.0000,4391440.08,585447.1500
-JNJ,,2022-02-14,Exercise or Conversion of Derivative Security,0.0000,11129.0000,0.0,555787.1500
-JNJ,,2022-02-14,Tax Withholding (RSU Vesting),168.8500,4833.0000,816052.05,550954.1500
-AAPL,,2022-02-01,Exercise or Conversion of Derivative Security,,486,,486
-JNJ,,2021-12-09,Gift,0.0000,6320.0000,0.0,469970.1500
-JNJ,,2021-12-09,Gift,0.0000,6320.0000,0.0,463650.1500
-JNJ,,2022-01-14,Exercise or Conversion of Derivative Security,65.3700,231951.0000,15162636.87,695601.1500
-JNJ,,2022-01-14,Tax Withholding (RSU Vesting),167.8400,150943.0000,25334273.12,544658.1500
+JNJ,,2023-01-17,Exercise or Conversion of Derivative Security,72.54,547692.0,39729577.68,1133193.671
+JNJ,,2023-01-17,Tax Withholding (RSU Vesting),173.43,366610.0,63581172.3,766583.671
+JNJ,,2022-02-15,Exercise or Conversion of Derivative Security,0.0,60965.0,0.0,611919.15
+JNJ,,2022-02-15,Tax Withholding (RSU Vesting),165.89,26472.0,4391440.08,585447.15
+JNJ,,2022-02-14,Exercise or Conversion of Derivative Security,0.0,11129.0,0.0,555787.15
+JNJ,,2022-02-14,Tax Withholding (RSU Vesting),168.85,4833.0,816052.05,550954.15
+AAPL,,2022-02-01,Exercise or Conversion of Derivative Security,,486.0,,486.0
+JNJ,,2021-12-09,Gift,0.0,6320.0,0.0,469970.15
+JNJ,,2021-12-09,Gift,0.0,6320.0,0.0,463650.15
+JNJ,,2022-01-14,Exercise or Conversion of Derivative Security,65.37,231951.0,15162636.87,695601.15
+JNJ,,2022-01-14,Tax Withholding (RSU Vesting),167.84,150943.0,25334273.12,544658.15

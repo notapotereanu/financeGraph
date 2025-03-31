@@ -1,32 +1,32 @@
 issuerTradingSymbol,relationship,date,transaction_type,cost,shares,value,shares_total
 AAPL,,2025-02-01,Exercise or Conversion of Derivative Security,,1516,,62491
-BLK,,2025-01-16,"Grant, Award, or Other Acquisition",0,250,0.0,427847
-IOT,Director,2024-09-04,"Grant, Award, or Other Acquisition",0,1293,0.0,446041
-BLK,,2024-08-16,Gift,0,290,0.0,427597
-IOT,Director,2024-07-10,"Grant, Award, or Other Acquisition",0,5685,0.0,444748
-BLK,,2024-02-22,Gift,0,775,0.0,427887
+BLK,,2025-01-16,"Grant, Award, or Other Acquisition",0.0,250,0.0,427847
+IOT,Director,2024-09-04,"Grant, Award, or Other Acquisition",0.0,1293,0.0,446041
+BLK,,2024-08-16,Gift,0.0,290,0.0,427597
+IOT,Director,2024-07-10,"Grant, Award, or Other Acquisition",0.0,5685,0.0,444748
+BLK,,2024-02-22,Gift,0.0,775,0.0,427887
 AAPL,,2024-02-01,Exercise or Conversion of Derivative Security,,1852,,60975
-BLK,,2024-01-16,"Grant, Award, or Other Acquisition",0,300,0.0,428662
-BLK,,2023-09-05,Gift,0,1000,0.0,428362
-IOT,,2023-06-29,"Grant, Award, or Other Acquisition",0.00,7233,0.0,24054
-IOT,,2023-06-29,Conversion of Security,0.00,146983,0.0,171037
-IOT,,2023-06-29,Conversion of Security,0.00,268026,0.0,439063
+BLK,,2024-01-16,"Grant, Award, or Other Acquisition",0.0,300,0.0,428662
+BLK,,2023-09-05,Gift,0.0,1000,0.0,428362
+IOT,,2023-06-29,"Grant, Award, or Other Acquisition",0.0,7233,0.0,24054
+IOT,,2023-06-29,Conversion of Security,0.0,146983,0.0,171037
+IOT,,2023-06-29,Conversion of Security,0.0,268026,0.0,439063
 AAPL,,2023-02-01,Exercise or Conversion of Derivative Security,,1685,,59123
 BLK,,2023-01-17,"Grant, Award, or Other Acquisition",743.61,323,240186.03,429362
-IOT,,2022-06-22,"Grant, Award, or Other Acquisition",0.00,16821,0.0,16821
+IOT,,2022-06-22,"Grant, Award, or Other Acquisition",0.0,16821,0.0,16821
 AAPL,,2022-02-01,Exercise or Conversion of Derivative Security,,1986,,57438
 BLK,,2022-01-18,"Grant, Award, or Other Acquisition",832.07,288,239636.16,429039
-BLK,,2021-09-30,"Grant, Award, or Other Acquisition",0,14,0.0,428751
-BLK,,2021-06-30,"Grant, Award, or Other Acquisition",0,13,0.0,428737
-BLK,,2021-05-26,Gift,0,3500,0.0,428724
-BLK,,2021-03-31,"Grant, Award, or Other Acquisition",0,16,0.0,432224
+BLK,,2021-09-30,"Grant, Award, or Other Acquisition",0.0,14,0.0,428751
+BLK,,2021-06-30,"Grant, Award, or Other Acquisition",0.0,13,0.0,428737
+BLK,,2021-05-26,Gift,0.0,3500,0.0,428724
+BLK,,2021-03-31,"Grant, Award, or Other Acquisition",0.0,16,0.0,432224
 AAPL,,2021-02-01,Exercise or Conversion of Derivative Security,,3416,,55452
-BLK,,2021-01-15,"Grant, Award, or Other Acquisition",0,325,0.0,432208
-BLK,,2020-12-31,"Grant, Award, or Other Acquisition",0,16,0.0,431883
-BLK,,2020-09-30,"Grant, Award, or Other Acquisition",0,20,0.0,431867
+BLK,,2021-01-15,"Grant, Award, or Other Acquisition",0.0,325,0.0,432208
+BLK,,2020-12-31,"Grant, Award, or Other Acquisition",0.0,16,0.0,431883
+BLK,,2020-09-30,"Grant, Award, or Other Acquisition",0.0,20,0.0,431867
 BLK,,2020-09-02,Sale,603.4742,41900,25285568.98,431947
 BLK,,2020-09-02,Sale,603.995,100,60399.5,431847
-BLK,,2020-08-13,Gift,0,1750,0.0,473847
-BLK,,2020-06-30,"Grant, Award, or Other Acquisition",0,22,0.0,475597
-BLK,,2020-05-21,"Grant, Award, or Other Acquisition",0,471,0.0,475575
-BLK,,2020-04-29,Gift,0,2000,0.0,475104
+BLK,,2020-08-13,Gift,0.0,1750,0.0,473847
+BLK,,2020-06-30,"Grant, Award, or Other Acquisition",0.0,22,0.0,475597
+BLK,,2020-05-21,"Grant, Award, or Other Acquisition",0.0,471,0.0,475575
+BLK,,2020-04-29,Gift,0.0,2000,0.0,475104

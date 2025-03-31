@@ -6,7 +6,6 @@ NEWS_API_KEY = "4f9a2b0c1efd40318cdf751d5b7444f1"
 NEWS_API_BASE_URL = "https://newsapi.org/v2/everything"
 SEC_API_KEY = "397c17e93c15fc7ac67f7eb3643727790b500df0b1e0b3cd26bdb48bfd52f5d9"
 
-
 # Default Settings
 DEFAULT_STOCK_TICKER: List[str] = [
     #"TEAM", 

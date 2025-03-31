@@ -1,9 +1,5 @@
 [
     {
-        "ticker": "FICO",
-        "name": "Fair Isaac Corp"
-    },
-    {
         "ticker": "DDOG",
         "name": "Datadog Inc"
     },
@@ -34,6 +30,10 @@
     {
         "ticker": "DOCU",
         "name": "DocuSign Inc"
+    },
+    {
+        "ticker": "AZPN",
+        "name": "Aspen Technology Inc"
     },
     {
         "ticker": "CRM",

@@ -8,12 +8,12 @@
         "name": "HP Inc"
     },
     {
-        "ticker": "SMCI",
-        "name": "Super Micro Computer Inc"
-    },
-    {
         "ticker": "HPE",
         "name": "Hewlett Packard Enterprise Co"
+    },
+    {
+        "ticker": "SMCI",
+        "name": "Super Micro Computer Inc"
     },
     {
         "ticker": "NTAP",
